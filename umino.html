@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unique Watches</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="umino.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <script src="https://kit.fontawesome.com/82f8c9310a.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <section class="scrolling-text color-green information-top-bar">
+        <div class="text white">
+          <span class="text-uppercase">mid-season sale up to 50% off</span>
+          <span class="text-uppercase">sign up for 10% off your first order</span>
+          <span class="text-uppercase">summer sale for all swim suits - 10% off</span>
+        </div>
+        <div class="text white">
+          <span class="text-uppercase">mid-season sale up to 50% off</span>
+          <span class="text-uppercase">sign up for 10% off your first order</span>
+          <span class="text-uppercase">summer sale for all swim suits - 10% off</span>
+        </div>
+        <div class="text white">
+          <span class="text-uppercase">mid-season sale up to 50% off</span>
+          <span class="text-uppercase">sign up for 10% off your first order</span>
+          <span class="text-uppercase">summer sale for all swim suits - 10% off</span>
+        </div>
+      </section>
+    </header>
+
+    <section class="header-bar position-sticky top-0">
+      <div class="container-fluid">
+        <div class="header-tab d-flex flex-row flex-wrap align-items-center">
+          <nav class="header-left">
+            <input type="checkbox" class="d-none" id="toggle" />
+            <div class="menu-toggle d-lg-none color-white">
+              <label for="toggle">
+                <img src="data/hamburger.svg" alt="hamburger" style="width: 2.5rem; height: 2.5rem" />
+              </label>
+            </div>
+            <ul class="d-none d-lg-flex flex-row flex-wrap">
+              <li>
+                <a href="" aria-label="home"> Home </a>
+              </li>
+              <li>
+                <a href="" aria-label="shop"> Shop </a>
+              </li>
+              <li>
+                <a href="" aria-label="product"> Product </a>
+              </li>
+              <li>
+                <a href="" aria-label="page"> Page </a>
+              </li>
+              <li>
+                <a href="" aria-label="blog"> Blog </a>
+              </li>
+              <li><a href="" aria-label="sale">Sale</a></li>
+              <li><a href="" aria-label="Buy Umino!">Buy Umino!</a></li>
+            </ul>
+          </nav>
+
+          <img src="data/Logo.svg" alt="Umino logo" class="header-middle" />
+
+          <div class="header-right d-flex justify-content-end align-items-center">
+            <div class="dropdown d-none d-xl-flex">
+              <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">English</button>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                  <li><button class="dropdown-item" type="button">English</button></li>
+                  <li><button class="dropdown-item" type="button">Netherland</button></li>
+                  <li><button class="dropdown-item" type="button">French</button></li>
+                </ul>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">United States (USD)</button>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                  <li><button class="dropdown-item" type="button">United Kingdom (GBP)</button></li>
+                  <li><button class="dropdown-item" type="button">France (EUR)</button></li>
+                  <li><button class="dropdown-item" type="button">Japan (JPY)</button></li>
+                  <li><button class="dropdown-item" type="button">United States (USD)</button></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="utilities d-flex flex-row">
+              <a href="#"><img src="data/icon-search.svg" alt="Search" /></a>
+              <a href="#" class="d-none d-lg-flex"><img src="data/icon-user.svg" alt="User" /></a>
+              <a href="#" class="d-none d-lg-flex"><img src="data/icon-recently-seen.svg" alt="Recently seen" /></a>
+              <a href="#" class="d-none d-lg-flex"><img src="data/icon-wishlist.svg" alt="Wishlist" /></a>
+              <a href="#"><img src="data/icon-cart.svg" alt="Cart" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section class="carousel-slide-show">
+        <div id="carouselBanner" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item position-relative active" data-bs-interval="3000">
+              <img src="data/slide-1.jpg" class="d-none d-md-block w-100" alt="Slide 1" />
+              <img src="data/slide-1-mobile.jpg" class="d-block d-md-none w-100" alt="Slide 1" />
+              <div class="slide-text d-flex flex-column justify-content-center align-items-center position-absolute">
+                <span class="slide-subtitle text-uppercase">2022 LIMITED EDITION</span>
+                <h2 class="slide-title text-uppercase">LIMITED EDITION</h2>
+                <span class="slide-description">Exclusive product you won't find in other distributors.</span>
+                <button class="slide-button text-uppercase">DISCOVER NOW</button>
+              </div>
+            </div>
+            <div class="carousel-item position-relative" data-bs-interval="3000">
+              <img src="data/slide-2.jpg" class="d-none d-md-block w-100" alt="Slide 2" />
+              <img src="data/slide-2-mobile.jpg" class="d-block d-md-none w-100" alt="Slide 2" />
+              <div class="slide-text d-flex flex-column justify-content-center align-items-center position-absolute">
+                <span class="slide-subtitle text-uppercase">2022 NEW ARRIVALS</span>
+                <h2 class="slide-title text-uppercase">SPORT EDITION</h2>
+                <span class="slide-description">A unique watch to suit your style.</span>
+                <button class="slide-button text-uppercase">DISCOVER NOW</button>
+              </div>
+            </div>
+            <div class="carousel-item position-relative" data-bs-interval="3000">
+              <img src="data/slide-3.jpg" class="d-none d-md-block w-100" alt="Slide 3" />
+              <img src="data/slide-3-mobile.jpg" class="d-block d-md-none w-100" alt="Slide 3" />
+              <div class="slide-text d-flex flex-column justify-content-center align-items-center position-absolute">
+                <span class="slide-subtitle text-uppercase">TOP WATCHES FOR MEN'S</span>
+                <h2 class="slide-title text-uppercase">THE PERFECT</h2>
+                <span class="slide-description">A unique watch to suit your style.</span>
+                <button class="slide-button text-uppercase">DISCOVER NOW</button>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="top-trending section-gap">
+        <div class="container-fluid">
+          <div class="section-content">
+            <div class="section-header text-center">
+              <h2 class="section-heading text-uppercase">top trending</h2>
+              <p class="section-description">Here's some of our most popular products people are in love with.</p>
+            </div>
+
+            <div class="section-product-style d-flex flex-row">
+              <div class="top-trending-product col-6 col-md-4">
+                <div class="card-wrapper">
+                  <div class="card" style="width: 100%">
+                    <div class="product-image position-relative overflow-hidden">
+                      <a href="#">
+                        <img src="data/top-trending-1.svg" class="card-img-top position-relative image-swatch-1" alt="Top trend 1" />
+                      </a>
+                      <a href="#">
+                        <img src="data/top-trending-1-swatch.jpg" class="card-img-top position-absolute image-swatch-2" alt="Top trend 1" />
+                      </a>
+                      <a href="#">
+                        <img src="data/top-trending-1-hover.jpg" class="card-img-top position-absolute img-hover" alt="Card Front" />
+                      </a>
+                      <span class="sale-block-item sale-off position-absolute">-15%</span>
+                      <div class="action-bar d-flex flex-row align-items-center position-absolute gap-2">
+                        <!-- <a href="#" class="action-item d-flex justify-content-center align-items-center"> -->
+                        <button
+                          type="button"
+                          class="btn btn-tooltip action-item d-flex justify-content-center align-items-center"
+                          data-bs-toggle="tooltip"
+                          data-bs-custom-class="text-fs"
+                          data-bs-placement="top"
+                          title="Add to Cart"
+                        >
+                          <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.5459 11.3285C10.3927 11.3285 10.2457 11.2669 10.1373 11.1573C10.029 11.0478 9.96811 10.8991 9.96811 10.7441H8.8125C8.8125 11.2091 8.99513 11.655 9.32021 11.9838C9.64529 12.3125 10.0862 12.4972 10.5459 12.4972C11.0057 12.4972 11.4466 12.3125 11.7716 11.9838C12.0967 11.655 12.2793 11.2091 12.2793 10.7441H11.1237C11.1237 10.8991 11.0629 11.0478 10.9545 11.1573C10.8461 11.2669 10.6992 11.3285 10.5459 11.3285Z"
+                              fill="#111111"
+                            />
+                            <path
+                              d="M6.47907 11.3285C6.32583 11.3285 6.17886 11.2669 6.0705 11.1573C5.96214 11.0478 5.90127 10.8991 5.90127 10.7441H4.74023C4.74023 10.9747 4.78514 11.203 4.87238 11.416C4.95962 11.629 5.08748 11.8225 5.24868 11.9856C5.40988 12.1486 5.60125 12.2779 5.81186 12.3661C6.02248 12.4544 6.24822 12.4998 6.47618 12.4998C6.70415 12.4998 6.92989 12.4544 7.1405 12.3661C7.35112 12.2779 7.54249 12.1486 7.70368 11.9856C7.86488 11.8225 7.99275 11.629 8.07999 11.416C8.16723 11.203 8.21213 10.9747 8.21213 10.7441H7.05652C7.05652 10.8991 6.99569 11.0476 6.88741 11.1572C6.77913 11.2668 6.63225 11.3284 6.47907 11.3285Z"
+                              fill="#111111"
+                            />
+                            <path
+                              d="M14.0173 1.66048C13.9858 1.65506 13.9539 1.65237 13.9219 1.65244H4.67702C4.52377 1.65244 4.37681 1.71401 4.26845 1.8236C4.16009 1.93319 4.09921 2.08182 4.09921 2.23681C4.09921 2.39179 4.16009 2.54042 4.26845 2.65001C4.37681 2.7596 4.52377 2.82117 4.67702 2.82117H13.2398L13.087 3.74811L12.277 8.66477H4.73949L2.77495 3.74811L1.60308 0.840914C1.54111 0.70415 1.42937 0.596826 1.29113 0.541284C1.15289 0.485742 0.998786 0.486261 0.860911 0.542733C0.723035 0.599206 0.612007 0.70728 0.550938 0.844458C0.489868 0.981637 0.483464 1.13735 0.533058 1.27918L2.40407 5.9223L3.68102 9.34519C3.77528 9.63335 3.96993 9.83349 4.25088 9.83349H12.7663C12.9031 9.83356 13.0355 9.78452 13.14 9.6951C13.2444 9.60568 13.314 9.48168 13.3365 9.34519L14.2589 3.74811L14.4921 2.33286C14.5173 2.18001 14.4814 2.02331 14.3924 1.89722C14.3033 1.77113 14.1684 1.68598 14.0173 1.66048Z"
+                              fill="#111111"
+                            />
+                          </svg>
+                        </button>
+                        <!-- </a> -->
+                        <!-- <a href="#" class="action-item d-flex justify-content-center align-items-center"> -->
+                        <button
+                          type="button"
+                          class="btn btn-tooltip action-item d-flex justify-content-center align-items-center"
+                          data-bs-toggle="tooltip"
+                          data-bs-custom-class="text-fs"
+                          data-bs-placement="top"
+                          title="Add to wishlist"
+                        >
+                          <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M12.2441 2.76562C11.9889 2.51042 11.6973 2.31901 11.3691 2.19141C11.0501 2.0638 10.722 2 10.3848 2C10.0475 2 9.7194 2.0638 9.40039 2.19141C9.08138 2.31901 8.78971 2.51042 8.52539 2.76562L7.91016 3.38086C7.80078 3.49935 7.66406 3.55859 7.5 3.55859C7.33594 3.55859 7.19922 3.49935 7.08984 3.38086L6.47461 2.76562C6.21029 2.51042 5.91862 2.31901 5.59961 2.19141C5.2806 2.0638 4.95247 2 4.61523 2C4.27799 2 3.94531 2.0638 3.61719 2.19141C3.29818 2.31901 3.01107 2.51042 2.75586 2.76562C2.50065 3.02083 2.30924 3.3125 2.18164 3.64062C2.05404 3.95964 1.99023 4.28776 1.99023 4.625C1.99023 4.96224 2.05404 5.29492 2.18164 5.62305C2.30924 5.94206 2.50065 6.22917 2.75586 6.48438L7.5 11.2285L12.2441 6.48438C12.4993 6.22917 12.6908 5.94206 12.8184 5.62305C12.946 5.29492 13.0098 4.96224 13.0098 4.625C13.0098 4.28776 12.946 3.95964 12.8184 3.64062C12.6908 3.3125 12.4993 3.02083 12.2441 2.76562ZM13.0645 1.94531C13.4382 2.31901 13.7161 2.73828 13.8984 3.20312C14.0898 3.66797 14.1855 4.14193 14.1855 4.625C14.1855 5.10807 14.0898 5.58659 13.8984 6.06055C13.7161 6.52539 13.4382 6.9401 13.0645 7.30469L7.91016 12.459C7.80078 12.5775 7.66406 12.6367 7.5 12.6367C7.33594 12.6367 7.19922 12.5775 7.08984 12.459L1.93555 7.30469C1.56185 6.9401 1.2793 6.52539 1.08789 6.06055C0.905599 5.58659 0.814453 5.10807 0.814453 4.625C0.814453 4.14193 0.905599 3.66797 1.08789 3.20312C1.2793 2.72917 1.56185 2.3099 1.93555 1.94531C2.30013 1.57161 2.71484 1.29362 3.17969 1.11133C3.65365 0.929036 4.13216 0.837891 4.61523 0.837891C5.09831 0.837891 5.57227 0.929036 6.03711 1.11133C6.50195 1.29362 6.92122 1.57161 7.29492 1.94531L7.5 2.15039L7.70508 1.94531C8.07878 1.57161 8.49805 1.29362 8.96289 1.11133C9.42773 0.929036 9.90169 0.837891 10.3848 0.837891C10.8678 0.837891 11.3418 0.929036 11.8066 1.11133C12.2806 1.29362 12.6999 1.57161 13.0645 1.94531Z"
+                              fill="#111111"
+                            />
+                          </svg>
+                        </button>
+                        <!-- </a> -->
+                        <!-- <a href="#" class="action-item d-flex justify-content-center align-items-center"> -->
+                        <button
+                          type="button"
+                          class="btn btn-tooltip action-item d-flex justify-content-center align-items-center"
+                          data-bs-toggle="tooltip"
+                          data-bs-custom-class="text-fs"
+                          data-bs-placement="top"
+                          title="Compare"
+                        >
+                          <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M6.5 1.48047L1.97461 3.75L6.5 6.01953L11.0254 3.75L6.5 1.48047ZM6.24023 0.318359V0.304688C6.32227 0.268229 6.40885 0.25 6.5 0.25C6.59115 0.25 6.67773 0.268229 6.75977 0.304688L12.5977 3.23047C12.6523 3.25781 12.7025 3.29427 12.748 3.33984C12.7936 3.3763 12.8301 3.42643 12.8574 3.49023C12.9303 3.63607 12.9395 3.78646 12.8848 3.94141C12.8392 4.08724 12.7435 4.19661 12.5977 4.26953L6.75977 7.18164C6.67773 7.22721 6.59115 7.25 6.5 7.25C6.40885 7.25 6.32227 7.22721 6.24023 7.18164L0.402344 4.26953C0.347656 4.24219 0.297526 4.21029 0.251953 4.17383C0.20638 4.12826 0.169922 4.07357 0.142578 4.00977C0.0696615 3.86393 0.0559896 3.7181 0.101562 3.57227C0.15625 3.41732 0.25651 3.30339 0.402344 3.23047L6.24023 0.318359ZM0.402344 10.1074C0.25651 10.0345 0.15625 9.92057 0.101562 9.76562C0.0559896 9.61068 0.0696615 9.46484 0.142578 9.32812C0.215495 9.18229 0.329427 9.08659 0.484375 9.04102C0.639323 8.98633 0.785156 8.99544 0.921875 9.06836L6.5 11.8438L12.0781 9.05469C12.2148 8.99089 12.3607 8.98633 12.5156 9.04102C12.6706 9.08659 12.7845 9.18229 12.8574 9.32812C12.9303 9.46484 12.9395 9.61068 12.8848 9.76562C12.8392 9.92057 12.7435 10.0345 12.5977 10.1074L6.75977 13.0195C6.67773 13.056 6.59115 13.0742 6.5 13.0742C6.40885 13.0833 6.32227 13.0651 6.24023 13.0195L0.402344 10.1074ZM0.402344 7.18164V7.19531C0.25651 7.1224 0.15625 7.00846 0.101562 6.85352C0.0559896 6.69857 0.0696615 6.54818 0.142578 6.40234C0.215495 6.25651 0.329427 6.16081 0.484375 6.11523C0.639323 6.06055 0.785156 6.06966 0.921875 6.14258L6.5 8.93164L12.0781 6.14258C12.2148 6.06966 12.3607 6.06055 12.5156 6.11523C12.6706 6.16081 12.7845 6.25651 12.8574 6.40234C12.9303 6.54818 12.9395 6.69857 12.8848 6.85352C12.8392 7.00846 12.7435 7.11784 12.5977 7.18164L6.75977 10.1074C6.67773 10.1439 6.59115 10.1621 6.5 10.1621C6.40885 10.1621 6.32227 10.1439 6.24023 10.1074L0.402344 7.18164Z"
+                              fill="#111111"
+                            />
+                          </svg>
+                        </button>
+                        <!-- </a> -->
+                        <!-- <a href="#" class="action-item d-flex justify-content-center align-items-center"> -->
+                        <button
+                          type="button"
+                          class="btn btn-tooltip action-item d-flex justify-content-center align-items-center"
+                          data-bs-toggle="tooltip"
+                          data-bs-custom-class="text-fs"
+                          data-bs-placement="top"
+                          title="Quick view"
+                        >
+                          <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M0.568359 5.40234C0.568359 5.40234 0.623047 5.30208 0.732422 5.10156C0.841797 4.89193 1.0013 4.63672 1.21094 4.33594C1.34766 4.14453 1.49805 3.93945 1.66211 3.7207C1.83529 3.49284 2.02669 3.26497 2.23633 3.03711C2.50065 2.75456 2.79232 2.47201 3.11133 2.18945C3.43945 1.9069 3.79492 1.64714 4.17773 1.41016C4.64258 1.11849 5.15299 0.88151 5.70898 0.699219C6.26497 0.507812 6.86198 0.412109 7.5 0.412109C8.13802 0.412109 8.73503 0.507812 9.29102 0.699219C9.84701 0.88151 10.3574 1.11849 10.8223 1.41016C11.2051 1.64714 11.556 1.9069 11.875 2.18945C12.2031 2.47201 12.4993 2.75456 12.7637 3.03711C12.9733 3.26497 13.1602 3.49284 13.3242 3.7207C13.4974 3.93945 13.6523 4.14453 13.7891 4.33594C13.9987 4.63672 14.1582 4.89193 14.2676 5.10156C14.377 5.30208 14.4316 5.40234 14.4316 5.40234C14.4772 5.49349 14.5 5.58464 14.5 5.67578C14.5 5.76693 14.4772 5.84896 14.4316 5.92188C14.4316 5.92188 14.377 6.02669 14.2676 6.23633C14.1582 6.43685 13.9987 6.69206 13.7891 7.00195C13.6523 7.19336 13.4974 7.40299 13.3242 7.63086C13.1602 7.84961 12.9733 8.07292 12.7637 8.30078C12.4993 8.58333 12.2031 8.86589 11.875 9.14844C11.556 9.43099 11.2051 9.69076 10.8223 9.92773C10.3574 10.2194 9.84701 10.4564 9.29102 10.6387C8.73503 10.821 8.13802 10.9121 7.5 10.9121C6.86198 10.9121 6.26497 10.821 5.70898 10.6387C5.15299 10.4564 4.64258 10.2194 4.17773 9.92773C3.79492 9.69076 3.43945 9.43099 3.11133 9.14844C2.79232 8.86589 2.50065 8.58333 2.23633 8.30078C2.02669 8.07292 1.83529 7.84961 1.66211 7.63086C1.49805 7.40299 1.34766 7.19336 1.21094 7.00195C1.0013 6.69206 0.841797 6.43685 0.732422 6.23633C0.623047 6.02669 0.568359 5.92188 0.568359 5.92188C0.522786 5.83984 0.5 5.75326 0.5 5.66211C0.5 5.57096 0.522786 5.48438 0.568359 5.40234ZM1.74414 5.66211C1.79883 5.74414 1.85807 5.8444 1.92188 5.96289C1.99479 6.07227 2.08138 6.19987 2.18164 6.3457C2.30013 6.51888 2.43685 6.70573 2.5918 6.90625C2.74674 7.10677 2.91536 7.30729 3.09766 7.50781C3.33464 7.76302 3.5944 8.01367 3.87695 8.25977C4.15951 8.50586 4.46484 8.73372 4.79297 8.94336C5.1849 9.18034 5.60417 9.3763 6.05078 9.53125C6.50651 9.67708 6.98958 9.75 7.5 9.75C8.01042 9.75 8.48893 9.67708 8.93555 9.53125C9.39128 9.3763 9.8151 9.18034 10.207 8.94336C10.5352 8.73372 10.8405 8.50586 11.123 8.25977C11.4056 8.01367 11.6654 7.76302 11.9023 7.50781C12.0846 7.30729 12.2533 7.10677 12.4082 6.90625C12.5632 6.70573 12.6999 6.51888 12.8184 6.3457C12.9186 6.19987 13.0007 6.07227 13.0645 5.96289C13.1374 5.8444 13.2012 5.74414 13.2559 5.66211C13.2012 5.58008 13.1374 5.48438 13.0645 5.375C13.0007 5.25651 12.9186 5.12891 12.8184 4.99219C12.6999 4.81901 12.5632 4.63216 12.4082 4.43164C12.2533 4.23112 12.0846 4.0306 11.9023 3.83008C11.6654 3.56576 11.4056 3.31055 11.123 3.06445C10.8405 2.81836 10.5352 2.59505 10.207 2.39453C9.8151 2.14844 9.39128 1.95247 8.93555 1.80664C8.48893 1.66081 8.01042 1.58789 7.5 1.58789C6.98958 1.58789 6.50651 1.66081 6.05078 1.80664C5.60417 1.95247 5.1849 2.14844 4.79297 2.39453C4.46484 2.59505 4.15951 2.81836 3.87695 3.06445C3.5944 3.31055 3.33464 3.56576 3.09766 3.83008C2.91536 4.0306 2.74674 4.23112 2.5918 4.43164C2.43685 4.63216 2.30013 4.81901 2.18164 4.99219C2.08138 5.12891 1.99479 5.25651 1.92188 5.375C1.85807 5.48438 1.79883 5.58008 1.74414 5.66211ZM9.83789 5.66211C9.83789 5.99023 9.77409 6.29557 9.64648 6.57812C9.52799 6.86068 9.36393 7.10677 9.1543 7.31641C8.94466 7.52604 8.69401 7.69466 8.40234 7.82227C8.11979 7.94076 7.81901 8 7.5 8C7.18099 8 6.87565 7.94076 6.58398 7.82227C6.30143 7.69466 6.05534 7.52604 5.8457 7.31641C5.63607 7.10677 5.46745 6.86068 5.33984 6.57812C5.22135 6.29557 5.16211 5.99023 5.16211 5.66211C5.16211 5.3431 5.22135 5.04232 5.33984 4.75977C5.46745 4.47721 5.63607 4.23112 5.8457 4.02148C6.05534 3.81185 6.30143 3.64779 6.58398 3.5293C6.87565 3.40169 7.18099 3.33789 7.5 3.33789C7.81901 3.33789 8.11979 3.40169 8.40234 3.5293C8.69401 3.64779 8.94466 3.81185 9.1543 4.02148C9.36393 4.23112 9.52799 4.47721 9.64648 4.75977C9.77409 5.04232 9.83789 5.3431 9.83789 5.66211ZM8.66211 5.66211C8.66211 5.50716 8.63021 5.36133 8.56641 5.22461C8.51172 5.07878 8.42969 4.95117 8.32031 4.8418C8.22005 4.73242 8.09701 4.65039 7.95117 4.5957C7.81445 4.5319 7.66406 4.5 7.5 4.5C7.33594 4.5 7.18099 4.5319 7.03516 4.5957C6.89844 4.65039 6.77995 4.73242 6.67969 4.8418C6.57031 4.95117 6.48372 5.07878 6.41992 5.22461C6.36523 5.36133 6.33789 5.50716 6.33789 5.66211C6.33789 5.82617 6.36523 5.98112 6.41992 6.12695C6.48372 6.26367 6.57031 6.38672 6.67969 6.49609C6.77995 6.59635 6.89844 6.67839 7.03516 6.74219C7.18099 6.80599 7.33594 6.83789 7.5 6.83789C7.66406 6.83789 7.81445 6.80599 7.95117 6.74219C8.09701 6.67839 8.22005 6.59635 8.32031 6.49609C8.42969 6.38672 8.51172 6.26367 8.56641 6.12695C8.63021 5.98112 8.66211 5.82617 8.66211 5.66211Z"
+                              fill="#111111"
+                            />
+                          </svg>
+                        </button>
+                        <!-- </a> -->
+                      </div>
+                    </div>
+                    <div class="card-body d-flex flex-column text-center">
+                      <p class="umino">UMINO</p>
+                      <a href="#" class="top-trending-name card-text text-decoration-none"> Galaxy S21 Ultra 5G 128GB Unlocked International Version </a>
+                      <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                      </div>
+                      <p class="sale-price">
+                        $350.00 &nbsp;
+                        <span class="base-price text-decoration-line-through"> $400.00 </span>
+                      </p>
+                      <div class="color-swatches d-flex flex-row justify-content-center align-items-center gap-2">
+                        <!-- <div class="swatch-color trending-1-swatch-1">
+                          <div class="swatch color-blue"></div>
+                        </div> -->
+                        <button type="button" id="trending-1-swatch-1" class="swatch-color trending-1-swatch-1">
+                          <label class="swatch color-blue" for="trending-1-swatch-1"></label>
+                        </button>
+                        <!-- <div class="swatch-color trending-1-swatch-2">
+                          <div class="swatch color-leather"></div>
+                        </div> -->
+                        <button type="button" id="trending-1-swatch-2" class="swatch-color trending-1-swatch-2">
+                          <label class="swatch color-leather" for="trending-1-swatch-2"></label>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="top-trending-product col-6 col-md-4">
+                <div class="card-wrapper">
+                  <div class="card" style="width: 100%">
+                    <div class="product-image position-relative overflow-hidden">
+                      <a href="#">
+                        <img src="data/top-trending-2.svg" class="card-img-top position-relative" alt="Top deal 1" />
+                      </a>
+                      <a href="#">
+                        <img src="data/top-trending-2-hover.jpg" class="card-img-top position-absolute img-hover" alt="Card Front" />
+                      </a>
+                      <span class="sale-block-item sale-off position-absolute">-15%</span>
+                      <div class="action-bar d-flex flex-row align-items-center position-absolute gap-2">
+                        <button
+                          type="button"
+                          class="btn btn-tooltip action-item d-flex justify-content-center align-items-center"
+                          data-bs-toggle="tooltip"
+                          data-bs-custom-class="text-fs"
+                          data-bs-placement="top"
+                          title="Add to Cart"
+                        >
+                          <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.5459 11.3285C10.3927 11.3285 10.2457 11.2669 10.1373 11.1573C10.029 11.0478 9.96811 10.8991 9.96811 10.7441H8.8125C8.8125 11.2091 8.99513 11.655 9.32021 11.9838C9.64529 12.3125 10.0862 12.4972 10.5459 12.4972C11.0057 12.4972 11.4466 12.3125 11.7716 11.9838C12.0967 11.655 12.2793 11.2091 12.2793 10.7441H11.1237C11.1237 10.8991 11.0629 11.0478 10.9545 11.1573C10.8461 11.2669 10.6992 11.3285 10.5459 11.3285Z"
+                              fill="#111111"
+                            />
+                            <path
+                              d="M6.47907 11.3285C6.32583 11.3285 6.17886 11.2669 6.0705 11.1573C5.96214 11.0478 5.90127 10.8991 5.90127 10.7441H4.74023C4.74023 10.9747 4.78514 11.203 4.87238 11.416C4.95962 11.629 5.08748 11.8225 5.24868 11.9856C5.40988 12.1486 5.60125 12.2779 5.81186 12.3661C6.02248 12.4544 6.24822 12.4998 6.47618 12.4998C6.70415 12.4998 6.92989 12.4544 7.1405 12.3661C7.35112 12.2779 7.54249 12.1486 7.70368 11.9856C7.86488 11.8225 7.99275 11.629 8.07999 11.416C8.16723 11.203 8.21213 10.9747 8.21213 10.7441H7.05652C7.05652 10.8991 6.99569 11.0476 6.88741 11.1572C6.77913 11.2668 6.63225 11.3284 6.47907 11.3285Z"
+                              fill="#111111"
+                            />
+                            <path
+                              d="M14.0173 1.66048C13.9858 1.65506 13.9539 1.65237 13.9219 1.65244H4.67702C4.52377 1.65244 4.37681 1.71401 4.26845 1.8236C4.16009 1.93319 4.09921 2.08182 4.09921 2.23681C4.09921 2.39179 4.16009 2.54042 4.26845 2.65001C4.37681 2.7596 4.52377 2.82117 4.67702 2.82117H13.2398L13.087 3.74811L12.277 8.66477H4.73949L2.77495 3.74811L1.60308 0.840914C1.54111 0.70415 1.42937 0.596826 1.29113 0.541284C1.15289 0.485742 0.998786 0.486261 0.860911 0.542733C0.723035 0.599206 0.612007 0.70728 0.550938 0.844458C0.489868 0.981637 0.483464 1.13735 0.533058 1.27918L2.40407 5.9223L3.68102 9.34519C3.77528 9.63335 3.96993 9.83349 4.25088 9.83349H12.7663C12.9031 9.83356 13.0355 9.78452 13.14 9.6951C13.2444 9.60568 13.314 9.48168 13.3365 9.34519L14.2589 3.74811L14.4921 2.33286C14.5173 2.18001 14.4814 2.02331 14.3924 1.89722C14.3033 1.77113 14.1684 1.68598 14.0173 1.66048Z"
+                              fill="#111111"
+                            />
+                          </svg>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-tooltip action-item d-flex justify-content-center align-items-center"
+                          data-bs-toggle="tooltip"
+                          data-bs-custom-class="text-fs"
+                          data-bs-placement="top"
+                          title="Add to wishlist"
+                        >
+                          <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M12.2441 2.76562C11.9889 2.51042 11.6973 2.31901 11.3691 2.19141C11.0501 2.0638 10.722 2 10.3848 2C10.0475 2 9.7194 2.0638 9.40039 2.19141C9.08138 2.31901 8.78971 2.51042 8.52539 2.76562L7.91016 3.38086C7.80078 3.49935 7.66406 3.55859 7.5 3.55859C7.33594 3.55859 7.19922 3.49935 7.08984 3.38086L6.47461 2.76562C6.21029 2.51042 5.91862 2.31901 5.59961 2.19141C5.2806 2.0638 4.95247 2 4.61523 2C4.27799 2 3.94531 2.0638 3.61719 2.19141C3.29818 2.31901 3.01107 2.51042 2.75586 2.76562C2.50065 3.02083 2.30924 3.3125 2.18164 3.64062C2.05404 3.95964 1.99023 4.28776 1.99023 4.625C1.99023 4.96224 2.05404 5.29492 2.18164 5.62305C2.30924 5.94206 2.50065 6.22917 2.75586 6.48438L7.5 11.2285L12.2441 6.48438C12.4993 6.22917 12.6908 5.94206 12.8184 5.62305C12.946 5.29492 13.0098 4.96224 13.0098 4.625C13.0098 4.28776 12.946 3.95964 12.8184 3.64062C12.6908 3.3125 12.4993 3.02083 12.2441 2.76562ZM13.0645 1.94531C13.4382 2.31901 13.7161 2.73828 13.8984 3.20312C14.0898 3.66797 14.1855 4.14193 14.1855 4.625C14.1855 5.10807 14.0898 5.58659 13.8984 6.06055C13.7161 6.52539 13.4382 6.9401 13.0645 7.30469L7.91016 12.459C7.80078 12.5775 7.66406 12.6367 7.5 12.6367C7.33594 12.6367 7.19922 12.5775 7.08984 12.459L1.93555 7.30469C1.56185 6.9401 1.2793 6.52539 1.08789 6.06055C0.905599 5.58659 0.814453 5.10807 0.814453 4.625C0.814453 4.14193 0.905599 3.66797 1.08789 3.20312C1.2793 2.72917 1.56185 2.3099 1.93555 1.94531C2.30013 1.57161 2.71484 1.29362 3.17969 1.11133C3.65365 0.929036 4.13216 0.837891 4.61523 0.837891C5.09831 0.837891 5.57227 0.929036 6.03711 1.11133C6.50195 1.29362 6.92122 1.57161 7.29492 1.94531L7.5 2.15039L7.70508 1.94531C8.07878 1.57161 8.49805 1.29362 8.96289 1.11133C9.42773 0.929036 9.90169 0.837891 10.3848 0.837891C10.8678 0.837891 11.3418 0.929036 11.8066 1.11133C12.2806 1.29362 12.6999 1.57161 13.0645 1.94531Z"
+                              fill="#111111"
+                            />
+                          </svg>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-tooltip action-item d-flex justify-content-center align-items-center"
+                          data-bs-toggle="tooltip"
+                          data-bs-custom-class="text-fs"
+                          data-bs-placement="top"
+                          title="Compare"
+                        >
+                          <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M6.5 1.48047L1.97461 3.75L6.5 6.01953L11.0254 3.75L6.5 1.48047ZM6.24023 0.318359V0.304688C6.32227 0.268229 6.40885 0.25 6.5 0.25C6.59115 0.25 6.67773 0.268229 6.75977 0.304688L12.5977 3.23047C12.6523 3.25781 12.7025 3.29427 12.748 3.33984C12.7936 3.3763 12.8301 3.42643 12.8574 3.49023C12.9303 3.63607 12.9395 3.78646 12.8848 3.94141C12.8392 4.08724 12.7435 4.19661 12.5977 4.26953L6.75977 7.18164C6.67773 7.22721 6.59115 7.25 6.5 7.25C6.40885 7.25 6.32227 7.22721 6.24023 7.18164L0.402344 4.26953C0.347656 4.24219 0.297526 4.21029 0.251953 4.17383C0.20638 4.12826 0.169922 4.07357 0.142578 4.00977C0.0696615 3.86393 0.0559896 3.7181 0.101562 3.57227C0.15625 3.41732 0.25651 3.30339 0.402344 3.23047L6.24023 0.318359ZM0.402344 10.1074C0.25651 10.0345 0.15625 9.92057 0.101562 9.76562C0.0559896 9.61068 0.0696615 9.46484 0.142578 9.32812C0.215495 9.18229 0.329427 9.08659 0.484375 9.04102C0.639323 8.98633 0.785156 8.99544 0.921875 9.06836L6.5 11.8438L12.0781 9.05469C12.2148 8.99089 12.3607 8.98633 12.5156 9.04102C12.6706 9.08659 12.7845 9.18229 12.8574 9.32812C12.9303 9.46484 12.9395 9.61068 12.8848 9.76562C12.8392 9.92057 12.7435 10.0345 12.5977 10.1074L6.75977 13.0195C6.67773 13.056 6.59115 13.0742 6.5 13.0742C6.40885 13.0833 6.32227 13.0651 6.24023 13.0195L0.402344 10.1074ZM0.402344 7.18164V7.19531C0.25651 7.1224 0.15625 7.00846 0.101562 6.85352C0.0559896 6.69857 0.0696615 6.54818 0.142578 6.40234C0.215495 6.25651 0.329427 6.16081 0.484375 6.11523C0.639323 6.06055 0.785156 6.06966 0.921875 6.14258L6.5 8.93164L12.0781 6.14258C12.2148 6.06966 12.3607 6.06055 12.5156 6.11523C12.6706 6.16081 12.7845 6.25651 12.8574 6.40234C12.9303 6.54818 12.9395 6.69857 12.8848 6.85352C12.8392 7.00846 12.7435 7.11784 12.5977 7.18164L6.75977 10.1074C6.67773 10.1439 6.59115 10.1621 6.5 10.1621C6.40885 10.1621 6.32227 10.1439 6.24023 10.1074L0.402344 7.18164Z"
+                              fill="#111111"
+                            />
+                          </svg>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-tooltip action-item d-flex justify-content-center align-items-center"
+                          data-bs-toggle="tooltip"
+                          data-bs-custom-class="text-fs"
+                          data-bs-placement="top"
+                          title="Quick view"
+                        >
+                          <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M0.568359 5.40234C0.568359 5.40234 0.623047 5.30208 0.732422 5.10156C0.841797 4.89193 1.0013 4.63672 1.21094 4.33594C1.34766 4.14453 1.49805 3.93945 1.66211 3.7207C1.83529 3.49284 2.02669 3.26497 2.23633 3.03711C2.50065 2.75456 2.79232 2.47201 3.11133 2.18945C3.43945 1.9069 3.79492 1.64714 4.17773 1.41016C4.64258 1.11849 5.15299 0.88151 5.70898 0.699219C6.26497 0.507812 6.86198 0.412109 7.5 0.412109C8.13802 0.412109 8.73503 0.507812 9.29102 0.699219C9.84701 0.88151 10.3574 1.11849 10.8223 1.41016C11.2051 1.64714 11.556 1.9069 11.875 2.18945C12.2031 2.47201 12.4993 2.75456 12.7637 3.03711C12.9733 3.26497 13.1602 3.49284 13.3242 3.7207C13.4974 3.93945 13.6523 4.14453 13.7891 4.33594C13.9987 4.63672 14.1582 4.89193 14.2676 5.10156C14.377 5.30208 14.4316 5.40234 14.4316 5.40234C14.4772 5.49349 14.5 5.58464 14.5 5.67578C14.5 5.76693 14.4772 5.84896 14.4316 5.92188C14.4316 5.92188 14.377 6.02669 14.2676 6.23633C14.1582 6.43685 13.9987 6.69206 13.7891 7.00195C13.6523 7.19336 13.4974 7.40299 13.3242 7.63086C13.1602 7.84961 12.9733 8.07292 12.7637 8.30078C12.4993 8.58333 12.2031 8.86589 11.875 9.14844C11.556 9.43099 11.2051 9.69076 10.8223 9.92773C10.3574 10.2194 9.84701 10.4564 9.29102 10.6387C8.73503 10.821 8.13802 10.9121 7.5 10.9121C6.86198 10.9121 6.26497 10.821 5.70898 10.6387C5.15299 10.4564 4.64258 10.2194 4.17773 9.92773C3.79492 9.69076 3.43945 9.43099 3.11133 9.14844C2.79232 8.86589 2.50065 8.58333 2.23633 8.30078C2.02669 8.07292 1.83529 7.84961 1.66211 7.63086C1.49805 7.40299 1.34766 7.19336 1.21094 7.00195C1.0013 6.69206 0.841797 6.43685 0.732422 6.23633C0.623047 6.02669 0.568359 5.92188 0.568359 5.92188C0.522786 5.83984 0.5 5.75326 0.5 5.66211C0.5 5.57096 0.522786 5.48438 0.568359 5.40234ZM1.74414 5.66211C1.79883 5.74414 1.85807 5.8444 1.92188 5.96289C1.99479 6.07227 2.08138 6.19987 2.18164 6.3457C2.30013 6.51888 2.43685 6.70573 2.5918 6.90625C2.74674 7.10677 2.91536 7.30729 3.09766 7.50781C3.33464 7.76302 3.5944 8.01367 3.87695 8.25977C4.15951 8.50586 4.46484 8.73372 4.79297 8.94336C5.1849 9.18034 5.60417 9.3763 6.05078 9.53125C6.50651 9.67708 6.98958 9.75 7.5 9.75C8.01042 9.75 8.48893 9.67708 8.93555 9.53125C9.39128 9.3763 9.8151 9.18034 10.207 8.94336C10.5352 8.73372 10.8405 8.50586 11.123 8.25977C11.4056 8.01367 11.6654 7.76302 11.9023 7.50781C12.0846 7.30729 12.2533 7.10677 12.4082 6.90625C12.5632 6.70573 12.6999 6.51888 12.8184 6.3457C12.9186 6.19987 13.0007 6.07227 13.0645 5.96289C13.1374 5.8444 13.2012 5.74414 13.2559 5.66211C13.2012 5.58008 13.1374 5.48438 13.0645 5.375C13.0007 5.25651 12.9186 5.12891 12.8184 4.99219C12.6999 4.81901 12.5632 4.63216 12.4082 4.43164C12.2533 4.23112 12.0846 4.0306 11.9023 3.83008C11.6654 3.56576 11.4056 3.31055 11.123 3.06445C10.8405 2.81836 10.5352 2.59505 10.207 2.39453C9.8151 2.14844 9.39128 1.95247 8.93555 1.80664C8.48893 1.66081 8.01042 1.58789 7.5 1.58789C6.98958 1.58789 6.50651 1.66081 6.05078 1.80664C5.60417 1.95247 5.1849 2.14844 4.79297 2.39453C4.46484 2.59505 4.15951 2.81836 3.87695 3.06445C3.5944 3.31055 3.33464 3.56576 3.09766 3.83008C2.91536 4.0306 2.74674 4.23112 2.5918 4.43164C2.43685 4.63216 2.30013 4.81901 2.18164 4.99219C2.08138 5.12891 1.99479 5.25651 1.92188 5.375C1.85807 5.48438 1.79883 5.58008 1.74414 5.66211ZM9.83789 5.66211C9.83789 5.99023 9.77409 6.29557 9.64648 6.57812C9.52799 6.86068 9.36393 7.10677 9.1543 7.31641C8.94466 7.52604 8.69401 7.69466 8.40234 7.82227C8.11979 7.94076 7.81901 8 7.5 8C7.18099 8 6.87565 7.94076 6.58398 7.82227C6.30143 7.69466 6.05534 7.52604 5.8457 7.31641C5.63607 7.10677 5.46745 6.86068 5.33984 6.57812C5.22135 6.29557 5.16211 5.99023 5.16211 5.66211C5.16211 5.3431 5.22135 5.04232 5.33984 4.75977C5.46745 4.47721 5.63607 4.23112 5.8457 4.02148C6.05534 3.81185 6.30143 3.64779 6.58398 3.5293C6.87565 3.40169 7.18099 3.33789 7.5 3.33789C7.81901 3.33789 8.11979 3.40169 8.40234 3.5293C8.69401 3.64779 8.94466 3.81185 9.1543 4.02148C9.36393 4.23112 9.52799 4.47721 9.64648 4.75977C9.77409 5.04232 9.83789 5.3431 9.83789 5.66211ZM8.66211 5.66211C8.66211 5.50716 8.63021 5.36133 8.56641 5.22461C8.51172 5.07878 8.42969 4.95117 8.32031 4.8418C8.22005 4.73242 8.09701 4.65039 7.95117 4.5957C7.81445 4.5319 7.66406 4.5 7.5 4.5C7.33594 4.5 7.18099 4.5319 7.03516 4.5957C6.89844 4.65039 6.77995 4.73242 6.67969 4.8418C6.57031 4.95117 6.48372 5.07878 6.41992 5.22461C6.36523 5.36133 6.33789 5.50716 6.33789 5.66211C6.33789 5.82617 6.36523 5.98112 6.41992 6.12695C6.48372 6.26367 6.57031 6.38672 6.67969 6.49609C6.77995 6.59635 6.89844 6.67839 7.03516 6.74219C7.18099 6.80599 7.33594 6.83789 7.5 6.83789C7.66406 6.83789 7.81445 6.80599 7.95117 6.74219C8.09701 6.67839 8.22005 6.59635 8.32031 6.49609C8.42969 6.38672 8.51172 6.26367 8.56641 6.12695C8.63021 5.98112 8.66211 5.82617 8.66211 5.66211Z"
+                              fill="#111111"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-body d-flex flex-column text-center">
+                      <p class="umino">UMINO</p>
+                      <a href="#" class="top-trending-name card-text text-decoration-none"> Galaxy S21 Ultra 5G 128GB Unlocked International Version </a>
+                      <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                      </div>
+                      <p class="sale-price">
+                        $350.00 &nbsp;
+                        <span class="base-price text-decoration-line-through"> $400.00 </span>
+                      </p>
+                      <div class="color-swatches d-flex flex-row justify-content-center align-items-center gap-2">
+                        <!-- <div class="swatch-color trending-1-swatch-1">
+                          <div class="swatch color-gold"></div>
+                        </div> -->
+                        <button type="button" id="trending-2-swatch-1" class="swatch-color trending-2-swatch-1">
+                          <label class="swatch color-gold" for="trending-2-swatch-1"></label>
+                        </button>
+                        <!-- <div class="swatch-color trending-1-swatch-2">
+                          <div class="swatch color-white"></div>
+                        </div> -->
+                        <button type="button" id="trending-2-swatch-2" class="swatch-color trending-2-swatch-2">
+                          <label class="swatch color-white" for="trending-2-swatch-2"></label>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="top-trending-product col-6 col-md-4">
+                <div class="card-wrapper">
+                  <div class="card" style="width: 100%">
+                    <div class="product-image position-relative overflow-hidden">
+                      <a href="#">
+                        <img src="data/top-trending-3.svg" class="card-img-top position-relative" alt="Top deal 1" />
+                      </a>
+                      <a href="#">
+                        <img src="data/top-trending-3-hover.jpg" class="card-img-top position-absolute img-hover" alt="Card Front" />
+                      </a>
+                      <span class="sale-block-item sale-off position-absolute">-15%</span>
+                      <div class="action-bar d-flex flex-row align-items-center position-absolute gap-2">
+                        <button
+                          type="button"
+                          class="btn btn-tooltip action-item d-flex justify-content-center align-items-center"
+                          data-bs-toggle="tooltip"
+                          data-bs-custom-class="text-fs"
+                          data-bs-placement="top"
+                          title="Add to Cart"
+                        >
+                          <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.5459 11.3285C10.3927 11.3285 10.2457 11.2669 10.1373 11.1573C10.029 11.0478 9.96811 10.8991 9.96811 10.7441H8.8125C8.8125 11.2091 8.99513 11.655 9.32021 11.9838C9.64529 12.3125 10.0862 12.4972 10.5459 12.4972C11.0057 12.4972 11.4466 12.3125 11.7716 11.9838C12.0967 11.655 12.2793 11.2091 12.2793 10.7441H11.1237C11.1237 10.8991 11.0629 11.0478 10.9545 11.1573C10.8461 11.2669 10.6992 11.3285 10.5459 11.3285Z"
+                              fill="#111111"
+                            />
+                            <path
+                              d="M6.47907 11.3285C6.32583 11.3285 6.17886 11.2669 6.0705 11.1573C5.96214 11.0478 5.90127 10.8991 5.90127 10.7441H4.74023C4.74023 10.9747 4.78514 11.203 4.87238 11.416C4.95962 11.629 5.08748 11.8225 5.24868 11.9856C5.40988 12.1486 5.60125 12.2779 5.81186 12.3661C6.02248 12.4544 6.24822 12.4998 6.47618 12.4998C6.70415 12.4998 6.92989 12.4544 7.1405 12.3661C7.35112 12.2779 7.54249 12.1486 7.70368 11.9856C7.86488 11.8225 7.99275 11.629 8.07999 11.416C8.16723 11.203 8.21213 10.9747 8.21213 10.7441H7.05652C7.05652 10.8991 6.99569 11.0476 6.88741 11.1572C6.77913 11.2668 6.63225 11.3284 6.47907 11.3285Z"
+                              fill="#111111"
+                            />
+                            <path
+                              d="M14.0173 1.66048C13.9858 1.65506 13.9539 1.65237 13.9219 1.65244H4.67702C4.52377 1.65244 4.37681 1.71401 4.26845 1.8236C4.16009 1.93319 4.09921 2.08182 4.09921 2.23681C4.09921 2.39179 4.16009 2.54042 4.26845 2.65001C4.37681 2.7596 4.52377 2.82117 4.67702 2.82117H13.2398L13.087 3.74811L12.277 8.66477H4.73949L2.77495 3.74811L1.60308 0.840914C1.54111 0.70415 1.42937 0.596826 1.29113 0.541284C1.15289 0.485742 0.998786 0.486261 0.860911 0.542733C0.723035 0.599206 0.612007 0.70728 0.550938 0.844458C0.489868 0.981637 0.483464 1.13735 0.533058 1.27918L2.40407 5.9223L3.68102 9.34519C3.77528 9.63335 3.96993 9.83349 4.25088 9.83349H12.7663C12.9031 9.83356 13.0355 9.78452 13.14 9.6951C13.2444 9.60568 13.314 9.48168 13.3365 9.34519L14.2589 3.74811L14.4921 2.33286C14.5173 2.18001 14.4814 2.02331 14.3924 1.89722C14.3033 1.77113 14.1684 1.68598 14.0173 1.66048Z"
+                              fill="#111111"
+                            />
+                          </svg>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-tooltip action-item d-flex justify-content-center align-items-center"
+                          data-bs-toggle="tooltip"
+                          data-bs-custom-class="text-fs"
+                          data-bs-placement="top"
+                          title="Add to wishlist"
+                        >
+                          <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M12.2441 2.76562C11.9889 2.51042 11.6973 2.31901 11.3691 2.19141C11.0501 2.0638 10.722 2 10.3848 2C10.0475 2 9.7194 2.0638 9.40039 2.19141C9.08138 2.31901 8.78971 2.51042 8.52539 2.76562L7.91016 3.38086C7.80078 3.49935 7.66406 3.55859 7.5 3.55859C7.33594 3.55859 7.19922 3.49935 7.08984 3.38086L6.47461 2.76562C6.21029 2.51042 5.91862 2.31901 5.59961 2.19141C5.2806 2.0638 4.95247 2 4.61523 2C4.27799 2 3.94531 2.0638 3.61719 2.19141C3.29818 2.31901 3.01107 2.51042 2.75586 2.76562C2.50065 3.02083 2.30924 3.3125 2.18164 3.64062C2.05404 3.95964 1.99023 4.28776 1.99023 4.625C1.99023 4.96224 2.05404 5.29492 2.18164 5.62305C2.30924 5.94206 2.50065 6.22917 2.75586 6.48438L7.5 11.2285L12.2441 6.48438C12.4993 6.22917 12.6908 5.94206 12.8184 5.62305C12.946 5.29492 13.0098 4.96224 13.0098 4.625C13.0098 4.28776 12.946 3.95964 12.8184 3.64062C12.6908 3.3125 12.4993 3.02083 12.2441 2.76562ZM13.0645 1.94531C13.4382 2.31901 13.7161 2.73828 13.8984 3.20312C14.0898 3.66797 14.1855 4.14193 14.1855 4.625C14.1855 5.10807 14.0898 5.58659 13.8984 6.06055C13.7161 6.52539 13.4382 6.9401 13.0645 7.30469L7.91016 12.459C7.80078 12.5775 7.66406 12.6367 7.5 12.6367C7.33594 12.6367 7.19922 12.5775 7.08984 12.459L1.93555 7.30469C1.56185 6.9401 1.2793 6.52539 1.08789 6.06055C0.905599 5.58659 0.814453 5.10807 0.814453 4.625C0.814453 4.14193 0.905599 3.66797 1.08789 3.20312C1.2793 2.72917 1.56185 2.3099 1.93555 1.94531C2.30013 1.57161 2.71484 1.29362 3.17969 1.11133C3.65365 0.929036 4.13216 0.837891 4.61523 0.837891C5.09831 0.837891 5.57227 0.929036 6.03711 1.11133C6.50195 1.29362 6.92122 1.57161 7.29492 1.94531L7.5 2.15039L7.70508 1.94531C8.07878 1.57161 8.49805 1.29362 8.96289 1.11133C9.42773 0.929036 9.90169 0.837891 10.3848 0.837891C10.8678 0.837891 11.3418 0.929036 11.8066 1.11133C12.2806 1.29362 12.6999 1.57161 13.0645 1.94531Z"
+                              fill="#111111"
+                            />
+                          </svg>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-tooltip action-item d-flex justify-content-center align-items-center"
+                          data-bs-toggle="tooltip"
+                          data-bs-custom-class="text-fs"
+                          data-bs-placement="top"
+                          title="Compare"
+                        >
+                          <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M6.5 1.48047L1.97461 3.75L6.5 6.01953L11.0254 3.75L6.5 1.48047ZM6.24023 0.318359V0.304688C6.32227 0.268229 6.40885 0.25 6.5 0.25C6.59115 0.25 6.67773 0.268229 6.75977 0.304688L12.5977 3.23047C12.6523 3.25781 12.7025 3.29427 12.748 3.33984C12.7936 3.3763 12.8301 3.42643 12.8574 3.49023C12.9303 3.63607 12.9395 3.78646 12.8848 3.94141C12.8392 4.08724 12.7435 4.19661 12.5977 4.26953L6.75977 7.18164C6.67773 7.22721 6.59115 7.25 6.5 7.25C6.40885 7.25 6.32227 7.22721 6.24023 7.18164L0.402344 4.26953C0.347656 4.24219 0.297526 4.21029 0.251953 4.17383C0.20638 4.12826 0.169922 4.07357 0.142578 4.00977C0.0696615 3.86393 0.0559896 3.7181 0.101562 3.57227C0.15625 3.41732 0.25651 3.30339 0.402344 3.23047L6.24023 0.318359ZM0.402344 10.1074C0.25651 10.0345 0.15625 9.92057 0.101562 9.76562C0.0559896 9.61068 0.0696615 9.46484 0.142578 9.32812C0.215495 9.18229 0.329427 9.08659 0.484375 9.04102C0.639323 8.98633 0.785156 8.99544 0.921875 9.06836L6.5 11.8438L12.0781 9.05469C12.2148 8.99089 12.3607 8.98633 12.5156 9.04102C12.6706 9.08659 12.7845 9.18229 12.8574 9.32812C12.9303 9.46484 12.9395 9.61068 12.8848 9.76562C12.8392 9.92057 12.7435 10.0345 12.5977 10.1074L6.75977 13.0195C6.67773 13.056 6.59115 13.0742 6.5 13.0742C6.40885 13.0833 6.32227 13.0651 6.24023 13.0195L0.402344 10.1074ZM0.402344 7.18164V7.19531C0.25651 7.1224 0.15625 7.00846 0.101562 6.85352C0.0559896 6.69857 0.0696615 6.54818 0.142578 6.40234C0.215495 6.25651 0.329427 6.16081 0.484375 6.11523C0.639323 6.06055 0.785156 6.06966 0.921875 6.14258L6.5 8.93164L12.0781 6.14258C12.2148 6.06966 12.3607 6.06055 12.5156 6.11523C12.6706 6.16081 12.7845 6.25651 12.8574 6.40234C12.9303 6.54818 12.9395 6.69857 12.8848 6.85352C12.8392 7.00846 12.7435 7.11784 12.5977 7.18164L6.75977 10.1074C6.67773 10.1439 6.59115 10.1621 6.5 10.1621C6.40885 10.1621 6.32227 10.1439 6.24023 10.1074L0.402344 7.18164Z"
+                              fill="#111111"
+                            />
+                          </svg>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-tooltip action-item d-flex justify-content-center align-items-center"
+                          data-bs-toggle="tooltip"
+                          data-bs-custom-class="text-fs"
+                          data-bs-placement="top"
+                          title="Quick view"
+                        >
+                          <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M0.568359 5.40234C0.568359 5.40234 0.623047 5.30208 0.732422 5.10156C0.841797 4.89193 1.0013 4.63672 1.21094 4.33594C1.34766 4.14453 1.49805 3.93945 1.66211 3.7207C1.83529 3.49284 2.02669 3.26497 2.23633 3.03711C2.50065 2.75456 2.79232 2.47201 3.11133 2.18945C3.43945 1.9069 3.79492 1.64714 4.17773 1.41016C4.64258 1.11849 5.15299 0.88151 5.70898 0.699219C6.26497 0.507812 6.86198 0.412109 7.5 0.412109C8.13802 0.412109 8.73503 0.507812 9.29102 0.699219C9.84701 0.88151 10.3574 1.11849 10.8223 1.41016C11.2051 1.64714 11.556 1.9069 11.875 2.18945C12.2031 2.47201 12.4993 2.75456 12.7637 3.03711C12.9733 3.26497 13.1602 3.49284 13.3242 3.7207C13.4974 3.93945 13.6523 4.14453 13.7891 4.33594C13.9987 4.63672 14.1582 4.89193 14.2676 5.10156C14.377 5.30208 14.4316 5.40234 14.4316 5.40234C14.4772 5.49349 14.5 5.58464 14.5 5.67578C14.5 5.76693 14.4772 5.84896 14.4316 5.92188C14.4316 5.92188 14.377 6.02669 14.2676 6.23633C14.1582 6.43685 13.9987 6.69206 13.7891 7.00195C13.6523 7.19336 13.4974 7.40299 13.3242 7.63086C13.1602 7.84961 12.9733 8.07292 12.7637 8.30078C12.4993 8.58333 12.2031 8.86589 11.875 9.14844C11.556 9.43099 11.2051 9.69076 10.8223 9.92773C10.3574 10.2194 9.84701 10.4564 9.29102 10.6387C8.73503 10.821 8.13802 10.9121 7.5 10.9121C6.86198 10.9121 6.26497 10.821 5.70898 10.6387C5.15299 10.4564 4.64258 10.2194 4.17773 9.92773C3.79492 9.69076 3.43945 9.43099 3.11133 9.14844C2.79232 8.86589 2.50065 8.58333 2.23633 8.30078C2.02669 8.07292 1.83529 7.84961 1.66211 7.63086C1.49805 7.40299 1.34766 7.19336 1.21094 7.00195C1.0013 6.69206 0.841797 6.43685 0.732422 6.23633C0.623047 6.02669 0.568359 5.92188 0.568359 5.92188C0.522786 5.83984 0.5 5.75326 0.5 5.66211C0.5 5.57096 0.522786 5.48438 0.568359 5.40234ZM1.74414 5.66211C1.79883 5.74414 1.85807 5.8444 1.92188 5.96289C1.99479 6.07227 2.08138 6.19987 2.18164 6.3457C2.30013 6.51888 2.43685 6.70573 2.5918 6.90625C2.74674 7.10677 2.91536 7.30729 3.09766 7.50781C3.33464 7.76302 3.5944 8.01367 3.87695 8.25977C4.15951 8.50586 4.46484 8.73372 4.79297 8.94336C5.1849 9.18034 5.60417 9.3763 6.05078 9.53125C6.50651 9.67708 6.98958 9.75 7.5 9.75C8.01042 9.75 8.48893 9.67708 8.93555 9.53125C9.39128 9.3763 9.8151 9.18034 10.207 8.94336C10.5352 8.73372 10.8405 8.50586 11.123 8.25977C11.4056 8.01367 11.6654 7.76302 11.9023 7.50781C12.0846 7.30729 12.2533 7.10677 12.4082 6.90625C12.5632 6.70573 12.6999 6.51888 12.8184 6.3457C12.9186 6.19987 13.0007 6.07227 13.0645 5.96289C13.1374 5.8444 13.2012 5.74414 13.2559 5.66211C13.2012 5.58008 13.1374 5.48438 13.0645 5.375C13.0007 5.25651 12.9186 5.12891 12.8184 4.99219C12.6999 4.81901 12.5632 4.63216 12.4082 4.43164C12.2533 4.23112 12.0846 4.0306 11.9023 3.83008C11.6654 3.56576 11.4056 3.31055 11.123 3.06445C10.8405 2.81836 10.5352 2.59505 10.207 2.39453C9.8151 2.14844 9.39128 1.95247 8.93555 1.80664C8.48893 1.66081 8.01042 1.58789 7.5 1.58789C6.98958 1.58789 6.50651 1.66081 6.05078 1.80664C5.60417 1.95247 5.1849 2.14844 4.79297 2.39453C4.46484 2.59505 4.15951 2.81836 3.87695 3.06445C3.5944 3.31055 3.33464 3.56576 3.09766 3.83008C2.91536 4.0306 2.74674 4.23112 2.5918 4.43164C2.43685 4.63216 2.30013 4.81901 2.18164 4.99219C2.08138 5.12891 1.99479 5.25651 1.92188 5.375C1.85807 5.48438 1.79883 5.58008 1.74414 5.66211ZM9.83789 5.66211C9.83789 5.99023 9.77409 6.29557 9.64648 6.57812C9.52799 6.86068 9.36393 7.10677 9.1543 7.31641C8.94466 7.52604 8.69401 7.69466 8.40234 7.82227C8.11979 7.94076 7.81901 8 7.5 8C7.18099 8 6.87565 7.94076 6.58398 7.82227C6.30143 7.69466 6.05534 7.52604 5.8457 7.31641C5.63607 7.10677 5.46745 6.86068 5.33984 6.57812C5.22135 6.29557 5.16211 5.99023 5.16211 5.66211C5.16211 5.3431 5.22135 5.04232 5.33984 4.75977C5.46745 4.47721 5.63607 4.23112 5.8457 4.02148C6.05534 3.81185 6.30143 3.64779 6.58398 3.5293C6.87565 3.40169 7.18099 3.33789 7.5 3.33789C7.81901 3.33789 8.11979 3.40169 8.40234 3.5293C8.69401 3.64779 8.94466 3.81185 9.1543 4.02148C9.36393 4.23112 9.52799 4.47721 9.64648 4.75977C9.77409 5.04232 9.83789 5.3431 9.83789 5.66211ZM8.66211 5.66211C8.66211 5.50716 8.63021 5.36133 8.56641 5.22461C8.51172 5.07878 8.42969 4.95117 8.32031 4.8418C8.22005 4.73242 8.09701 4.65039 7.95117 4.5957C7.81445 4.5319 7.66406 4.5 7.5 4.5C7.33594 4.5 7.18099 4.5319 7.03516 4.5957C6.89844 4.65039 6.77995 4.73242 6.67969 4.8418C6.57031 4.95117 6.48372 5.07878 6.41992 5.22461C6.36523 5.36133 6.33789 5.50716 6.33789 5.66211C6.33789 5.82617 6.36523 5.98112 6.41992 6.12695C6.48372 6.26367 6.57031 6.38672 6.67969 6.49609C6.77995 6.59635 6.89844 6.67839 7.03516 6.74219C7.18099 6.80599 7.33594 6.83789 7.5 6.83789C7.66406 6.83789 7.81445 6.80599 7.95117 6.74219C8.09701 6.67839 8.22005 6.59635 8.32031 6.49609C8.42969 6.38672 8.51172 6.26367 8.56641 6.12695C8.63021 5.98112 8.66211 5.82617 8.66211 5.66211Z"
+                              fill="#111111"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-body d-flex flex-column text-center">
+                      <p class="umino">UMINO</p>
+                      <a href="#" class="top-trending-name card-text text-decoration-none"> Galaxy S21 Ultra 5G 128GB Unlocked International Version </a>
+                      <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                      </div>
+                      <p class="sale-price">
+                        $350.00 &nbsp;
+                        <span class="base-price text-decoration-line-through"> $400.00 </span>
+                      </p>
+                      <div class="color-swatches d-flex flex-row justify-content-center align-items-center gap-2">
+                        <!-- <div class="swatch-color trending-1-swatch-1">
+                          <div class="swatch color-silver"></div>
+                        </div> -->
+                        <button type="button" id="trending-3-swatch-1" class="swatch-color trending-3-swatch-1">
+                          <label class="swatch color-silver" for="trending-3-swatch-1"></label>
+                        </button>
+                        <!-- <div class="swatch-color trending-1-swatch-2">
+                          <div class="swatch color-blue"></div>
+                        </div> -->
+                        <button type="button" id="trending-3-swatch-2" class="swatch-color trending-3-swatch-2">
+                          <label class="swatch color-blue" for="trending-3-swatch-2"></label>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hot-category section-gap color-background">
+        <div class="container-fluid">
+          <div class="section-content">
+            <div class="section-header text-center">
+              <h2 class="section-heading text-uppercase">hot category</h2>
+              <p class="section-description">Here's some of our most popular products people are in love with.</p>
+            </div>
+
+            <div class="section-product-style d-flex flex-row overflow-scroll position-relative">
+              <div class="collection-product-wrapper col-6 col-md-4 col-xl-3">
+                <div class="collection-product overflow-hidden position-relative">
+                  <a href="#" aria-label="product">
+                    <img src="data/hot-category-1.svg" alt="Hot category 1" />
+                  </a>
+                  <button class="collection-btn position-absolute">Men's Watches</button>
+                </div>
+              </div>
+
+              <div class="collection-product-wrapper col-6 col-md-4 col-xl-3">
+                <div class="collection-product overflow-hidden position-relative">
+                  <a href="#" aria-label="product">
+                    <img src="data/hot-category-2.svg" alt="Hot category 2" />
+                  </a>
+                  <button class="collection-btn position-absolute">Men's Watches</button>
+                </div>
+              </div>
+
+              <div class="collection-product-wrapper col-6 col-md-4 col-xl-3">
+                <div class="collection-product overflow-hidden position-relative">
+                  <a href="#" aria-label="product">
+                    <img src="data/hot-category-3.svg" alt="Hot category 3" />
+                  </a>
+                  <button class="collection-btn position-absolute">Men's Watches</button>
+                </div>
+              </div>
+
+              <div class="collection-product-wrapper col-6 col-md-4 col-xl-3">
+                <div class="collection-product overflow-hidden position-relative">
+                  <a href="#" aria-label="product">
+                    <img src="data/hot-category-4.svg" alt="Hot category 4" />
+                  </a>
+                  <button class="collection-btn position-absolute">Men's Watches</button>
+                </div>
+              </div>
+
+              <div class="collection-product-wrapper col-6 col-md-4 col-xl-3">
+                <div class="collection-product overflow-hidden position-relative">
+                  <a href="#" aria-label="product">
+                    <img src="data/hot-category-5.svg" alt="Hot category 5" />
+                  </a>
+                  <button class="collection-btn position-absolute">Men's Watches</button>
+                </div>
+              </div>
+
+              <div class="collection-product-wrapper col-6 col-md-4 col-xl-3">
+                <div class="collection-product overflow-hidden position-relative">
+                  <a href="#" aria-label="product">
+                    <img src="data/hot-category-6.svg" alt="Hot category 6" />
+                  </a>
+                  <button class="collection-btn position-absolute">Men's Watches</button>
+                </div>
+              </div>
+
+              <!-- <button id="prevButton" class="position-absolute">
+                <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.77754 9.66675C5.92988 9.81909 6.00605 10.0007 6.00605 10.2117C6.00605 10.4109 5.92988 10.5808 5.77754 10.7214C5.63691 10.8738 5.46113 10.95 5.25019 10.95C5.03926 10.95 4.86348 10.8738 4.72285 10.7214L0.222851 6.22144C0.070507 6.08081 -0.00566483 5.91089 -0.00566483 5.71167C-0.00566483 5.50073 0.070507 5.31909 0.222851 5.16675L4.72285 0.666748C4.86348 0.526123 5.03926 0.455811 5.25019 0.455811C5.46113 0.455811 5.63691 0.526123 5.77754 0.666748C5.92988 0.819092 6.00605 1.00073 6.00605 1.21167C6.00605 1.41089 5.92988 1.58081 5.77754 1.72144L1.80488 5.69409L5.77754 9.66675Z"
+                    fill="#111111"
+                  />
+                </svg>
+              </button>
+              <button id="nextButton" class="position-absolute">
+                <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.27754 10.7214C1.13691 10.8738 0.961132 10.95 0.750195 10.95C0.539257 10.95 0.363476 10.8738 0.222851 10.7214C0.070507 10.5808 -0.00566483 10.4109 -0.00566483 10.2117C-0.00566483 10.0007 0.070507 9.81909 0.222851 9.66675L4.19551 5.69409L0.222851 1.72144C0.070507 1.58081 -0.00566483 1.41089 -0.00566483 1.21167C-0.00566483 1.00073 0.070507 0.819092 0.222851 0.666748C0.363476 0.526123 0.539257 0.455811 0.750195 0.455811C0.961132 0.455811 1.13691 0.526123 1.27754 0.666748L5.77754 5.16675C5.92988 5.31909 6.00605 5.50073 6.00605 5.71167C6.00605 5.91089 5.92988 6.08081 5.77754 6.22144L1.27754 10.7214Z"
+                    fill="#111111"
+                  />
+                </svg>
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="video">
+        <div class="section-content position-relative">
+          <iframe
+            width="1520"
+            height="607"
+            src="https://www.youtube.com/embed/v75kf-L3pYs"
+            title="Umino - watches"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <div class="video-text d-flex flex-column justify-content-center align-items-center position-absolute">
+            <span class="slide-subtitle text-uppercase">#high-quality products</span>
+            <h2 class="slide-title text-uppercase">Affirm your style</h2>
+            <span class="slide-description">Change and take your lifestyle to the next level.</span>
+            <button class="slide-button text-uppercase">DISCOVER NOW</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="limited-edition section-gap">
+        <div class="container-fluid">
+          <div class="section-content">
+            <div class="section-header text-center">
+              <h2 class="section-heading text-uppercase">limited edition</h2>
+              <p class="section-description">Here's some of our most popular products people are in love with.</p>
+            </div>
+
+            <div class="section-product d-flex flex-row flex-wrap">
+              <div class="wrapper col-12 col-md-6">
+                <div class="limited-edition-img">
+                  <div class="position-relative overflow-hidden">
+                    <a href="#">
+                      <img src="data/limited-edition.jpg" class="position-relative" alt="Top trend 1" />
+                    </a>
+                    <a href="#">
+                      <img src="data/limited-edition-hover.jpg" class="position-absolute img-hover" alt="Card Front" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="wrapper col-12 col-md-6">
+                <div class="limited-edition-information d-flex flex-column">
+                  <div class="product-label">
+                    <div>-26%</div>
+                  </div>
+                  <div class="product-vendor text-uppercase">
+                    <div>umino</div>
+                  </div>
+                  <h3 class="product-title">
+                    <a href="#" aria-label="1940 Vintage - Steel/Midnight Blue">1940 Vintage - Steel/Midnight Blue</a>
+                  </h3>
+                  <div class="product-review d-flex flex-row align-items-center gap-3">
+                    <div class="rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="review">2 reviews</div>
+                  </div>
+                  <div class="product-price">$120.00</div>
+                  <div class="product-options">
+                    <div class="text-swatches d-flex flex-row">
+                      <span>Color:&nbsp;</span>
+                      <span class="d-block fw-bold">Steel</span>
+                      <span class="d-none fw-bold">Midnight Blue</span>
+                    </div>
+                    <div class="color-swatches d-flex flex-row align-items-center gap-2">
+                      <!-- <div class="swatch-color trending-1-swatch-1">
+                        <div class="swatch color-steel"></div>
+                      </div> -->
+                      <button type="button" id="limited-swatch-1" class="swatch-color limited-swatch-1">
+                        <label class="swatch color-steel" for="limited-swatch-1"></label>
+                      </button>
+                      <!-- <div class="swatch-color trending-1-swatch-2">
+                        <div class="swatch color-midnight-blue"></div>
+                      </div> -->
+                      <button type="button" id="limited-swatch-2" class="swatch-color limited-swatch-2">
+                        <label class="swatch color-midnight-blue" for="limited-swatch-2"></label>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-size">
+                    <div class="size-swatches d-flex flex-row">
+                      <span>Size:&nbsp;</span>
+                      <span class="d-block fw-bold">40mm</span>
+                      <span class="d-none fw-bold">42mm</span>
+                      <span class="d-none fw-bold">44mm</span>
+                      <span class="d-none fw-bold">46mm</span>
+                    </div>
+                    <div class="choose-size-swatches d-flex flex-row flex-wrap align-items-center gap-3">
+                      <button type="button" id="swatchSize1" class="swatch-size chosen">40mm</button>
+                      <button type="button" id="swatchSize2" class="swatch-size chosen">42mm</button>
+                      <button type="button" id="swatchSize3" class="swatch-size chosen">44mm</button>
+                      <button type="button" id="swatchSize4" class="swatch-size chosen">46mm</button>
+                    </div>
+                  </div>
+                  <div class="product-input-form d-flex flex-row flex-wrap gap-3">
+                    <div class="input-number d-flex flex-row align-items-center col-12 col-lg-2">
+                      <button class="decrease">
+                        <svg width="11" height="2" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11 0.5L11 1.5L-4.37114e-08 1.5L0 0.5L11 0.5Z" fill="#111111" />
+                        </svg>
+                      </button>
+                      <span class="number-of-product text-center">2</span>
+                      <button class="increase">
+                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M5 11.5H6L6 6.5H11V5.5H6L6 0.5H5L5 5.5H0V6.5H5L5 11.5Z" fill="#111111" />
+                        </svg>
+                      </button>
+                    </div>
+                    <button type="button" class="input-to-cart text-uppercase d-flex justify-content-center align-items-center">add to cart</button>
+                    <div class="input-action d-flex flex-row justify-content-center align-items-center">
+                      <!-- <button type="button" class="to-wish-list"> -->
+                      <button
+                        type="button"
+                        class="btn btn-tooltip to-wish-list d-flex justify-content-center align-items-center"
+                        data-bs-toggle="tooltip"
+                        data-bs-custom-class="text-fs"
+                        data-bs-placement="top"
+                        title="Add to wishlist"
+                      >
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M13.4219 2.875C13.1302 2.58333 12.7969 2.36458 12.4219 2.21875C12.0573 2.07292 11.6823 2 11.2969 2C10.9115 2 10.5365 2.07292 10.1719 2.21875C9.80729 2.36458 9.47396 2.58333 9.17188 2.875L8.46875 3.57812C8.34375 3.71354 8.1875 3.78125 8 3.78125C7.8125 3.78125 7.65625 3.71354 7.53125 3.57812L6.82812 2.875C6.52604 2.58333 6.19271 2.36458 5.82812 2.21875C5.46354 2.07292 5.08854 2 4.70312 2C4.31771 2 3.9375 2.07292 3.5625 2.21875C3.19792 2.36458 2.86979 2.58333 2.57812 2.875C2.28646 3.16667 2.06771 3.5 1.92188 3.875C1.77604 4.23958 1.70312 4.61458 1.70312 5C1.70312 5.38542 1.77604 5.76562 1.92188 6.14062C2.06771 6.50521 2.28646 6.83333 2.57812 7.125L8 12.5469L13.4219 7.125C13.7135 6.83333 13.9323 6.50521 14.0781 6.14062C14.224 5.76562 14.2969 5.38542 14.2969 5C14.2969 4.61458 14.224 4.23958 14.0781 3.875C13.9323 3.5 13.7135 3.16667 13.4219 2.875ZM14.3594 1.9375C14.7865 2.36458 15.1042 2.84375 15.3125 3.375C15.5312 3.90625 15.6406 4.44792 15.6406 5C15.6406 5.55208 15.5312 6.09896 15.3125 6.64062C15.1042 7.17188 14.7865 7.64583 14.3594 8.0625L8.46875 13.9531C8.34375 14.0885 8.1875 14.1562 8 14.1562C7.8125 14.1562 7.65625 14.0885 7.53125 13.9531L1.64062 8.0625C1.21354 7.64583 0.890625 7.17188 0.671875 6.64062C0.463542 6.09896 0.359375 5.55208 0.359375 5C0.359375 4.44792 0.463542 3.90625 0.671875 3.375C0.890625 2.83333 1.21354 2.35417 1.64062 1.9375C2.05729 1.51042 2.53125 1.19271 3.0625 0.984375C3.60417 0.776042 4.15104 0.671875 4.70312 0.671875C5.25521 0.671875 5.79688 0.776042 6.32812 0.984375C6.85938 1.19271 7.33854 1.51042 7.76562 1.9375L8 2.17188L8.23438 1.9375C8.66146 1.51042 9.14062 1.19271 9.67188 0.984375C10.2031 0.776042 10.7448 0.671875 11.2969 0.671875C11.849 0.671875 12.3906 0.776042 12.9219 0.984375C13.4635 1.19271 13.9427 1.51042 14.3594 1.9375Z"
+                            fill="#111111"
+                          />
+                        </svg>
+                      </button>
+                      <!-- </button> -->
+                      <!-- <button type="button" class="to-compare-list"> -->
+                      <button
+                        type="button"
+                        class="btn btn-tooltip to-compare-list d-flex justify-content-center align-items-center"
+                        data-bs-toggle="tooltip"
+                        data-bs-custom-class="text-fs"
+                        data-bs-placement="top"
+                        title="Compare"
+                      >
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M8 1.40625L2.82812 4L8 6.59375L13.1719 4L8 1.40625ZM7.70312 0.078125V0.0625C7.79688 0.0208333 7.89583 0 8 0C8.10417 0 8.20312 0.0208333 8.29688 0.0625L14.9688 3.40625C15.0312 3.4375 15.0885 3.47917 15.1406 3.53125C15.1927 3.57292 15.2344 3.63021 15.2656 3.70312C15.349 3.86979 15.3594 4.04167 15.2969 4.21875C15.2448 4.38542 15.1354 4.51042 14.9688 4.59375L8.29688 7.92188C8.20312 7.97396 8.10417 8 8 8C7.89583 8 7.79688 7.97396 7.70312 7.92188L1.03125 4.59375C0.96875 4.5625 0.911458 4.52604 0.859375 4.48438C0.807292 4.43229 0.765625 4.36979 0.734375 4.29688C0.651042 4.13021 0.635417 3.96354 0.6875 3.79688C0.75 3.61979 0.864583 3.48958 1.03125 3.40625L7.70312 0.078125ZM1.03125 11.2656C0.864583 11.1823 0.75 11.0521 0.6875 10.875C0.635417 10.6979 0.651042 10.5312 0.734375 10.375C0.817708 10.2083 0.947917 10.099 1.125 10.0469C1.30208 9.98438 1.46875 9.99479 1.625 10.0781L8 13.25L14.375 10.0625C14.5312 9.98958 14.6979 9.98438 14.875 10.0469C15.0521 10.099 15.1823 10.2083 15.2656 10.375C15.349 10.5312 15.3594 10.6979 15.2969 10.875C15.2448 11.0521 15.1354 11.1823 14.9688 11.2656L8.29688 14.5938C8.20312 14.6354 8.10417 14.6562 8 14.6562C7.89583 14.6667 7.79688 14.6458 7.70312 14.5938L1.03125 11.2656ZM1.03125 7.92188V7.9375C0.864583 7.85417 0.75 7.72396 0.6875 7.54688C0.635417 7.36979 0.651042 7.19792 0.734375 7.03125C0.817708 6.86458 0.947917 6.75521 1.125 6.70312C1.30208 6.64062 1.46875 6.65104 1.625 6.73438L8 9.92188L14.375 6.73438C14.5312 6.65104 14.6979 6.64062 14.875 6.70312C15.0521 6.75521 15.1823 6.86458 15.2656 7.03125C15.349 7.19792 15.3594 7.36979 15.2969 7.54688C15.2448 7.72396 15.1354 7.84896 14.9688 7.92188L8.29688 11.2656C8.20312 11.3073 8.10417 11.3281 8 11.3281C7.89583 11.3281 7.79688 11.3073 7.70312 11.2656L1.03125 7.92188Z"
+                            fill="#111111"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-agree-term">
+                    <label class="custom-checkbox d-flex justify-content-start align-items-center position-relative">
+                      <p class="agree-text">I agree with <a href="#" class="text-decoration-underline">Terms & Conditions</a></p>
+                      <input type="checkbox" id="agreeTerm" class="agree-term" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="product-payment-button d-flex flex-column justify-content-center align-items-center">
+                    <button type="button" class="purchase-button text-center">
+                      Buy with
+                      <!-- <img src="data/paypal-seeklogo.svg" alt="" /> -->
+                    </button>
+
+                    <button type="button" class="more-purchase-options text-uppercase text-center">more payment options</button>
+                  </div>
+                  <ul class="product-meta">
+                    <li>
+                      <span class="key">Sku:</span>
+                      <span class="value">Umino142</span>
+                    </li>
+                    <li>
+                      <span class="key">Available:</span>
+                      <span class="value">Instock</span>
+                    </li>
+                    <li>
+                      <span class="key">Vendor:</span>
+                      <span class="value">Umino</span>
+                    </li>
+                    <li>
+                      <span class="key">Type:</span>
+                      <span class="value">Umino</span>
+                    </li>
+                    <li>
+                      <span class="key">Collections:</span>
+                      <span class="value">
+                        <a href="#">Gift & Promotion</a>, <a href="#">Limited Editions</a>, <a href="#">Men's Watches</a>, <a href="#">Minimalist Watches</a>, <a href="#">Straps & Brands</a>,
+                        <a href="#">Women's Watches</a>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner">
+        <div class="container-fluid d-flex align-items-center justify-content-center">
+          <div class="banner-content text-center">
+            <div class="banner-text d-flex flex-column justify-content-center align-items-center">
+              <span class="banner-subtitle text-uppercase">2023 limited edition</span>
+              <h2 class="banner-title text-uppercase">unique style</h2>
+              <span class="banner-description">
+                The watch is carefully designed with quality materials, such as the domed sapphire crystal, and the meticulous level of detail - from the dial to the delicate gold hour markers.
+              </span>
+              <button class="banner-button text-uppercase">DISCOVER NOW</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="scrolling-text">
+        <div class="text">
+          <span class="text-uppercase">2023 Editorial - Mid-Season Sale Up To 50% Off</span>
+          <span class="text-uppercase">2023 Editorial - Mid-Season Sale Up To 50% Off</span>
+          <span class="text-uppercase">2023 Editorial - Mid-Season Sale Up To 50% Off</span>
+        </div>
+        <div class="text text-uppercase">
+          <span class="text-uppercase">2023 Editorial - Mid-Season Sale Up To 50% Off</span>
+          <span class="text-uppercase">2023 Editorial - Mid-Season Sale Up To 50% Off</span>
+          <span class="text-uppercase">2023 Editorial - Mid-Season Sale Up To 50% Off</span>
+        </div>
+        <div class="text text-uppercase">
+          <span class="text-uppercase">2023 Editorial - Mid-Season Sale Up To 50% Off</span>
+          <span class="text-uppercase">2023 Editorial - Mid-Season Sale Up To 50% Off</span>
+          <span class="text-uppercase">2023 Editorial - Mid-Season Sale Up To 50% Off</span>
+        </div>
+      </section>
+
+      <section class="blog section-gap">
+        <div class="container-fluid">
+          <div class="section-header text-center">
+            <h2 class="section-heading text-uppercase">the blog</h2>
+            <p class="section-description">Here's some of our most popular products people are in love with.</p>
+          </div>
+
+          <div class="section-product-style d-flex flex-row">
+            <div class="card-wrapper col-12 col-md-6 col-xl-4">
+              <div class="card">
+                <div class="img-wrapper overflow-hidden">
+                  <img src="data/blog-1.svg" class="card-img-top" alt="blog 1" />
+                </div>
+                <div class="card-body">
+                  <p class="card-product-type text-uppercase">watches</p>
+                  <a href="#" class="card-title text-decoration-none">The History Of Umino Watches</a>
+                  <p class="card-description">These are the people who make your life asier. Large tiles were arranged on the counter top plate near the window of the living room, they...</p>
+                  <p class="date-and-author">
+                    <span class="date text-uppercase">jan 16 2024</span>
+                    <a href="#" class="author text-uppercase text-decoration-none">posted by tien anh dinh</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrapper col-12 col-md-6 col-xl-4">
+              <div class="card">
+                <div class="img-wrapper overflow-hidden">
+                  <img src="data/blog-2.svg" class="card-img-top" alt="blog 1" />
+                </div>
+                <div class="card-body">
+                  <p class="card-product-type text-uppercase">watches</p>
+                  <a href="#" class="card-title text-decoration-none">The History Of Umino Watches</a>
+                  <p class="card-description">These are the people who make your life asier. Large tiles were arranged on the counter top plate near the window of the living room, they...</p>
+                  <p class="date-and-author">
+                    <span class="date text-uppercase">jan 16 2024</span>
+                    <a href="#" class="author text-uppercase text-decoration-none">posted by tien anh dinh</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrapper col-12 col-md-6 col-xl-4">
+              <div class="card">
+                <div class="img-wrapper overflow-hidden">
+                  <img src="data/blog-3.svg" class="card-img-top" alt="blog 1" />
+                </div>
+                <div class="card-body">
+                  <p class="card-product-type text-uppercase">watches</p>
+                  <a href="#" class="card-title text-decoration-none">The History Of Umino Watches</a>
+                  <p class="card-description">These are the people who make your life asier. Large tiles were arranged on the counter top plate near the window of the living room, they...</p>
+                  <p class="date-and-author">
+                    <span class="date text-uppercase">jan 16 2024</span>
+                    <a href="#" class="author text-uppercase text-decoration-none">posted by tien anh dinh</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="service section-gap">
+        <div class="container-fluid">
+          <div class="d-flex flex-row flex-wrap justify-content-center align-items-baseline">
+            <div class="service-infor-wrapper col-12 col-sm-4">
+              <div class="service-infor d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="data/service-shipping.png" alt="Free shipping" />
+                <p class="service-title text-uppercase">free shipping</p>
+                <p class="service-description">Get complimentary ground shipping on every order. Don't love it? Send it back, on us.</p>
+              </div>
+            </div>
+
+            <div class="service-infor-wrapper col-12 col-sm-4">
+              <div class="service-infor d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="data/service-return.png" alt="Free return" />
+                <p class="service-title text-uppercase">free returns</p>
+                <p class="service-description">Free returns within 10 days, please make sure the items are in undamaged condition.</p>
+              </div>
+            </div>
+
+            <div class="service-infor-wrapper col-12 col-sm-4">
+              <div class="service-infor d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="data/service-support.png" alt="Online support" />
+                <p class="service-title text-uppercase">online support</p>
+                <p class="service-description">We support customers 24/7, send us questions and we will solve for you immediately.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer-menu">
+        <div class="container-fluid">
+          <div class="footer-menu-wrapper accordion d-flex flex-wrap" id="accordionExample">
+            <div class="footer-block-wrapper col-12 col-md-6 col-xl-4">
+              <div class="footer-block">
+                <img src="data/Logo-white.svg" alt="" class="white" />
+                <div class="accordion-body">
+                  <ul>
+                    <li>268 St, South New York/NY 98944, United States.</li>
+                    <li><a href="#">+222-1800-2628</a></li>
+                    <li><a href="#">blueskytechcompany@gmail.com</a></li>
+                  </ul>
+
+                  <div class="tooltip-icon d-flex flex-row">
+                    <button type="button" class="btn btn-tooltip" data-bs-toggle="tooltip" data-bs-custom-class="text-fs" data-bs-placement="bottom" title="X">
+                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="18" cy="18" r="17.5" stroke="#91a1b5" />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M15.9184 12H12.066L16.5298 18.6281L12 24H13.5877L17.2347 19.6747L20.1476 24H24L19.3764 17.1347L23.7059 12H22.1183L18.6714 16.0879L15.9184 12ZM17.4993 17.9239L14.2821 13.2286H15.2134L17.9508 17.2237L18.3878 17.8614L21.7755 22.8054H20.8442L17.9793 18.6242L17.4993 17.9239Z"
+                          fill="#91a1b5"
+                        />
+                      </svg>
+                    </button>
+
+                    <button type="button" class="btn btn-tooltip" data-bs-toggle="tooltip" data-bs-custom-class="text-fs" data-bs-placement="bottom" title="Instagram">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                        <circle cx="18" cy="18" r="17.5" stroke="#91a1b5" />
+                        <path
+                          d="M21.6 12H14.4C13.0745 12 12 13.0746 12 14.4V21.6001C12 22.9255 13.0745 24 14.4 24H21.6C22.9255 24 24 22.9255 24 21.6001V14.4001C24.0001 13.0746 22.9255 12 21.6 12ZM20.4 13.8001H22.2V15.6001H20.4V13.8001ZM18 15.6001C19.3255 15.6001 20.4 16.6746 20.4 18.0001C20.4 19.3256 19.3255 20.4001 18 20.4001C16.6745 20.4001 15.6 19.3256 15.6 18.0001C15.6 16.6746 16.6745 15.6001 18 15.6001ZM22.8 21.6001C22.8 22.2628 22.2627 22.8001 21.6 22.8001H14.4C13.7373 22.8001 13.2 22.2628 13.2 21.6001V17.4001H14.46C14.0996 19.3554 15.3926 21.2326 17.3479 21.5929C19.3032 21.9533 21.1804 20.6603 21.5408 18.705C21.5836 18.4726 21.6035 18.2365 21.6 18.0001C21.597 17.7987 21.577 17.5981 21.54 17.4001H22.8V21.6001H22.8Z"
+                          fill="#91a1b5"
+                        />
+                      </svg>
+                    </button>
+
+                    <button type="button" class="btn btn-tooltip" data-bs-toggle="tooltip" data-bs-custom-class="text-fs" data-bs-placement="bottom" title="Tiktok">
+                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="18" cy="18" r="17.5" stroke="#91a1b5" />
+                        <path
+                          d="M16.9886 24C15.9308 24 14.9163 23.5966 14.1682 22.8785C13.4202 22.1604 13 21.1865 13 20.1709C13 19.1554 13.4202 18.1814 14.1682 17.4634C14.9163 16.7453 15.9308 16.3418 16.9886 16.3418H17.9625V18.2106H16.9886C16.5841 18.2106 16.1886 18.3257 15.8522 18.5415C15.5159 18.7573 15.2537 19.0639 15.0989 19.4228C14.9441 19.7816 14.9036 20.1764 14.9825 20.5573C15.0614 20.9382 15.2562 21.2881 15.5423 21.5627C15.8283 21.8373 16.1928 22.0243 16.5896 22.1001C16.9864 22.1759 17.3976 22.137 17.7714 21.9884C18.1452 21.8397 18.4646 21.5881 18.6894 21.2651C18.9141 20.9422 19.0341 20.5626 19.0341 20.1742V12H20.9807V12.9338C20.9807 13.4546 21.1962 13.9541 21.5798 14.3223C21.9634 14.6906 22.4836 14.8975 23.0261 14.8975H24V16.7629H23.0193C22.2984 16.7639 21.591 16.5753 20.9739 16.2175V20.1709C20.973 21.1856 20.5529 22.1586 19.8058 22.8764C19.0587 23.5942 18.0456 23.9983 16.9886 24Z"
+                          fill="#91a1b5"
+                        />
+                      </svg>
+                    </button>
+
+                    <button type="button" class="btn btn-tooltip" data-bs-toggle="tooltip" data-bs-custom-class="text-fs" data-bs-placement="bottom" title="Youtube">
+                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="18" cy="18" r="17.5" stroke="#91a1b5" />
+                        <path
+                          d="M24.9882 14.5648C24.8236 13.9529 24.3412 13.4706 23.7294 13.3058C22.6117 13 18.1411 13 18.1411 13C18.1411 13 13.6706 13 12.5529 13.2942C11.9529 13.4588 11.4587 13.953 11.2941 14.5648C11 15.6823 11 18 11 18C11 18 11 20.3294 11.2941 21.4352C11.4589 22.047 11.9411 22.5294 12.553 22.6941C13.6823 23 18.1412 23 18.1412 23C18.1412 23 22.6117 23 23.7294 22.7058C24.3413 22.5411 24.8236 22.0588 24.9884 21.447C25.2824 20.3294 25.2824 18.0118 25.2824 18.0118C25.2824 18.0118 25.2942 15.6823 24.9882 14.5648ZM16.7177 20.1412V15.8588L20.4353 18L16.7177 20.1412Z"
+                          fill="#91a1b5"
+                        />
+                      </svg>
+                    </button>
+
+                    <button type="button" class="btn btn-tooltip" data-bs-toggle="tooltip" data-bs-custom-class="text-fs" data-bs-placement="bottom" title="Facebook">
+                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="18" cy="18" r="17.5" stroke="#91a1b5" />
+                        <path
+                          d="M16.3334 14.6667V16.0001H15V18.0001H16.3334V24H19V18.0001H20.7734L21 16.0001H19V14.8334C19 14.2934 19.0533 14.0067 19.8866 14.0067H21V12H19.2134C17.08 12.0001 16.3334 13.0001 16.3334 14.6667Z"
+                          fill="#91a1b5"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-block-wrapper col-12 col-md-6 col-xl-2">
+              <div class="accordion-item footer-block">
+                <h3 class="accordion-header">
+                  <button class="accordion-button text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Shop by
+                  </button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul>
+                      <li><a href="#">Special Offers</a></li>
+                      <li><a href="#">Performance</a></li>
+                      <li><a href="#">T-Shirts</a></li>
+                      <li><a href="#">Underwear</a></li>
+                      <li><a href="#">Top Brands</a></li>
+                      <li><a href="#">Online Exclusive</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-block-wrapper col-12 col-md-6 col-xl-2">
+              <div class="accordion-item footer-block">
+                <h3 class="accordion-header">
+                  <button class="accordion-button text-uppercase collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    customer service
+                  </button>
+                </h3>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Refund Policy</a></li>
+                      <li><a href="#">Shipping & Return</a></li>
+                      <li><a href="#">Term & Conditions</a></li>
+                      <li><a href="#">Advanced Search</a></li>
+                      <li><a href="#">Theme FAQs</a></li>
+                      <li><a href="#">Store Locations</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-block-wrapper col-12 col-md-6 col-xl-4">
+              <div class="accordion-item footer-block">
+                <h3 class="accordion-header">
+                  <button class="accordion-button text-uppercase collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    sign up to newsletter
+                  </button>
+                </h3>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="newsletter-description">Enter your email address to get $10 off your first order and free shipping.Updates information on Sales and Offers.</p>
+                    <div class="input-form d-flex">
+                      <input type="email" id="email" name="email" placeholder="Enter your email..." autocapitalize="off" autocomplete="off" spellcheck="false" required />
+                      <button class="text-uppercase">Subcribe</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer-bottom">
+        <div class="container-fluid">
+          <div class="footer-bottom-wrapper d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <div class="dropdown dropup d-none d-lg-flex">
+              <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">English</button>
+                <ul class="dropdown-menu dropdown-menu-start">
+                  <li><button class="dropdown-item" type="button">English</button></li>
+                  <li><button class="dropdown-item" type="button">Netherland</button></li>
+                  <li><button class="dropdown-item" type="button">French</button></li>
+                </ul>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">United States (USD)</button>
+                <ul class="dropdown-menu dropdown-menu-start">
+                  <li><button class="dropdown-item" type="button">United Kingdom (GBP)</button></li>
+                  <li><button class="dropdown-item" type="button">France (EUR)</button></li>
+                  <li><button class="dropdown-item" type="button">Japan (JPY)</button></li>
+                  <li><button class="dropdown-item" type="button">United States (USD)</button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="copy-right">&copy;&nbsp;2022 Umino Store. All Rights Reserved</div>
+            <div class="footer-payment d-flex flex-row flex-wrap justify-content-center gap-1">
+              <img src="data/payment-1.svg" alt="Visa" class="payment" />
+              <img src="data/payment-2.svg" alt="Mastercard" class="payment" />
+              <img src="data/payment-3.svg" alt="Discover" class="payment" />
+              <img src="data/payment-4.svg" alt="Western Union" class="payment" />
+              <img src="data/payment-5.svg" alt="Amex" class="payment" />
+              <img src="data/payment-6.svg" alt="Cirrus" class="payment" />
+              <img src="data/payment-7.svg" alt="PayPal" class="payment" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="umino.js"></script>
+  </body>
+</html>
