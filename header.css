@@ -128,6 +128,17 @@ nav ul li a:hover {
   transition: all 0.2s ease-in;
 }
 
+.submenu::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: -5rem;
+  left: 0;
+  right: 0;
+  height: 5rem;
+}
+
 .submenu-shop,
 .submenu-second {
   top: 120%;
