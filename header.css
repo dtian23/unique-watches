@@ -26,6 +26,7 @@
 }
 
 .header-bar {
+  position: sticky;
   background-color: var(--color-white);
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
   top: -0.1rem;
