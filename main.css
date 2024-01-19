@@ -393,16 +393,24 @@ iframe {
   color: var(--color-grey-5);
   border-radius: 0.3rem;
   border: 1px solid var(--border);
-}
-
-.swatch-size.chosen {
   transition: all 0.4s;
 }
 
-.swatch-size.chosen:focus {
+.choose-size-swatches input[type="radio"]:checked + label {
+  .swatch-size {
+    color: var(--color-white);
+    background-color: var(--color-black);
+  }
+}
+
+/* .swatch-size.chosen {
+  transition: all 0.4s;
+}
+
+.swatch-size:focus {
   color: var(--color-white);
   background-color: var(--color-black);
-}
+} */
 
 .product-input-form {
   margin-bottom: 2.5rem;

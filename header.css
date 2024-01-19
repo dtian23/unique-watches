@@ -326,11 +326,11 @@ nav ul li a:hover {
     font-weight: 400;
     color: var(--color-grey-5);
   }
-}
 
-input[type="radio"]:checked + label {
-  color: var(--color-black);
-  text-decoration: underline;
+  input[type="radio"]:checked + label {
+    color: var(--color-black);
+    text-decoration: underline;
+  }
 }
 
 .currency-option img {
