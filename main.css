@@ -113,7 +113,6 @@
 
 .product-image:hover {
   .action-bar {
-    /* transform: translateY(0); */
     transform: translateX(-50%) translateY(0%);
     opacity: 1;
     visibility: visible;
@@ -125,11 +124,6 @@
   visibility: visible;
 }
 
-/* .image-swatch-2 {
-  opacity: 0;
-  visibility: hidden;
-} */
-
 .swatch-color {
   display: flex;
   padding: 0.2rem;
@@ -138,20 +132,10 @@
   transition: all 0.4s;
 }
 
-/* .swatch-color:hover, */
 .swatch-color:focus {
   cursor: pointer;
   border: 1px solid var(--color-black) !important;
 }
-
-/* .swatch-color:hover .image-swatch-2,
-.swatch-color:focus .image-swatch-2 {
-  opacity: 1;
-} */
-
-/* .trending-1-swatch-1 {
-  border: 1px solid var(--color-black);
-} */
 
 .swatch {
   width: 2rem;
@@ -268,7 +252,6 @@
 }
 
 .collection-btn {
-  /* min-width: 23rem; */
   width: 65%;
   min-height: 4.5rem;
   bottom: 1.5rem;
@@ -330,10 +313,6 @@ iframe {
   height: 100%;
 }
 
-/* .limited-edition-information {
-  gap: 1.5rem;
-} */
-
 .product-label > div {
   width: fit-content;
   padding: 0.6rem 1.2rem;
@@ -348,7 +327,6 @@ iframe {
 .product-vendor > div {
   font-size: 1.2rem;
   font-weight: 500;
-  /* margin-top: 1.5rem; */
   margin-bottom: 0.5rem;
 }
 
@@ -386,10 +364,6 @@ iframe {
   color: var(--color-green);
   margin-bottom: 1.5rem;
 }
-
-/* .color-swatches {
-  margin-bottom: 1rem;
-} */
 
 .product-options {
   margin-bottom: 2rem;
@@ -429,15 +403,6 @@ iframe {
   color: var(--color-white);
   background-color: var(--color-black);
 }
-
-/* .chosen {
-  color: var(--color-white);
-  background-color: var(--color-black);
-} */
-
-/* .choose-size-swatches {
-  margin-bottom: 1rem;
-} */
 
 .product-input-form {
   margin-bottom: 2.5rem;
@@ -606,10 +571,6 @@ iframe {
   filter: brightness(80%);
 }
 
-/* .purchase-button img {
-  width: 8rem;
-} */
-
 .more-purchase-options {
   width: 100%;
   min-height: 5rem;
@@ -708,7 +669,6 @@ iframe {
   min-height: 5.5rem;
   color: var(--color-white);
   background-color: var(--color-black);
-  /* border: 1px solid var(--color-black); */
   border: none;
   border-radius: 0.5rem;
   padding: clamp(1rem, 1.2vw, 1.45rem) clamp(4rem, 4.5vw, 6.6rem);
@@ -731,10 +691,6 @@ iframe {
   font-size: 1.2rem;
   font-weight: 700;
 }
-
-/* .blog .card-wrapper {
-  width: calc(100% / 3);
-} */
 
 .blog .card-img-top {
   border-radius: 1rem 1rem 0 0;
@@ -863,11 +819,6 @@ iframe {
     fill: var(--color-white);
   }
 }
-
-/* .section-product-style {
-  overflow: visible;
-  display: flex;
-} */
 
 @media only screen and (min-width: 576px) {
   .collection-btn {
