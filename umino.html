@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Author: Tien Anh Dinh." />
-    <link rel="icon" type="image/png" href="//umino-demo.myshopify.com/cdn/shop/files/Favicon_971b4ca4-74dd-4ba9-b347-20c2dae81f9d.png?crop=center&amp;height=32&amp;v=1680319767&amp;width=32" />
+    <link rel="icon" type="image/png" href="data/featured_channel.jpg" />
     <title>Unique Watches</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -233,7 +233,7 @@
                       </a>
                     </li>
                   </ul>
-                  <button class="view-more-button">View More Demos</button>
+                  <button class="view-more-button" name="Buttonname" aria-label="View More Demos">View More Demos</button>
                 </div>
               </li>
 
@@ -450,20 +450,20 @@
           <div class="header-right d-flex justify-content-end align-items-center col-4">
             <div class="dropdown d-none d-xl-flex">
               <div class="btn-group">
-                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" name="buttonName">English</button>
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" aria-label="English">English</button>
                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
                   <li><button class="dropdown-item" type="button" name="buttonName">English</button></li>
-                  <li><button class="dropdown-item" type="button" name="buttonName">Netherland</button></li>
-                  <li><button class="dropdown-item" type="button" name="buttonName">French</button></li>
+                  <li><button class="dropdown-item" type="button" name="buttonName" aria-label="Net aria-label="English"herland">Netherland</button></li>
+                  <li><button class="dropdown-item" type="button" name="buttonName" aria-label="French">French</button></li>
                 </ul>
               </div>
               <div class="btn-group">
-                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" name="buttonName">United States (USD)</button>
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" aria-label="United States (USD)">United States (USD)</button>
                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
-                  <li><button class="dropdown-item" type="button" name="buttonName">United Kingdom (GBP)</button></li>
-                  <li><button class="dropdown-item" type="button" name="buttonName">France (EUR)</button></li>
-                  <li><button class="dropdown-item" type="button" name="buttonName">Japan (JPY)</button></li>
-                  <li><button class="dropdown-item" type="button" name="buttonName">United States (USD)</button></li>
+                  <li><button class="dropdown-item" type="button" name="buttonName" aria-label="United Kingdom (GBP)">United Kingdom (GBP)</button></li>
+                  <li><button class="dropdown-item" type="button" name="buttonName" aria-label="France (EUR)">France (EUR)</button></li>
+                  <li><button class="dropdown-item" type="button" name="buttonName" aria-label="Japan (JPY)">Japan (JPY)</button></li>
+                  <li><button class="dropdown-item" type="button" name="buttonName" aria-label="United States (USD)">United States (USD)</button></li>
                 </ul>
               </div>
             </div>
@@ -494,7 +494,7 @@
                         autocapitalize="off"
                         spellcheck="false"
                       />
-                      <button aria-label="I'm looking for…" class="search-icon d-flex justify-content-center align-items-center position-absolute">
+                      <button aria-label="I'm looking for…" class="search-icon d-flex justify-content-center align-items-center position-absolute" name="Search button">
                         <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M11.9 11.731C11.8 11.731 11.8 11.731 11.9 11.731C11.8 11.8304 11.8 11.8304 11.8 11.8304C11.3 12.3275 10.7 12.7251 9.9 13.0234C9.2 13.3216 8.4 13.4211 7.6 13.4211C6.8 13.4211 6 13.2222 5.3 12.924C4.6 12.6257 4 12.2281 3.4 11.6316C2.9 11.1345 2.4 10.4386 2.1 9.74269C1.8 9.1462 1.7 8.45029 1.7 7.65497C1.7 6.85965 1.9 6.06433 2.2 5.36842C2.5 4.5731 2.9 3.97661 3.4 3.38012C4 2.88304 4.6 2.48538 5.3 2.18713C6 1.88889 6.8 1.69006 7.6 1.69006C8.4 1.69006 9.2 1.88889 9.9 2.18713C10.6 2.48538 11.3 2.88304 11.8 3.47953C12.3 3.97661 12.7 4.67251 13.1 5.36842C13.4 6.06433 13.6 6.76023 13.6 7.65497C13.6 8.45029 13.4 9.24561 13.1 9.94152C12.8 10.538 12.4 11.1345 11.9 11.731ZM16.7 15.4094L13.6 12.3275C14.1 11.6316 14.5 10.9357 14.8 10.1404C15.1 9.34503 15.2 8.45029 15.2 7.55556C15.2 6.46199 15 5.46784 14.6 4.5731C14.2 3.67836 13.7 2.88304 13 2.18713C12.3 1.49123 11.5 0.994152 10.6 0.596491C9.7 0.19883 8.7 0 7.6 0C6.6 0 5.6 0.19883 4.6 0.596491C3.7 0.994152 2.9 1.49123 2.2 2.18713C1.5 2.88304 1 3.67836 0.6 4.67251C0.2 5.56725 0 6.5614 0 7.65497C0 8.64912 0.2 9.64327 0.6 10.6374C1 11.5322 1.6 12.3275 2.3 13.0234C3 13.7193 3.8 14.2164 4.7 14.7134C5.6 15.0117 6.6 15.2105 7.6 15.2105C8.5 15.2105 9.4 15.1111 10.2 14.8129C11 14.5146 11.8 14.117 12.4 13.6199L15.5 16.7018C15.7 16.9006 15.9 17 16.1 17C16.3 17 16.5 16.9006 16.7 16.7018C16.9 16.5029 17 16.3041 17 16.1053C17 15.807 16.9 15.6082 16.7 15.4094Z"
@@ -546,14 +546,14 @@
                                   $116.00 &nbsp;
                                   <span class="base-price text-decoration-line-through"> $260.00 </span>
                                 </p>
-                                <div class="color-swatches d-flex flex-row justify-content-center align-items-center gap-2">
+                                <!-- <div class="color-swatches d-flex flex-row justify-content-center align-items-center gap-2">
                                   <button type="button" id="trending-1-swatch-1" class="swatch-color trending-1-swatch-1" name="buttonName">
                                     <label class="swatch color-blue" for="trending-1-swatch-1"></label>
                                   </button>
                                   <button type="button" id="trending-1-swatch-2" class="swatch-color trending-1-swatch-2" name="buttonName">
                                     <label class="swatch color-leather" for="trending-1-swatch-2"></label>
                                   </button>
-                                </div>
+                                </div> -->
                               </div>
                             </div>
                           </div>
@@ -585,14 +585,14 @@
                                   $350.00 &nbsp;
                                   <span class="base-price text-decoration-line-through"> $400.00 </span>
                                 </p>
-                                <div class="color-swatches d-flex flex-row justify-content-center align-items-center gap-2">
+                                <!-- <div class="color-swatches d-flex flex-row justify-content-center align-items-center gap-2">
                                   <button type="button" id="trending-2-swatch-1" class="swatch-color trending-2-swatch-1" name="buttonName">
                                     <label class="swatch color-gold" for="trending-2-swatch-1"></label>
                                   </button>
                                   <button type="button" id="trending-2-swatch-2" class="swatch-color trending-2-swatch-2" name="buttonName">
                                     <label class="swatch color-white" for="trending-2-swatch-2"></label>
                                   </button>
-                                </div>
+                                </div> -->
                               </div>
                             </div>
                           </div>
@@ -624,14 +624,14 @@
                                   $350.00 &nbsp;
                                   <span class="base-price text-decoration-line-through"> $400.00 </span>
                                 </p>
-                                <div class="color-swatches d-flex flex-row justify-content-center align-items-center gap-2">
+                                <!-- <div class="color-swatches d-flex flex-row justify-content-center align-items-center gap-2">
                                   <button type="button" id="trending-3-swatch-1" class="swatch-color trending-3-swatch-1" name="buttonName">
                                     <label class="swatch color-silver" for="trending-3-swatch-1"></label>
                                   </button>
                                   <button type="button" id="trending-3-swatch-2" class="swatch-color trending-3-swatch-2" name="buttonName">
                                     <label class="swatch color-blue" for="trending-3-swatch-2"></label>
                                   </button>
-                                </div>
+                                </div> -->
                               </div>
                             </div>
                           </div>
@@ -672,13 +672,13 @@
                         <p class="item-description">White</p>
                         <p class="item-price">$40.00&nbsp;<span class="text-decoration-line-through">$55.00</span></p>
                         <div class="input-number d-flex flex-row align-items-center col-12 col-lg-2">
-                          <button class="decrease" name="buttonName">
+                          <button class="decrease" name="buttonName" aria-label="decrease">
                             <svg width="11" height="2" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M11 0.5L11 1.5L-4.37114e-08 1.5L0 0.5L11 0.5Z" fill="#111111" />
                             </svg>
                           </button>
                           <span class="number-of-product text-center">1</span>
-                          <button class="increase" name="buttonName">
+                          <button class="increase" name="buttonName" aria-label="increase">
                             <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M5 11.5H6L6 6.5H11V5.5H6L6 0.5H5L5 5.5H0V6.5H5L5 11.5Z" fill="#111111" />
                             </svg>
@@ -720,7 +720,7 @@
                   </div>
 
                   <div class="cart-addons d-flex flex-row justify-content-center align-items-center">
-                    <button type="button" class="btn d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add order note">
+                    <button type="button" class="btn d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add order note" aria-label="label">
                       <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M10.8642 1.18519V0.691358C10.8642 0.296296 10.5679 0 10.1728 0C9.77778 0 9.48148 0.395062 9.48148 0.691358V1.08642H5.03704V0.691358C5.03704 0.395062 4.74074 0 4.34568 0C3.95062 0 3.65432 0.395062 3.65432 0.691358V1.18519C1.28395 1.38272 0 2.96296 0 5.4321V11.6543C0 14.4198 1.58025 16 4.34568 16H10.1728C12.9383 16 14.5185 14.4198 14.5185 11.6543V5.4321C14.5185 2.96296 13.2346 1.38272 10.8642 1.18519ZM4.34568 3.55556C4.64198 3.55556 5.03704 3.25926 5.03704 2.8642V2.46914H9.48148V2.8642C9.48148 3.25926 9.87654 3.55556 10.1728 3.55556C10.4691 3.55556 10.8642 3.25926 10.8642 2.8642V2.46914C12.4444 2.66667 13.1358 3.65432 13.1358 5.4321V11.6543C13.1358 13.7284 12.1481 14.6173 10.1728 14.6173H4.34568C2.27161 14.6173 1.38272 13.6296 1.38272 11.6543V5.33333C1.38272 3.55556 2.07407 2.5679 3.65432 2.37037V2.76543C3.65432 3.25926 3.95062 3.55556 4.34568 3.55556Z"
@@ -737,7 +737,7 @@
                       </svg>
                     </button>
 
-                    <button type="button" class="btn d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add gift">
+                    <button type="button" class="btn d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add gift" name="Buttonname" aria-label="label">
                       <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M9.14355 10.375C9.14355 10.0298 8.86374 9.75 8.51855 9.75C8.17337 9.75 7.89355 10.0298 7.89355 10.375V12.875C7.89355 13.2202 8.17337 13.5 8.51855 13.5C8.86374 13.5 9.14355 13.2202 9.14355 12.875V10.375Z"
@@ -754,7 +754,7 @@
                       </svg>
                     </button>
 
-                    <button type="button" class="btn d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Shipping estimate">
+                    <button type="button" class="btn d-flex align-items-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Shipping estimate" name="Buttonname" aria-label="label">
                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M13.7633 2.65861L9.8962 0.435045C8.83275 -0.145015 7.28593 -0.145015 6.31916 0.435045L2.45209 2.65861C1.38865 3.23867 0.518555 4.68882 0.518555 5.94562V10.1027C0.518555 11.3595 1.38865 12.713 2.45209 13.3897L6.31916 15.6133C6.80254 15.9033 7.47928 16 8.15602 16C8.83275 16 9.41282 15.9033 9.99288 15.6133L13.8599 13.3897C14.9234 12.8097 15.7935 11.3595 15.7935 10.1027V5.84894C15.6968 4.68882 14.8267 3.23867 13.7633 2.65861ZM6.80254 1.49849C7.09257 1.30514 7.57596 1.20846 8.05934 1.20846C8.54272 1.20846 8.92943 1.30514 9.31614 1.49849L13.1832 3.72205C13.4732 3.81873 13.6666 4.10876 13.8599 4.39879L11.7331 5.65559L5.7391 2.07855L6.80254 1.49849ZM2.93547 3.62538L4.57898 2.65861L10.5729 6.13897L8.05934 7.6858L2.16206 4.30212C2.35541 4.01208 2.64544 3.81873 2.93547 3.62538ZM2.93547 12.2296C2.25874 11.8429 1.582 10.7795 1.582 10.006V5.84894C1.582 5.65559 1.582 5.46224 1.67868 5.26888L7.47928 8.65257V14.6465C7.18925 14.6465 6.9959 14.5498 6.80254 14.4532L2.93547 12.2296ZM14.5367 10.006C14.5367 10.7795 13.9566 11.8429 13.1832 12.2296L9.31614 14.3565C9.12279 14.4532 8.92943 14.5498 8.6394 14.5498V8.65257L11.153 7.20242V8.84592C11.153 9.13595 11.443 9.42598 11.7331 9.42598C12.0231 9.42598 12.3131 9.13595 12.3131 8.84592V6.52568L14.44 5.26888C14.44 5.55891 14.5367 5.75227 14.5367 5.84894V10.006Z"
@@ -778,7 +778,7 @@
                       </label>
                     </div>
                     <a href="#" class="viewcart text-center"><span class="text-uppercase">view cart</span></a>
-                    <button type="submit" class="checkout text-uppercase">checkout</button>
+                    <button type="submit" class="checkout text-uppercase" name="Buttonname" aria-label="label">checkout</button>
                   </div>
                 </div>
               </div>
@@ -800,7 +800,7 @@
                 <span class="slide-subtitle text-uppercase">2022 LIMITED EDITION</span>
                 <h2 class="slide-title text-uppercase">LIMITED EDITION</h2>
                 <span class="slide-description">Exclusive product you won't find in other distributors.</span>
-                <button class="slide-button text-uppercase" name="buttonName">DISCOVER NOW</button>
+                <button class="slide-button text-uppercase" name="buttonName" aria-label="label">DISCOVER NOW</button>
               </div>
             </div>
             <div class="carousel-item position-relative" data-bs-interval="3000">
@@ -810,7 +810,7 @@
                 <span class="slide-subtitle text-uppercase">2022 NEW ARRIVALS</span>
                 <h2 class="slide-title text-uppercase">SPORT EDITION</h2>
                 <span class="slide-description">A unique watch to suit your style.</span>
-                <button class="slide-button text-uppercase" name="buttonName">DISCOVER NOW</button>
+                <button class="slide-button text-uppercase" name="buttonName" aria-label="label">DISCOVER NOW</button>
               </div>
             </div>
             <div class="carousel-item position-relative" data-bs-interval="3000">
@@ -820,15 +820,15 @@
                 <span class="slide-subtitle text-uppercase">TOP WATCHES FOR MEN'S</span>
                 <h2 class="slide-title text-uppercase">THE PERFECT</h2>
                 <span class="slide-description">A unique watch to suit your style.</span>
-                <button class="slide-button text-uppercase" name="buttonName">DISCOVER NOW</button>
+                <button class="slide-button text-uppercase" name="buttonName" aria-label="label">DISCOVER NOW</button>
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev" name="buttonName">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev" name="buttonName" aria-label="label">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next" name="buttonName">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next" name="buttonName" aria-label="label">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -867,6 +867,7 @@
                           data-bs-placement="top"
                           title="Add to Cart"
                           name="buttonName"
+                          aria-label="label"
                         >
                           <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -891,6 +892,7 @@
                           data-bs-placement="top"
                           title="Add to wishlist"
                           name="buttonName"
+                          aria-label="label"
                         >
                           <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -907,6 +909,7 @@
                           data-bs-placement="top"
                           title="Compare"
                           name="buttonName"
+                          aria-label="label"
                         >
                           <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -923,6 +926,7 @@
                           data-bs-placement="top"
                           title="Quick view"
                           name="buttonName"
+                          aria-label="label"
                         >
                           <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -948,10 +952,10 @@
                         <span class="base-price text-decoration-line-through"> $400.00 </span>
                       </p>
                       <div class="color-swatches d-flex flex-row justify-content-center align-items-center gap-2">
-                        <button type="button" id="trending-1-swatch-1" class="swatch-color trending-1-swatch-1" name="buttonName">
+                        <button type="button" id="trending-1-swatch-1" class="swatch-color trending-1-swatch-1" name="buttonName" aria-label="label">
                           <label class="swatch color-blue" for="trending-1-swatch-1"></label>
                         </button>
-                        <button type="button" id="trending-1-swatch-2" class="swatch-color trending-1-swatch-2" name="buttonName">
+                        <button type="button" id="trending-1-swatch-2" class="swatch-color trending-1-swatch-2" name="buttonName" aria-label="label">
                           <label class="swatch color-leather" for="trending-1-swatch-2"></label>
                         </button>
                       </div>
@@ -980,6 +984,7 @@
                           data-bs-placement="top"
                           title="Add to Cart"
                           name="buttonName"
+                          aria-label="label"
                         >
                           <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -1004,6 +1009,7 @@
                           data-bs-placement="top"
                           title="Add to wishlist"
                           name="buttonName"
+                          aria-label="label"
                         >
                           <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -1020,6 +1026,7 @@
                           data-bs-placement="top"
                           title="Compare"
                           name="buttonName"
+                          aria-label="label"
                         >
                           <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -1036,6 +1043,7 @@
                           data-bs-placement="top"
                           title="Quick view"
                           name="buttonName"
+                          aria-label="label"
                         >
                           <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -1061,10 +1069,10 @@
                         <span class="base-price text-decoration-line-through"> $400.00 </span>
                       </p>
                       <div class="color-swatches d-flex flex-row justify-content-center align-items-center gap-2">
-                        <button type="button" id="trending-2-swatch-1" class="swatch-color trending-2-swatch-1" name="buttonName">
+                        <button type="button" id="trending-2-swatch-1" class="swatch-color trending-2-swatch-1" name="buttonName" aria-label="label">
                           <label class="swatch color-gold" for="trending-2-swatch-1"></label>
                         </button>
-                        <button type="button" id="trending-2-swatch-2" class="swatch-color trending-2-swatch-2" name="buttonName">
+                        <button type="button" id="trending-2-swatch-2" class="swatch-color trending-2-swatch-2" name="buttonName" aria-label="label">
                           <label class="swatch color-white" for="trending-2-swatch-2"></label>
                         </button>
                       </div>
@@ -1093,6 +1101,7 @@
                           data-bs-placement="top"
                           title="Add to Cart"
                           name="buttonName"
+                          aria-label="label"
                         >
                           <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -1117,6 +1126,7 @@
                           data-bs-placement="top"
                           title="Add to wishlist"
                           name="buttonName"
+                          aria-label="label"
                         >
                           <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -1133,6 +1143,7 @@
                           data-bs-placement="top"
                           title="Compare"
                           name="buttonName"
+                          aria-label="label"
                         >
                           <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -1149,6 +1160,7 @@
                           data-bs-placement="top"
                           title="Quick view"
                           name="buttonName"
+                          aria-label="label"
                         >
                           <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -1174,10 +1186,10 @@
                         <span class="base-price text-decoration-line-through"> $400.00 </span>
                       </p>
                       <div class="color-swatches d-flex flex-row justify-content-center align-items-center gap-2">
-                        <button type="button" id="trending-3-swatch-1" class="swatch-color trending-3-swatch-1" name="buttonName">
+                        <button type="button" id="trending-3-swatch-1" class="swatch-color trending-3-swatch-1" name="buttonName" aria-label="label">
                           <label class="swatch color-silver" for="trending-3-swatch-1"></label>
                         </button>
-                        <button type="button" id="trending-3-swatch-2" class="swatch-color trending-3-swatch-2" name="buttonName">
+                        <button type="button" id="trending-3-swatch-2" class="swatch-color trending-3-swatch-2" name="buttonName" aria-label="label">
                           <label class="swatch color-blue" for="trending-3-swatch-2"></label>
                         </button>
                       </div>
@@ -1204,7 +1216,7 @@
                   <a href="#" aria-label="product">
                     <img src="data/hot-category-1.svg" alt="Hot category 1" />
                   </a>
-                  <button class="collection-btn position-absolute" name="buttonName">Men's Watches</button>
+                  <button class="collection-btn position-absolute" name="buttonName" aria-label="label">Men's Watches</button>
                 </div>
               </div>
 
@@ -1213,7 +1225,7 @@
                   <a href="#" aria-label="product">
                     <img src="data/hot-category-2.svg" alt="Hot category 2" />
                   </a>
-                  <button class="collection-btn position-absolute" name="buttonName">Men's Watches</button>
+                  <button class="collection-btn position-absolute" name="buttonName" aria-label="label">Men's Watches</button>
                 </div>
               </div>
 
@@ -1222,7 +1234,7 @@
                   <a href="#" aria-label="product">
                     <img src="data/hot-category-3.svg" alt="Hot category 3" />
                   </a>
-                  <button class="collection-btn position-absolute" name="buttonName">Men's Watches</button>
+                  <button class="collection-btn position-absolute" name="buttonName" aria-label="label">Men's Watches</button>
                 </div>
               </div>
 
@@ -1231,7 +1243,7 @@
                   <a href="#" aria-label="product">
                     <img src="data/hot-category-4.svg" alt="Hot category 4" />
                   </a>
-                  <button class="collection-btn position-absolute" name="buttonName">Men's Watches</button>
+                  <button class="collection-btn position-absolute" name="buttonName" aria-label="label">Men's Watches</button>
                 </div>
               </div>
 
@@ -1240,7 +1252,7 @@
                   <a href="#" aria-label="product">
                     <img src="data/hot-category-5.svg" alt="Hot category 5" />
                   </a>
-                  <button class="collection-btn position-absolute" name="buttonName">Men's Watches</button>
+                  <button class="collection-btn position-absolute" name="buttonName" aria-label="label">Men's Watches</button>
                 </div>
               </div>
 
@@ -1249,7 +1261,7 @@
                   <a href="#" aria-label="product">
                     <img src="data/hot-category-6.svg" alt="Hot category 6" />
                   </a>
-                  <button class="collection-btn position-absolute" name="buttonName">Men's Watches</button>
+                  <button class="collection-btn position-absolute" name="buttonName" aria-label="label">Men's Watches</button>
                 </div>
               </div>
 
@@ -1289,7 +1301,7 @@
             <span class="slide-subtitle text-uppercase">#high-quality products</span>
             <h2 class="slide-title text-uppercase">Affirm your style</h2>
             <span class="slide-description">Change and take your lifestyle to the next level.</span>
-            <button class="slide-button text-uppercase" name="buttonName">DISCOVER NOW</button>
+            <button class="slide-button text-uppercase" name="buttonName" aria-label="label">DISCOVER NOW</button>
           </div>
         </div>
       </section>
@@ -1345,16 +1357,10 @@
                       <span class="d-none fw-bold">Midnight Blue</span>
                     </div>
                     <div class="color-swatches d-flex flex-row align-items-center gap-2">
-                      <!-- <div class="swatch-color trending-1-swatch-1">
-                        <div class="swatch color-steel"></div>
-                      </div> -->
-                      <button type="button" id="limited-swatch-1" class="swatch-color limited-swatch-1" name="buttonName">
+                      <button type="button" id="limited-swatch-1" class="swatch-color limited-swatch-1" name="buttonName" aria-label="label">
                         <label class="swatch color-steel" for="limited-swatch-1"></label>
                       </button>
-                      <!-- <div class="swatch-color trending-1-swatch-2">
-                        <div class="swatch color-midnight-blue"></div>
-                      </div> -->
-                      <button type="button" id="limited-swatch-2" class="swatch-color limited-swatch-2" name="buttonName">
+                      <button type="button" id="limited-swatch-2" class="swatch-color limited-swatch-2" name="buttonName" aria-label="label">
                         <label class="swatch color-midnight-blue" for="limited-swatch-2"></label>
                       </button>
                     </div>
@@ -1388,19 +1394,19 @@
                   </div>
                   <div class="product-input-form d-flex flex-row flex-wrap gap-3">
                     <div class="input-number d-flex flex-row align-items-center col-12 col-lg-2">
-                      <button class="decrease" name="buttonName">
+                      <button class="decrease" name="buttonName" aria-label="label">
                         <svg width="11" height="2" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M11 0.5L11 1.5L-4.37114e-08 1.5L0 0.5L11 0.5Z" fill="#111111" />
                         </svg>
                       </button>
                       <span class="number-of-product text-center">2</span>
-                      <button class="increase" name="buttonName">
+                      <button class="increase" name="buttonName" aria-label="label">
                         <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path fill-rule="evenodd" clip-rule="evenodd" d="M5 11.5H6L6 6.5H11V5.5H6L6 0.5H5L5 5.5H0V6.5H5L5 11.5Z" fill="#111111" />
                         </svg>
                       </button>
                     </div>
-                    <button type="button" class="input-to-cart text-uppercase d-flex justify-content-center align-items-center" name="buttonName">add to cart</button>
+                    <button type="button" class="input-to-cart text-uppercase d-flex justify-content-center align-items-center" name="buttonName" aria-label="label">add to cart</button>
                     <div class="input-action d-flex flex-row justify-content-center align-items-center">
                       <!-- <button type="button" class="to-wish-list"> -->
                       <button
@@ -1411,6 +1417,7 @@
                         data-bs-placement="top"
                         title="Add to wishlist"
                         name="buttonName"
+                        aria-label="label"
                       >
                         <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
@@ -1429,6 +1436,7 @@
                         data-bs-placement="top"
                         title="Compare"
                         name="buttonName"
+                        aria-label="label"
                       >
                         <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
@@ -1447,12 +1455,12 @@
                     </label>
                   </div>
                   <div class="product-payment-button d-flex flex-column justify-content-center align-items-center">
-                    <button type="button" class="purchase-button text-center" name="buttonName">
+                    <button type="button" class="purchase-button text-center" name="buttonName" aria-label="label">
                       Buy with
                       <!-- <img src="data/paypal-seeklogo.svg" alt="" /> -->
                     </button>
 
-                    <button type="button" class="more-purchase-options text-uppercase text-center" name="buttonName">more payment options</button>
+                    <button type="button" class="more-purchase-options text-uppercase text-center" name="buttonName" aria-label="label">more payment options</button>
                   </div>
                   <ul class="product-meta">
                     <li>
@@ -1495,7 +1503,7 @@
               <span class="banner-description">
                 The watch is carefully designed with quality materials, such as the domed sapphire crystal, and the meticulous level of detail - from the dial to the delicate gold hour markers.
               </span>
-              <button class="banner-button text-uppercase" name="buttonName">DISCOVER NOW</button>
+              <button class="banner-button text-uppercase" name="buttonName" aria-label="label">DISCOVER NOW</button>
             </div>
           </div>
         </div>
@@ -1627,7 +1635,7 @@
                   </ul>
 
                   <div class="tooltip-icon d-flex flex-row">
-                    <button type="button" class="btn btn-tooltip" data-bs-toggle="tooltip" data-bs-custom-class="text-fs" data-bs-placement="bottom" title="X" name="buttonName">
+                    <button type="button" class="btn btn-tooltip" data-bs-toggle="tooltip" data-bs-custom-class="text-fs" data-bs-placement="bottom" title="X" name="buttonName" aria-label="label">
                       <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="18" cy="18" r="17.5" stroke="#91a1b5" />
                         <path
@@ -1639,7 +1647,7 @@
                       </svg>
                     </button>
 
-                    <button type="button" name="buttonName" class="btn btn-tooltip" data-bs-toggle="tooltip" data-bs-custom-class="text-fs" data-bs-placement="bottom" title="Instagram">
+                    <button type="button" name="buttonName" class="btn btn-tooltip" data-bs-toggle="tooltip" data-bs-custom-class="text-fs" data-bs-placement="bottom" title="Instagram" aria-label="label">
                       <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                         <circle cx="18" cy="18" r="17.5" stroke="#91a1b5" />
                         <path
@@ -1649,7 +1657,7 @@
                       </svg>
                     </button>
 
-                    <button type="button" name="buttonName" class="btn btn-tooltip" data-bs-toggle="tooltip" data-bs-custom-class="text-fs" data-bs-placement="bottom" title="Tiktok">
+                    <button type="button" name="buttonName" class="btn btn-tooltip" data-bs-toggle="tooltip" data-bs-custom-class="text-fs" data-bs-placement="bottom" title="Tiktok" aria-label="label">
                       <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="18" cy="18" r="17.5" stroke="#91a1b5" />
                         <path
@@ -1659,7 +1667,7 @@
                       </svg>
                     </button>
 
-                    <button type="button" name="buttonName" class="btn btn-tooltip" data-bs-toggle="tooltip" data-bs-custom-class="text-fs" data-bs-placement="bottom" title="Youtube">
+                    <button type="button" name="buttonName" class="btn btn-tooltip" data-bs-toggle="tooltip" data-bs-custom-class="text-fs" data-bs-placement="bottom" title="Youtube" aria-label="label">
                       <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="18" cy="18" r="17.5" stroke="#91a1b5" />
                         <path
@@ -1669,7 +1677,7 @@
                       </svg>
                     </button>
 
-                    <button type="button" name="buttonName" class="btn btn-tooltip" data-bs-toggle="tooltip" data-bs-custom-class="text-fs" data-bs-placement="bottom" title="Facebook">
+                    <button type="button" name="buttonName" class="btn btn-tooltip" data-bs-toggle="tooltip" data-bs-custom-class="text-fs" data-bs-placement="bottom" title="Facebook" aria-label="label">
                       <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="18" cy="18" r="17.5" stroke="#91a1b5" />
                         <path
@@ -1694,6 +1702,7 @@
                     data-bs-target="#collapseOne"
                     aria-expanded="true"
                     aria-controls="collapseOne"
+                    aria-label="label"
                   >
                     Shop by
                   </button>
@@ -1724,6 +1733,7 @@
                     data-bs-target="#collapseTwo"
                     aria-expanded="false"
                     aria-controls="collapseTwo"
+                    aria-label="label"
                   >
                     customer service
                   </button>
@@ -1755,6 +1765,7 @@
                     data-bs-target="#collapseThree"
                     aria-expanded="false"
                     aria-controls="collapseThree"
+                    aria-label="label"
                   >
                     sign up to newsletter
                   </button>
@@ -1764,7 +1775,7 @@
                     <p class="newsletter-description">Enter your email address to get $10 off your first order and free shipping.Updates information on Sales and Offers.</p>
                     <div class="input-form d-flex">
                       <input type="email" id="email" name="email" placeholder="Enter your email..." autocapitalize="off" autocomplete="off" spellcheck="false" required />
-                      <button class="text-uppercase" name="buttonName">Subcribe</button>
+                      <button class="text-uppercase" name="buttonName" aria-label="label">Subcribe</button>
                     </div>
                   </div>
                 </div>
@@ -1779,20 +1790,20 @@
           <div class="footer-bottom-wrapper d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
             <div class="dropdown dropup d-none d-lg-flex">
               <div class="btn-group">
-                <button type="button" class="btn dropdown-toggle" name="buttonName" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">English</button>
+                <button type="button" class="btn dropdown-toggle" name="buttonName" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" aria-label="label">English</button>
                 <ul class="dropdown-menu dropdown-menu-start">
-                  <li><button class="dropdown-item" type="button" name="buttonName">English</button></li>
-                  <li><button class="dropdown-item" type="button" name="buttonName">Netherland</button></li>
-                  <li><button class="dropdown-item" type="button" name="buttonName">French</button></li>
+                  <li><button class="dropdown-item" type="button" name="buttonName" aria-label="label">English</button></li>
+                  <li><button class="dropdown-item" type="button" name="buttonName" aria-label="label">Netherland</button></li>
+                  <li><button class="dropdown-item" type="button" name="buttonName" aria-label="label">French</button></li>
                 </ul>
               </div>
               <div class="btn-group">
-                <button type="button" class="btn dropdown-toggle" name="buttonName" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">United States (USD)</button>
+                <button type="button" class="btn dropdown-toggle" name="buttonName" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" aria-label="label">United States (USD)</button>
                 <ul class="dropdown-menu dropdown-menu-start">
-                  <li><button class="dropdown-item" type="button" name="buttonName">United Kingdom (GBP)</button></li>
-                  <li><button class="dropdown-item" type="button" name="buttonName">France (EUR)</button></li>
-                  <li><button class="dropdown-item" type="button" name="buttonName">Japan (JPY)</button></li>
-                  <li><button class="dropdown-item" type="button" name="buttonName">United States (USD)</button></li>
+                  <li><button class="dropdown-item" type="button" name="buttonName" aria-label="label">United Kingdom (GBP)</button></li>
+                  <li><button class="dropdown-item" type="button" name="buttonName" aria-label="label">France (EUR)</button></li>
+                  <li><button class="dropdown-item" type="button" name="buttonName" aria-label="label">Japan (JPY)</button></li>
+                  <li><button class="dropdown-item" type="button" name="buttonName" aria-label="label">United States (USD)</button></li>
                 </ul>
               </div>
             </div>
