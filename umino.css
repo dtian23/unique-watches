@@ -159,6 +159,10 @@ h2 {
   background-color: var(--color-sale);
 }
 
+.gray-5 {
+  color: var(--color-grey-5);
+}
+
 @media only screen and (min-width: 1200px) {
   .container-fluid {
     --bs-gutter-x: 6rem;

@@ -89,6 +89,7 @@
 .section-description {
   font-size: 1.4rem;
   font-weight: 500;
+  color: var(--color-grey-5);
 }
 
 .section-product-style {
@@ -124,15 +125,20 @@
   visibility: visible;
 }
 
-.swatch-color {
+/* .swatch {
   display: flex;
   padding: 0.2rem;
   border: 1px solid #ddd;
   border-radius: 0.7rem;
   transition: all 0.4s;
-}
+} */
 
-.swatch-color:focus {
+/* .swatch:focus {
+  cursor: pointer;
+  border: 1px solid var(--color-black) !important;
+} */
+
+.size-swatch input[type="radio"]:checked + label {
   cursor: pointer;
   border: 1px solid var(--color-black) !important;
 }
@@ -140,7 +146,9 @@
 .swatch {
   width: 2rem;
   height: 2rem;
+  padding: 0.2rem;
   border-radius: 0.5rem;
+  border: 1px solid #ddd;
 }
 
 .card-body {
@@ -390,7 +398,7 @@ iframe {
   padding: 0.3rem 2.2rem;
   font-size: 1.4rem;
   font-weight: 500;
-  color: var(--color-grey-5);
+  color: var(--color-black);
   border-radius: 0.3rem;
   border: 1px solid var(--border);
   transition: all 0.4s;
@@ -656,6 +664,7 @@ iframe {
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  color: var(--color-grey-9);
 }
 
 .banner-title {
@@ -668,6 +677,7 @@ iframe {
   font-size: 1.4rem;
   font-weight: 500;
   margin-bottom: 5rem;
+  color: var(--color-grey-5);
 }
 
 .banner-button {
@@ -697,6 +707,10 @@ iframe {
   margin: 0 4rem;
   padding: 1rem;
   font-size: 1.2rem;
+  font-weight: 600;
+}
+
+main .scrolling-text .text span {
   font-weight: 700;
 }
 
