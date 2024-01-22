@@ -37,8 +37,7 @@
   margin-top: clamp(2.5rem, 4vw, 5rem);
   font-size: 1.2rem;
   font-weight: var(--fw-800);
-  min-width: 20rem;
-  min-height: 5.5rem;
+  line-height: 2;
   color: var(--color-black);
   background-color: var(--color-white);
   border: none;
@@ -47,9 +46,16 @@
   transition: all 0.5s;
 }
 
+.slide-button a {
+  color: var(--color-black);
+  transition: all 0.5s;
+}
+
 .slide-button:hover {
-  color: var(--color-white);
   background-color: var(--color-black);
+  a {
+  color: var(--color-white);
+  }
 }
 
 .carousel-indicators [data-bs-target] {
@@ -859,6 +865,10 @@ main .scrolling-text .text span {
     margin-right: -3rem;
   }
 
+  .hot-category .section-product-style {
+    overflow: scroll;
+  }
+
   .top-trending .card-wrapper {
     padding-right: 3rem;
   }
@@ -888,5 +898,17 @@ main .scrolling-text .text span {
   .section-gap {
     padding-top: 10rem;
     padding-bottom: 10rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+.section-product-style-wrapper {
+  overflow: visible;
+}
+
+  .hot-category .section-product-style {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
   }
 }
