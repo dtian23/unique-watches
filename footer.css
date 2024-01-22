@@ -32,7 +32,7 @@ footer {
 .footer-block ul li {
   list-style-type: none;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   margin-bottom: 1rem;
   color: var(--footer-text);
 }
@@ -51,14 +51,14 @@ footer {
 .footer-block p {
   color: var(--footer-text);
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   margin-bottom: 3rem;
   line-height: 2;
 }
 
 .accordion-button {
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight:  var(--fw-700);
   color: var(--color-white);
   background-color: transparent;
   padding-left: 0;
@@ -106,14 +106,14 @@ footer {
 
 .input-form input::placeholder {
   color: var(--footer-text);
-  font-weight: 400;
+  font-weight: var(--fw-400);
 }
 
 .input-form button {
   padding: 1.5rem 4rem;
   margin-left: 1rem;
   font-size: 1.2rem;
-  font-weight: 800;
+  font-weight: var(--fw-800);
   border: none;
   border-radius: 0.5rem;
 }
@@ -125,7 +125,7 @@ footer {
 
 .copy-right {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   color: var(--footer-text);
 }
 
@@ -161,7 +161,7 @@ footer {
 
 .dropdown-menu li button {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   color: var(--color-black);
 }
 

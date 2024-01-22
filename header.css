@@ -13,7 +13,7 @@
   margin: 0 4rem;
   padding: 1rem;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: var(--fw-600);
 }
 
 @keyframes scrollText {
@@ -62,7 +62,7 @@ nav ul li {
 .header-left > ul > li > a {
   text-decoration: none;
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: var(--fw-700);
   color: var(--color-black);
   padding-right: 3rem;
   transition: all 0.6s;
@@ -103,7 +103,7 @@ nav ul li a:hover {
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
 }
 
 .utilities > a > img {
@@ -175,7 +175,7 @@ nav ul li a:hover {
 .demo-title {
   padding-top: 1rem;
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: var(--fw-700);
   color: var(--color-black);
   text-align: center;
 }
@@ -199,7 +199,7 @@ nav ul li a:hover {
   background-color: var(--color-black);
   color: var(--color-white);
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   border: none;
   border-radius: 3rem;
   transition: all 0.4s;
@@ -211,7 +211,7 @@ nav ul li a:hover {
 
 .submenu-child-title {
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: var(--fw-700);
   margin-bottom: 2rem;
 }
 
@@ -231,7 +231,7 @@ nav ul li a:hover {
 .submenu-child-wrapper ul li a {
   text-decoration: none;
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: var(--fw-400);
   color: var(--color-gray-9);
   transition: all 0.4s;
 }
@@ -260,7 +260,7 @@ nav ul li a:hover {
   bottom: 2rem;
   padding: 1.5rem 2rem;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: var(--fw-600);
   color: var(--color-black);
   background-color: var(--color-white);
   border: none;
@@ -301,7 +301,7 @@ nav ul li a:hover {
 
 .side-header-text {
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: var(--fw-700);
   color: var(--color-white);
 }
 
@@ -317,9 +317,15 @@ nav ul li a:hover {
 
 .side-body li {
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: var(--fw-700);
   color: var(--color-black);
   padding: 1.5rem 0;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+.side-body li:hover {
+  color: var(--color-green);
 }
 
 .side-body li:not(:last-child) {
@@ -336,7 +342,7 @@ nav ul li a:hover {
   margin-top: 1rem;
 
   label {
-    font-weight: 400;
+    font-weight: var(--fw-400);
     color: var(--color-grey-5);
   }
 
@@ -389,7 +395,7 @@ nav ul li a:hover {
 
 .cart-header-text {
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: var(--fw-700);
 }
 
 .shipping-trace {
@@ -399,10 +405,10 @@ nav ul li a:hover {
 
 .shipping-trace-text {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
 
   span {
-    font-weight: 700;
+    font-weight: var(--fw-700);
     color: var(--color-green);
   }
 }
@@ -421,7 +427,7 @@ nav ul li a:hover {
 
 .item-title {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   color: var(--color-black);
   text-decoration: none;
   margin-bottom: 0.3rem;
@@ -429,14 +435,14 @@ nav ul li a:hover {
 
 .item-description {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   color: var(--color-grey-5);
   margin-bottom: 0.8rem;
 }
 
 .item-price {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   color: var(--color-green);
   margin-bottom: 0.8rem;
 
@@ -460,15 +466,17 @@ nav ul li a:hover {
 
 .subtotal {
   padding: 2rem 3rem 1.5rem;
+  background-color: var(--color-light-grey);
 }
 
 .subtotal > * {
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: var(--fw-700);
 }
 
 .minicart-bottom {
   padding: 0 3rem 3rem;
+  background-color: var(--color-light-grey);
 }
 
 .viewcart,
@@ -476,7 +484,7 @@ nav ul li a:hover {
   padding: 1.5rem 2.5rem;
   flex: 1;
   font-size: 1.2rem;
-  font-weight: 800;
+  font-weight: var(--fw-800);
   border-radius: 0.5rem;
 }
 
@@ -559,7 +567,7 @@ nav ul li a:hover {
   top: 5%;
   left: 95%;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   border-radius: 50%;
   background-color: var(--color-green);
 }
@@ -588,7 +596,7 @@ nav ul li a:hover {
 
 .search-header-text {
   font-size: clamp(2rem, 3vw, 3.2rem);
-  font-weight: 700;
+  font-weight: var(--fw-700);
   margin-bottom: clamp(1rem, 3vw, 2rem);
 }
 
@@ -608,7 +616,7 @@ input[type="search"] {
   padding: 1rem 5rem 1rem 2rem;
   border: 1px solid var(--border);
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   color: var(--color-grey-9);
   border-radius: 0.5rem;
   transition: all 0.4s;
@@ -634,7 +642,7 @@ input[type="search"]:focus {
 
 .quick-search > * {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
 }
 
 .quick-search-option {
@@ -654,7 +662,7 @@ input[type="search"]:focus {
 
 .search-suggest-heading h5 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: var(--fw-700);
 }
 
 .search-suggest-list {

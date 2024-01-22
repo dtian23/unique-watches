@@ -17,26 +17,26 @@
 .slide-subtitle {
   text-align: center;
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: var(--fw-700);
   margin-bottom: clamp(0rem, 1vw, 1.5rem);
 }
 
 .slide-title {
   text-align: center;
   font-size: clamp(3.6rem, 4.7vw, 8rem);
-  font-weight: 300;
+  font-weight: var(--fw-300);
 }
 
 .slide-description {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   text-align: center;
 }
 
 .slide-button {
   margin-top: clamp(2.5rem, 4vw, 5rem);
   font-size: 1.2rem;
-  font-weight: 800;
+  font-weight: var(--fw-800);
   min-width: 20rem;
   min-height: 5.5rem;
   color: var(--color-black);
@@ -83,12 +83,12 @@
 
 .section-heading {
   font-size: 4rem;
-  font-weight: 300;
+  font-weight: var(--fw-300);
 }
 
 .section-description {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   color: var(--color-grey-5);
 }
 
@@ -125,19 +125,6 @@
   visibility: visible;
 }
 
-/* .swatch {
-  display: flex;
-  padding: 0.2rem;
-  border: 1px solid #ddd;
-  border-radius: 0.7rem;
-  transition: all 0.4s;
-} */
-
-/* .swatch:focus {
-  cursor: pointer;
-  border: 1px solid var(--color-black) !important;
-} */
-
 .size-swatch input[type="radio"]:checked + label {
   cursor: pointer;
   border: 1px solid var(--color-black) !important;
@@ -158,13 +145,13 @@
 .umino {
   color: var(--color-grey-5);
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
 }
 
 .top-trending-name {
   color: var(--color-black);
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: var(--fw-700);
   transition: all 0.4s;
 }
 
@@ -179,12 +166,12 @@
 .sale-price {
   color: var(--color-green);
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: var(--fw-700);
 }
 
 .base-price {
   color: var(--color-grey-9);
-  font-weight: 500;
+  font-weight: var(--fw-500);
 }
 
 .img-hover,
@@ -229,7 +216,7 @@
   left: 1.5rem;
   color: var(--color-white);
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   padding: 0.6rem 1.2rem;
   border-radius: 0.3rem;
   z-index: 6;
@@ -266,7 +253,7 @@
   left: 50%;
   transform: translateX(-50%);
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: var(--fw-700);
   border: none;
   border-radius: 0.5rem;
   transition: all 0.6s;
@@ -326,7 +313,7 @@ iframe {
   padding: 0.6rem 1.2rem;
   margin-bottom: 1.5rem;
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   color: var(--color-white);
   background-color: var(--color-sale);
   border-radius: 0.2rem;
@@ -334,7 +321,7 @@ iframe {
 
 .product-vendor > div {
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   margin-bottom: 0.5rem;
 }
 
@@ -344,7 +331,7 @@ iframe {
 
 .product-title a {
   font-size: clamp(2.4rem, 3.5vw, 3.6rem);
-  font-weight: 700;
+  font-weight: var(--fw-700);
   color: var(--color-black);
   text-decoration: none;
   transition: all 0.5s;
@@ -361,14 +348,14 @@ iframe {
 
 .review {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   margin-bottom: 0.4rem;
   color: var(--color-grey-5);
 }
 
 .product-price {
   font-size: clamp(2.8rem, 4.2vw, 3rem);
-  font-weight: 700;
+  font-weight: var(--fw-700);
   color: var(--color-green);
   margin-bottom: 1.5rem;
 }
@@ -397,7 +384,7 @@ iframe {
 .swatch-size {
   padding: 0.3rem 2.2rem;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   color: var(--color-black);
   border-radius: 0.3rem;
   border: 1px solid var(--border);
@@ -410,15 +397,6 @@ iframe {
     background-color: var(--color-black);
   }
 }
-
-/* .swatch-size.chosen {
-  transition: all 0.4s;
-}
-
-.swatch-size:focus {
-  color: var(--color-white);
-  background-color: var(--color-black);
-} */
 
 .product-input-form {
   margin-bottom: 2.5rem;
@@ -459,7 +437,7 @@ iframe {
 
 .number-of-product {
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
 }
 
 .input-to-cart {
@@ -467,7 +445,7 @@ iframe {
   color: var(--color-white);
   background-color: var(--color-black);
   font-size: 1.2rem;
-  font-weight: 800;
+  font-weight: var(--fw-800);
   border: none;
   border-radius: 0.5rem;
 }
@@ -517,8 +495,8 @@ iframe {
 
 .checkmark {
   position: absolute;
-  top: 0.1rem;
-  left: 0;
+  top: 0.2rem;
+  left: .1rem;
   height: 1.8rem;
   width: 1.8rem;
   background-color: #f5f5f5;
@@ -558,7 +536,7 @@ iframe {
 
 .agree-text {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   color: var(--color-grey-5);
 
   a {
@@ -574,7 +552,7 @@ iframe {
   width: 100%;
   min-height: 5rem;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   padding: 1.5rem 2rem;
   color: var(--text-payment);
   background-color: var(--button-payment);
@@ -591,7 +569,7 @@ iframe {
   width: 100%;
   min-height: 5rem;
   font-size: 1.2rem;
-  font-weight: 800;
+  font-weight: var(--fw-800);
   padding: 1.5rem 2rem;
   margin-top: 1.2rem;
   color: var(--color-white);
@@ -614,7 +592,7 @@ iframe {
 
 .product-meta li > * {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
 }
 
 .key {
@@ -662,27 +640,27 @@ iframe {
 
 .banner-subtitle {
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: var(--fw-700);
   margin-bottom: 1rem;
   color: var(--color-grey-9);
 }
 
 .banner-title {
   font-size: clamp(3rem, 3.5vw, 4rem);
-  font-weight: 300;
+  font-weight: var(--fw-300);
   margin-bottom: 2rem;
 }
 
 .banner-description {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   margin-bottom: 5rem;
   color: var(--color-grey-5);
 }
 
 .banner-button {
   font-size: 1.2rem;
-  font-weight: 800;
+  font-weight: var(--fw-800);
   min-width: 20rem;
   min-height: 5.5rem;
   color: var(--color-white);
@@ -707,11 +685,11 @@ iframe {
   margin: 0 4rem;
   padding: 1rem;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: var(--fw-600);
 }
 
 main .scrolling-text .text span {
-  font-weight: 700;
+  font-weight: var(--fw-700);
 }
 
 .blog .card-img-top {
@@ -724,14 +702,14 @@ main .scrolling-text .text span {
 
 .card-product-type {
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: var(--fw-700);
   margin-bottom: 0.5rem;
   color: var(--color-black);
 }
 
 .card-title {
   font-size: 2.4rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   color: var(--color-black);
   margin-bottom: 1.5rem;
 }
@@ -742,7 +720,7 @@ main .scrolling-text .text span {
 
 .card-description {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   margin-top: 1.5rem;
   margin-bottom: 2rem;
   color: var(--color-grey-5);
@@ -750,7 +728,7 @@ main .scrolling-text .text span {
 
 .date-and-author > * {
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: var(--fw-700);
   margin-bottom: 1rem;
   color: var(--color-grey-9);
 }
@@ -802,13 +780,13 @@ main .scrolling-text .text span {
 
 .service-title {
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: var(--fw-700);
   color: var(--color-black);
 }
 
 .service-description {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   color: var(--color-grey-5);
 }
 
