@@ -17,6 +17,7 @@ footer{background-color:var(--footer-bg)}
 .input-form input{flex:1;padding:1.5rem 2rem;font-size:1.2rem;color:var(--footer-text);background-color:transparent;border:1px solid #29374a;border-radius:.5rem}
 .input-form input::placeholder{color:var(--footer-text);font-weight:var(--fw-400)}
 .input-form button{padding:1.5rem 2rem;margin-left:1rem;font-size:1.2rem;font-weight:var(--fw-800);border:none;border-radius:.5rem}
+.footer-bottom{padding-bottom:7rem}
 .footer-bottom-wrapper{padding-top:1rem;padding-bottom:2rem}
 .copy-right{font-size:1.4rem;font-weight:var(--fw-500);color:var(--footer-text)}
 .tooltip{font-size:1.4rem}
@@ -29,6 +30,13 @@ footer{background-color:var(--footer-bg)}
 .tooltip-icon{margin-left:-1rem}
 .dropdown-menu{transform:translateY(-100%);transition:all .3s ease}
 .dropdown-menu.show{transform:translateY(0)}
+.fixed-mobile-nav{position:fixed;flex-wrap:nowrap;top:89%;left:50%;transform:translateX(-50%);width:95%;background-color:var(--color-white);border-radius:4rem;box-shadow:rgba(0,0,0,0.35) 0 5px 15px;z-index:90}
+.icon-nav{flex:0 0 19%;padding:1.5rem 1.5rem 1rem;font-size:.9rem;font-weight:500}
+.icon-nav:first-child{border-radius:3rem 0 0 3rem}
+.icon-nav:last-child{border-radius:0 3rem 3rem 0}
+.icon-nav a{color:var(--base-color)}
+.icon-nav:hover{cursor:pointer;background-color:#ebebeb}
+.icon-nav svg{font-size:.5rem}
 @media only screen and (min-width: 768px) {
 .footer-block{margin-bottom:4rem}
 .footer-menu{padding-bottom:3rem}
@@ -39,6 +47,9 @@ footer{background-color:var(--footer-bg)}
 .accordion-button::after{display:none}
 .footer-bottom-wrapper{padding-top:3.5rem;padding-bottom:3.5rem}
 .input-form button{padding:1.5rem 4rem}
+}
+@media only screen and (min-width: 992px) {
+.footer-bottom{padding-bottom:0}
 }
 @media only screen and (min-width: 1200px) {
 .footer-menu{padding-top:10rem}
