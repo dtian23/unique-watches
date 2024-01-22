@@ -19,6 +19,7 @@
   font-size: 1.4rem;
   font-weight: var(--fw-700);
   margin-bottom: clamp(0rem, 1vw, 1.5rem);
+  white-space: nowrap;
 }
 
 .slide-title {
