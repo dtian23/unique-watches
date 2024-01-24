@@ -52,6 +52,10 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 @font-face {
   font-family: "Manrope";
   src: url("font/Manrope-Light.ttf") format("truetype");
@@ -162,12 +166,16 @@ h2 {
 }
 
 .sale-off {
-  background-color: var(--color-sale);
+  background-color: var(--color-green);
 }
 
 .gray-5 {
   color: var(--color-grey-5);
 }
+
+/* .col-6 {
+  width: calc(calc(100% - 15px) / 2);
+} */
 
 @media only screen and (min-width: 1200px) {
   .container-fluid {

@@ -58,7 +58,7 @@ footer {
 
 .accordion-button {
   font-size: 1.4rem;
-  font-weight:  var(--fw-700);
+  font-weight: var(--fw-700);
   color: var(--color-white);
   background-color: transparent;
   padding-left: 0;
