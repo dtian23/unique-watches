@@ -6,12 +6,14 @@
     <meta name="description" content="Author: Tien Anh Dinh." />
     <link rel="icon" type="image/png" href="data/featured_channel.jpg" />
     <title>Unique Watches</title>
-    <link rel="stylesheet" href="bootstrap2.css" />
-    <link rel="stylesheet" href="umino2.css" />
-    <link rel="stylesheet" href="header2.css" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="footer2.css" />
-    <script src="https://kit.fontawesome.com/82f8c9310a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap_.css" media="all"/>
+    <link rel="stylesheet" href="bootstrap1_.css" media="(min-width:768px)"/>
+    <link rel="stylesheet" href="bootstrap2_.css" media="(min-width:576px)"/>
+    <link rel="stylesheet" href="umino-min.css" />
+    <link rel="stylesheet" href="header-min.css" />
+    <link rel="stylesheet" href="main-min.css" />
+    <link rel="stylesheet" href="footer-min.css" />
+    <!-- <script src="https://kit.fontawesome.com/82f8c9310a.js" crossorigin="anonymous"></script> -->
   </head>
 
   <body>
@@ -440,7 +442,7 @@
 
           <span class="header-middle d-flex justify-content-center col-4">
             <a href="#" aria-label="Umino label">
-              <img loading="lazy" src="data/Logo.svg" alt="Umino logo" />
+              <img fetchpriority="high" loading="lazy" src="data/Logo.svg" alt="Umino logo" />
             </a>
           </span>
 
@@ -508,7 +510,7 @@
                             <div class="card" style="width: 100%">
                               <div class="product-image position-relative overflow-hidden">
                                 <a href="#">
-                                  <img loading="lazy" src="data/top-trending-1.svg" class="card-img-top position-relative image-swatch-1" width="295" height="393" alt="The Chrono S200 - Blue" />
+                                  <img loading="lazy" src="data/top-trending-1.jpg" class="card-img-top position-relative image-swatch-1" width="295" height="393" alt="The Chrono S200 - Blue" />
                                 </a>
                                 <a href="#">
                                   <img loading="lazy" src="data/top-trending-1-hover.jpg" class="card-img-top position-absolute img-hover" width="295" height="393" alt="The Chrono S200" />
@@ -541,7 +543,7 @@
                             <div class="card" style="width: 100%">
                               <div class="product-image position-relative overflow-hidden">
                                 <a href="#">
-                                  <img loading="lazy" src="data/top-trending-2.svg" class="card-img-top position-relative" width="295" height="393" alt="The 1820 Vintage - Gold" />
+                                  <img loading="lazy" src="data/top-trending-2.jpg" class="card-img-top position-relative" width="295" height="393" alt="The 1820 Vintage - Gold" />
                                 </a>
                                 <a href="#">
                                   <img loading="lazy" src="data/top-trending-2-hover.jpg" class="card-img-top position-absolute img-hover" width="295" height="393" alt="The 1820 Vintage" />
@@ -574,7 +576,7 @@
                             <div class="card" style="width: 100%">
                               <div class="product-image position-relative overflow-hidden">
                                 <a href="#">
-                                  <img loading="lazy" src="data/top-trending-3.svg" class="card-img-top position-relative" width="295" height="393" alt="The Reserve Automatic - Blue" />
+                                  <img loading="lazy" src="data/top-trending-3.jpg" class="card-img-top position-relative" width="295" height="393" alt="The Reserve Automatic - Blue" />
                                 </a>
                                 <a href="#">
                                   <img loading="lazy" src="data/top-trending-3-hover.jpg" class="card-img-top position-absolute img-hover" width="295" height="393" alt="The Reserve Automatic" />
@@ -631,7 +633,7 @@
 
                   <div class="cart-item-list">
                     <div class="cart-item d-flex flex-row position-relative">
-                      <a href="#" aria-label="item"><img loading="lazy" src="data/top-trending-1.svg" alt="item" /></a>
+                      <a href="#" aria-label="item"><img loading="lazy" src="data/top-trending-1.jpg" alt="item" /></a>
                       <div class="item-body d-flex flex-column">
                         <a href="#" class="item-title" aria-label="The 1820 Vintage - Gold/White">The 1820 Vintage - Gold/White</a>
                         <p class="item-description">White</p>
@@ -765,21 +767,23 @@
         <div id="carouselBanner" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item position-relative active" data-bs-interval="3000">
-              <picture>
-                <source srcset="data/slide-1-w1200.webp" type="img/webp" />
-                <source srcset="data/slide-1-w1440.webp" type="img/webp" />
-                <source srcset="data/slide-1-w1780.webp" type="img/webp" />
-                <source srcset="data/slide-1-w1920.webp" type="img/webp" />
-                <img src="data/slide-1-w992.webp" class="d-none d-md-block w-100" alt="2022 LIMITED EDITION" />
+              <!-- <picture>
+                <source srcset="data/slide-1-w1200.webp" type="image/webp" />
+                <source srcset="data/slide-1-w1440.webp" type="image/webp" />
+                <source srcset="data/slide-1-w1780.webp" type="image/webp" />
+                <source srcset="data/slide-1-w1920.webp" type="image/webp" />
+                <img src="data/slide-1-w992.webp" class="d-none d-md-block w-100" alt="2022 LIMITED EDITION" height="860" sizes="100vw" />
               </picture>
               <picture>
-                <source srcset="data/slide-1-w750.webp" type="img/webp" />
-                <source srcset="data/slide-1-w650.webp" type="img/webp" />
-                <source srcset="data/slide-1-w550.webp" type="img/webp" />
-                <source srcset="data/slide-1-w480.webp" type="img/webp" />
-                <source srcset="data/slide-1-w400.webp" type="img/webp" />
-                <img src="data/slide-1-w320.webp" class="d-block d-md-none w-100" alt="2022 LIMITED EDITION" fetchpriority="high" />
-              </picture>
+                <source srcset="data/slide-1-w750.webp" type="image/webp" />
+                <source srcset="data/slide-1-w650.webp" type="image/webp" />
+                <source srcset="data/slide-1-w550.webp" type="image/webp" />
+                <source srcset="data/slide-1-w480.webp" type="image/webp" />
+                <source srcset="data/slide-1-w400.webp" type="image/webp" />
+                <img src="data/slide-1-w320.webp" class="d-block d-md-none w-100" alt="2022 LIMITED EDITION" height="860" sizes="100vw" fetchpriority="high" />
+              </picture> -->
+              <!-- <img src="data/slide-1-w992.webp" srcset="data/slide-1-w1200.webp 1200w, data/slide-1-w1440.webp 1440w, data/slide-1-w1780.webp 1780w, data/slide-1-w1920.webp 1920w" alt="2022 LIMITED EDITION" class="d-none d-md-block w-100" height="860" sizes="100vw" loading="lazy" /> -->
+              <img fetchpriority="high" src="data/slide-1-w320.webp" srcset="data/slide-1-w750.webp 750w, data/slide-1-w650.webp 650w, data/slide-1-w550.webp 550w, data/slide-1-w480.webp 480w, data/slide-1-w400.webp 400w, data/slide-1-w1200.webp 1200w, data/slide-1-w1440.webp 1440w, data/slide-1-w1780.webp 1780w, data/slide-1-w1920.webp 1920w" alt="2022 LIMITED EDITION" class=" w-100" height="860" sizes="100vw" preload />
 
               <div class="slide-text d-flex flex-column justify-content-center align-items-center position-absolute">
                 <span class="slide-subtitle text-uppercase">2022 LIMITED EDITION</span>
@@ -789,21 +793,23 @@
               </div>
             </div>
             <div class="carousel-item position-relative" data-bs-interval="3000">
-              <picture>
-                <source srcset="data/slide-2-w1200.webp" type="img/webp" />
-                <source srcset="data/slide-2-w1440.webp" type="img/webp" />
-                <source srcset="data/slide-2-w1780.webp" type="img/webp" />
-                <source srcset="data/slide-2-w1920.webp" type="img/webp" />
-                <img src="data/slide-2-w992.webp" class="d-none d-md-block w-100" alt="2022 NEW ARRIVALS" />
+              <!-- <picture>
+                <source srcset="data/slide-2-w1200.webp" type="image/webp" />
+                <source srcset="data/slide-2-w1440.webp" type="image/webp" />
+                <source srcset="data/slide-2-w1780.webp" type="image/webp" />
+                <source srcset="data/slide-2-w1920.webp" type="image/webp" />
+                <img src="data/slide-2-w992.webp" class="d-none d-md-block w-100" alt="2022 NEW ARRIVALS" height="860" sizes="100vw"/>
               </picture>
               <picture>
-                <source srcset="data/slide-2-w750.webp" type="img/webp" />
-                <source srcset="data/slide-2-w650.webp" type="img/webp" />
-                <source srcset="data/slide-2-w550.webp" type="img/webp" />
-                <source srcset="data/slide-2-w480.webp" type="img/webp" />
-                <source srcset="data/slide-2-w400.webp" type="img/webp" />
-                <img src="data/slide-2-w320.webp" class="d-block d-md-none w-100" alt="2022 NEW ARRIVALS" fetchpriority="high" />
-              </picture>
+                <source srcset="data/slide-2-w750.webp" type="image/webp" />
+                <source srcset="data/slide-2-w650.webp" type="image/webp" />
+                <source srcset="data/slide-2-w550.webp" type="image/webp" />
+                <source srcset="data/slide-2-w480.webp" type="image/webp" />
+                <source srcset="data/slide-2-w400.webp" type="image/webp" />
+                <img src="data/slide-2-w320.webp" class="d-block d-md-none w-100" alt="2022 NEW ARRIVALS" height="860" sizes="100vw" fetchpriority="high" />
+              </picture> -->
+              <!-- <img src="data/slide-2-w992.webp" srcset="data/slide-2-w1200.webp 1200w, data/slide-2-w1440.webp 1440w, data/slide-2-w1780.webp 1780w, data/slide-2-w1920.webp 1920w" alt="2022 NEW ARRIVALS" class="d-none d-md-block w-100" height="860" sizes="100vw" loading="lazy" /> -->
+              <img fetchpriority="high" src="data/slide-2-w320.webp" srcset="data/slide-2-w750.webp 750w, data/slide-2-w650.webp 650w, data/slide-2-w550.webp 550w, data/slide-2-w480.webp 480w, data/slide-2-w400.webp 400w, data/slide-2-w1200.webp 1200w, data/slide-2-w1440.webp 1440w, data/slide-2-w1780.webp 1780w, data/slide-2-w1920.webp 1920w" alt="2022 NEW ARRIVALS" class="w-100" height="860" sizes="100vw" preload />
 
               <div class="slide-text d-flex flex-column justify-content-center align-items-center position-absolute">
                 <span class="slide-subtitle text-uppercase">2022 NEW ARRIVALS</span>
@@ -813,21 +819,23 @@
               </div>
             </div>
             <div class="carousel-item position-relative" data-bs-interval="3000">
-              <picture>
-                <source srcset="data/slide-3-w1200.webp" type="img/webp" />
-                <source srcset="data/slide-3-w1440.webp" type="img/webp" />
-                <source srcset="data/slide-3-w1780.webp" type="img/webp" />
-                <source srcset="data/slide-3-w1920.webp" type="img/webp" />
-                <img src="data/slide-3-w992.webp" class="d-none d-md-block w-100" alt="TOP WATCHES FOR MEN'S" />
-              </picture>
-              <picture>
-                <source srcset="data/slide-3-w750.webp" type="img/webp" />
-                <source srcset="data/slide-3-w650.webp" type="img/webp" />
-                <source srcset="data/slide-3-w550.webp" type="img/webp" />
-                <source srcset="data/slide-3-w480.webp" type="img/webp" />
-                <source srcset="data/slide-3-w400.webp" type="img/webp" />
-                <img src="data/slide-3-w320.webp" class="d-block d-md-none w-100" alt="TOP WATCHES FOR MEN'S" fetchpriority="high" />
-              </picture>
+              <!-- <picture>
+                <source srcset="data/slide-3-w1200.webp" type="image/webp" />
+                <source srcset="data/slide-3-w1440.webp" type="image/webp" />
+                <source srcset="data/slide-3-w1780.webp" type="image/webp" />
+                <source srcset="data/slide-3-w1920.webp" type="image/webp" />
+                <img src="data/slide-3-w992.webp" class="d-none d-md-block w-100" alt="TOP WATCHES FOR MEN'S" height="860" sizes="100vw" />
+              </picture>  -->
+              <!-- <img src="data/slide-3-w992.webp" srcset="data/slide-3-w1200.webp 1200w, data/slide-3-w1440.webp 1440w, data/slide-3-w1780.webp 1780w, data/slide-3-w1920.webp 1920w" alt="TOP WATCHES FOR MEN'S" class="d-none d-md-block w-100" height="860" sizes="100vw" loading="lazy" /> -->
+              <!-- <picture>
+                <source srcset="data/slide-3-w750.webp" type="image/webp" />
+                <source srcset="data/slide-3-w650.webp" type="image/webp" />
+                <source srcset="data/slide-3-w550.webp" type="image/webp" />
+                <source srcset="data/slide-3-w480.webp" type="image/webp" />
+                <source srcset="data/slide-3-w400.webp" type="image/webp" />
+                <img src="data/slide-3-w320.webp" class="d-block d-md-none w-100" alt="TOP WATCHES FOR MEN'S" height="860" sizes="100vw" fetchpriority="high"/>
+              </picture> -->
+              <img fetchpriority="high" src="data/slide-3-w750.webp" srcset="data/slide-3-w650.webp 650w, data/slide-3-w550.webp 550w, data/slide-3-w480.webp 480w, data/slide-3-w400.webp 400w, data/slide-3-w1200.webp 1200w, data/slide-3-w1440.webp 1440w, data/slide-3-w1780.webp 1780w, data/slide-3-w1920.webp 1920w" alt="TOP WATCHES FOR MEN'S" class=" w-100" height="860" sizes="100vw" fetchpriority="high" preload />
 
               <div class="slide-text d-flex flex-column justify-content-center align-items-center position-absolute">
                 <span class="slide-subtitle text-uppercase">TOP WATCHES FOR MEN'S</span>
@@ -887,7 +895,7 @@
 
                   <div class="color-swatch-img position-relative overflow-hidden" style="order: 1">
                     <a href="#" class="d-block overflow-hidden position-relative" aria-label="The Chrono S200 - Blue/Leather">
-                      <img loading="lazy" src="data/top-trending-1.svg" class="top-trending-1 card-img-top position-relative" width="295" height="393" alt="The Chrono S200" />
+                      <img loading="lazy" src="data/top-trending-1.jpg" class="top-trending-1 card-img-top position-relative" width="295" height="393" alt="The Chrono S200" />
                       <img loading="lazy" src="data/top-trending-1-swatch.jpg" class="top-trending-1-swatch card-img-top position-relative" width="295" height="393" alt="The Chrono S200" />
                       <img loading="lazy" src="data/top-trending-1-hover.jpg" class="card-img-top position-absolute img-hover" width="295" height="393" alt="The Chrono S200" />
                     </a>
@@ -975,7 +983,7 @@
 
                   <div class="color-swatch-img position-relative overflow-hidden" style="order: 1">
                     <a href="#" class="d-block overflow-hidden position-relative" aria-label="The 1820 Vintage - Gold/White">
-                      <img loading="lazy" src="data/top-trending-2.svg" class="top-trending-2 card-img-top position-relative" width="295" height="393" alt="The 1820 Vintage" />
+                      <img loading="lazy" src="data/top-trending-2.jpg" class="top-trending-2 card-img-top position-relative" width="295" height="393" alt="The 1820 Vintage" />
                       <img loading="lazy" src="data/top-trending-2-swatch.jpg" class="top-trending-2-swatch card-img-top position-relative" width="295" height="393" alt="The 1820 Vintage" />
                       <img loading="lazy" src="data/top-trending-2-hover.jpg" class="card-img-top position-absolute img-hover" width="295" height="393" alt="The 1820 Vintage" />
                     </a>
@@ -1062,7 +1070,7 @@
 
                   <div class="color-swatch-img position-relative overflow-hidden" style="order: 1">
                     <a href="#" class="d-block overflow-hidden position-relative" aria-label="The Reserve Automatic - Blue/Silver">
-                      <img loading="lazy" src="data/top-trending-3.svg" class="top-trending-3 card-img-top position-relative" width="295" height="393" alt="The Reserve Automatic" />
+                      <img loading="lazy" src="data/top-trending-3.jpg" class="top-trending-3 card-img-top position-relative" width="295" height="393" alt="The Reserve Automatic" />
                       <img loading="lazy" src="data/top-trending-3-swatch.jpg" class="top-trending-3-swatch card-img-top position-relative" width="295" height="393" alt="The Reserve Automatic" />
                       <img loading="lazy" src="data/top-trending-3-hover.jpg" class="card-img-top position-absolute img-hover" width="295" height="393" alt="The Reserve Automatic" />
                     </a>
