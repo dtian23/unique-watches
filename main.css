@@ -109,13 +109,13 @@
   aspect-ratio: 3/4;
 }
 
-.size-swatch input[type="radio"]:checked + label {
+.size-swatch input[type="radio"]:checked+label {
   cursor: pointer;
   border: 1px solid var(--color-black) !important;
 }
 
 .color-swatches {
-  input[type="radio"]:checked + label {
+  input[type="radio"]:checked+label {
     border: 1px solid var(--color-black);
   }
 }
@@ -132,12 +132,12 @@
   transition: all 0.4s ease-in-out;
 }
 
-.trending-1-swatch-1:checked ~ .swatch + .color-swatch-img .top-trending-1,
-.trending-1-swatch-2:checked ~ .swatch + .color-swatch-img .top-trending-1-swatch,
-.trending-2-swatch-1:checked ~ .swatch + .color-swatch-img .top-trending-2,
-.trending-2-swatch-2:checked ~ .swatch + .color-swatch-img .top-trending-2-swatch,
-.trending-3-swatch-1:checked ~ .swatch + .color-swatch-img .top-trending-3,
-.trending-3-swatch-2:checked ~ .swatch + .color-swatch-img .top-trending-3-swatch {
+.trending-1-swatch-1:checked~.swatch+.color-swatch-img .top-trending-1,
+.trending-1-swatch-2:checked~.swatch+.color-swatch-img .top-trending-1-swatch,
+.trending-2-swatch-1:checked~.swatch+.color-swatch-img .top-trending-2,
+.trending-2-swatch-2:checked~.swatch+.color-swatch-img .top-trending-2-swatch,
+.trending-3-swatch-1:checked~.swatch+.color-swatch-img .top-trending-3,
+.trending-3-swatch-2:checked~.swatch+.color-swatch-img .top-trending-3-swatch {
   display: block;
   opacity: 1;
   visibility: visible;
@@ -410,7 +410,7 @@ iframe {
   margin-bottom: 2.5rem;
 }
 
-.product-size > * {
+.product-size>* {
   font-size: 1.4rem;
 }
 
@@ -432,7 +432,7 @@ iframe {
   transition: all 0.4s;
 }
 
-.choose-size-swatches input[type="radio"]:checked + label {
+.choose-size-swatches input[type="radio"]:checked+label {
   background-color: var(--color-black);
 
   .swatch-size {
@@ -453,7 +453,7 @@ iframe {
   border: 1px solid var(--border);
 }
 
-.input-number > * {
+.input-number>* {
   width: calc(100% / 3);
   border: none;
   background-color: var(--color-light-grey);
@@ -500,6 +500,7 @@ iframe {
   border-radius: 0.5rem;
   background-color: var(--color-white);
   transition: all 0.5s;
+
   svg path {
     transition: all 0.5s;
   }
@@ -508,6 +509,7 @@ iframe {
 .to-wish-list:hover,
 .to-compare-list:hover {
   background-color: var(--color-black);
+
   svg path {
     fill: var(--color-white);
   }
@@ -547,11 +549,11 @@ iframe {
   border-radius: 0.2rem;
 }
 
-.custom-checkbox:hover input ~ .checkmark {
+.custom-checkbox:hover input~.checkmark {
   background-color: #ccc;
 }
 
-.custom-checkbox input:checked ~ .checkmark {
+.custom-checkbox input:checked~.checkmark {
   background-color: var(--color-black);
 }
 
@@ -561,7 +563,7 @@ iframe {
   display: none;
 }
 
-.custom-checkbox input:checked ~ .checkmark::after {
+.custom-checkbox input:checked~.checkmark::after {
   display: block;
 }
 
@@ -634,7 +636,7 @@ iframe {
   margin-bottom: 0.5rem;
 }
 
-.product-meta li > * {
+.product-meta li>* {
   font-size: 1.4rem;
   font-weight: var(--fw-500);
 }
@@ -658,7 +660,7 @@ iframe {
   aspect-ratio: 2.742857142857143;
   width: 100%;
   height: 60rem;
-  background-image: url(data/banner.svg);
+  background-image: url(data/banner.jpg);
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: 40%;
@@ -782,7 +784,7 @@ main .scrolling-text .text span {
   color: var(--color-grey-5);
 }
 
-.date-and-author > * {
+.date-and-author>* {
   font-size: 1.2rem;
   font-weight: var(--fw-700);
   margin-bottom: 1rem;
@@ -870,6 +872,7 @@ main .scrolling-text .text span {
 
 .action-item:hover {
   background-color: var(--color-black);
+
   svg path {
     fill: var(--color-white);
   }
@@ -955,6 +958,7 @@ main .scrolling-text .text span {
 }
 
 .tooltip-placeholder:hover {
+
   .tooltip-text-left,
   .tooltip-text-bottom,
   .tooltip-text-top {
