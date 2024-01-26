@@ -1,0 +1,13 @@
+@media only screen and (min-width: 992px) {
+    .footer-bottom {
+        padding-bottom: 0;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .search-popup {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+}

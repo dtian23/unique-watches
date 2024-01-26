@@ -113,6 +113,10 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
+.utility-link {
+  padding-right: 2rem;
+}
+
 .submenu {
   opacity: 0;
   visibility: hidden;
@@ -173,6 +177,7 @@ nav ul li a:hover {
 
 .nav-bar li a img {
   width: 100%;
+  height: 100%;
 }
 
 .demo-title {
@@ -696,31 +701,4 @@ input[type="search"]:focus {
 #searchPopup:checked~#overLay-search {
   opacity: 1;
   visibility: visible;
-}
-
-@media only screen and (min-width: 576px) {
-  .btn {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .search-popup {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .submenu {
-    padding-top: 3rem;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .submenu::before {
-    width: 6rem;
-    top: -3rem;
-  }
 }

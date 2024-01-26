@@ -176,9 +176,3 @@ h2 {
 /* .col-6 {
   width: calc(calc(100% - 15px) / 2);
 } */
-
-@media only screen and (min-width: 1200px) {
-  .container-fluid {
-    --bs-gutter-x: 6rem;
-  }
-}

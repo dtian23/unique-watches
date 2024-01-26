@@ -142,7 +142,7 @@ footer {
   padding-right: 1rem;
 }
 
-.footer-bottom .btn-group > button {
+.footer-bottom .btn-group>button {
   color: var(--footer-text);
 }
 
@@ -227,56 +227,6 @@ footer {
   font-size: 0.5rem;
 }
 
-@media only screen and (min-width: 768px) {
-  .footer-block {
-    margin-bottom: 4rem;
-  }
-
-  .footer-menu {
-    padding-bottom: 3rem;
-  }
-
-  .footer-bottom-wrapper {
-    border-top: 1px solid #29374a;
-  }
-
-  .accordion .accordion-button {
-    pointer-events: none;
-  }
-
-  .accordion .accordion-collapse {
-    display: block !important;
-    visibility: visible !important;
-    height: auto !important;
-    overflow: visible !important;
-  }
-
-  .footer-block::after {
-    display: none;
-  }
-
-  .accordion-button::after {
-    display: none;
-  }
-
-  .footer-bottom-wrapper {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
-  }
-
-  .input-form button {
-    padding: 1.5rem 4rem;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .footer-bottom {
-    padding-bottom: 0;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .footer-menu {
-    padding-top: 10rem;
-  }
+.footer-payment img {
+  border-radius: .5rem;
 }
