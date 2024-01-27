@@ -115,6 +115,8 @@
 }
 
 .color-swatches {
+  gap: .8rem;
+
   input[type="radio"]:checked+label {
     border: 1px solid var(--color-black);
   }
@@ -166,6 +168,10 @@
   border-top-right-radius: 0;
   border-top-left-radius: 0;
   height: 100%;
+}
+
+.umino-link {
+  margin-top: 2rem;
 }
 
 .umino {
@@ -313,10 +319,22 @@
   right: 1.5rem;
 }
 
-iframe {
+.video .section-content {
+  position: relative;
   overflow: hidden;
   width: 100%;
-  height: 35rem;
+  padding-top: 56.25%;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 70rem;
 }
 
 .video-text {
@@ -347,7 +365,7 @@ iframe {
   font-size: 1.3rem;
   font-weight: var(--fw-500);
   color: var(--color-white);
-  background-color: var(--color-sale);
+  background-color: var(--color-green);
   border-radius: 0.2rem;
 }
 
@@ -722,18 +740,22 @@ iframe {
 }
 
 .scrolling-text {
-  border-top: 1px solid var(--border);
+  /* border-top: 1px solid var(--border); */
   border-bottom: 1px solid var(--border);
 }
 
 .scrolling-text .text span {
   margin: 0 4rem;
-  padding: 1rem;
   font-size: 1.2rem;
+}
+
+header .scrolling-text .text span {
+  padding: 1rem;
   font-weight: var(--fw-600);
 }
 
 main .scrolling-text .text span {
+  padding: 3rem 1rem;
   font-weight: var(--fw-700);
 }
 
@@ -745,10 +767,10 @@ main .scrolling-text .text span {
   border-radius: 0 0 1rem 1rem;
 }
 
-.col-12 {
+/* .col-12 {
   flex: 0 0 auto;
   width: 100%;
-}
+} */
 
 .card-product-type {
   font-size: 1.2rem;
@@ -861,7 +883,7 @@ main .scrolling-text .text span {
   width: 3.2rem;
   height: 3.2rem;
   background-color: var(--color-white);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
   border-radius: 0.3rem;
   transition: all 0.5s;
 }
@@ -965,4 +987,13 @@ main .scrolling-text .text span {
     visibility: visible;
     opacity: 1;
   }
+}
+
+.input-action button {
+  min-width: 5rem;
+  min-height: 5rem;
+  background-color: var(--color-white);
+  border: 1px solid var(--border);
+  border-radius: 0.3rem;
+  transition: all 0.5s;
 }
