@@ -226,3 +226,7 @@ footer {
 .icon-nav svg {
     font-size: .5rem
 }
+
+.footer-payment img {
+    border-radius: .5rem
+}
