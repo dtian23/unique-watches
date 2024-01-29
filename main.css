@@ -57,26 +57,6 @@
   color: var(--color-white);
 }
 
-/* .carousel-indicators [data-bs-target] {
-  box-sizing: content-box;
-  flex: 0 1 auto;
-  width: 0.8rem;
-  height: 0.8rem;
-  padding: 0;
-  margin-right: 3px;
-  margin-left: 3px;
-  text-indent: -999px;
-  cursor: pointer;
-  background-color: var(--color-white);
-  background-clip: padding-box;
-  border: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  opacity: 0.5;
-  transition: opacity 0.6s ease;
-  border-radius: 100%;
-} */
-
 .section-gap {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -342,7 +322,7 @@ iframe {
   height: 200%;
 }
 
-div.bg_utube {
+/* div.bg_utube {
   position: fixed;
   z-index: -99999;
   -webkit-user-select: none;
@@ -360,7 +340,7 @@ div.bg_utube {
   left: 0 !important;
   right: 0 !important;
   max-width: 86rem !important;
-}
+} */
 
 .video-text {
   top: 50%;
