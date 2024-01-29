@@ -451,6 +451,10 @@ iframe {
   transition: all 0.4s;
 }
 
+label {
+  cursor: pointer;
+}
+
 .choose-size-swatches label {
   padding: 0.3rem 2.2rem 0.4rem;
   border: 1px solid var(--border);
