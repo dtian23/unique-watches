@@ -59,10 +59,19 @@
 .header-right .dropdown-menu {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+}
+
+.footer-bottom .dropdown-menu {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-menu {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   border: none;
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
 }
 
 .btn.show,
