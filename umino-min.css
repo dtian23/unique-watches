@@ -22,12 +22,12 @@
     --fw-500: 500;
     --fw-600: 600;
     --fw-700: 700;
-    --fw-800: 800
+    --fw-800: 800;
 }
 
 * {
     margin: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 html {
@@ -39,7 +39,7 @@ html {
     border: 0;
     height: 100%;
     vertical-align: baseline;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 body {
@@ -49,64 +49,68 @@ body {
     font-weight: var(--base-font-weight);
     height: 100%;
     min-width: 320px;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
-    display: none
+    display: none;
 }
 
 @font-face {
     font-family: "Manrope";
     src: url("font/Manrope-Light.ttf") format("truetype");
-    font-weight: 300
+    font-weight: 300;
 }
 
 @font-face {
     font-family: "Manrope";
     src: url("font/Manrope-Regular.ttf") format("truetype");
-    font-weight: 400
+    font-weight: 400;
 }
 
 @font-face {
     font-family: "Manrope";
     src: url("font/Manrope-Medium.ttf") format("truetype");
-    font-weight: 500
+    font-weight: 500;
 }
 
 @font-face {
     font-family: "Manrope";
     src: url("font/Manrope-SemiBold.ttf") format("truetype");
-    font-weight: 600
+    font-weight: 600;
 }
 
 @font-face {
     font-family: "Manrope";
     src: url("font/Manrope-Bold.ttf") format("truetype");
-    font-weight: 700
+    font-weight: 700;
 }
 
 body,
 input,
 textarea,
 button {
-    font-family: "Manrope", sans-serif
+    font-family: "Manrope", sans-serif;
 }
 
 ul,
 p {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 h2 {
     font-size: 4rem;
-    font-weight: var(--fw-300)
+    font-weight: var(--fw-300);
 }
 
 .container-fluid {
     --bs-gutter-x: 3rem;
-    max-width: 147rem
+}
+
+main .container-fluid,
+footer .container-fluid {
+    max-width: 147rem;
 }
 
 #overLay,
@@ -121,53 +125,53 @@ h2 {
     visibility: hidden;
     background-color: rgba(0, 0, 0, .5);
     transition: all .6s;
-    z-index: 11
+    z-index: 11;
 }
 
 .color-green {
-    background-color: var(--color-green)
+    background-color: var(--color-green);
 }
 
 .color-blue {
-    background-color: #3f8ad1
+    background-color: #3f8ad1;
 }
 
 .color-leather {
-    background-color: #5e2d0d
+    background-color: #5e2d0d;
 }
 
 .color-gold {
-    background-color: #c3891e
+    background-color: #c3891e;
 }
 
 .color-white {
-    background-color: #ffffff
+    background-color: #ffffff;
 }
 
 .white {
-    color: var(--color-white)
+    color: var(--color-white);
 }
 
 .color-silver {
-    background-color: #c0c0c0
+    background-color: #c0c0c0;
 }
 
 .color-background {
-    background-color: var(--bg)
+    background-color: var(--bg);
 }
 
 .color-steel {
-    background-color: var(--color-steel)
+    background-color: var(--color-steel);
 }
 
 .color-midnight-blue {
-    background-color: var(--color-midnight-blue)
+    background-color: var(--color-midnight-blue);
 }
 
 .sale-off {
-    background-color: var(--color-green)
+    background-color: var(--color-green);
 }
 
 .gray-5 {
-    color: var(--color-grey-5)
+    color: var(--color-grey-5);
 }
