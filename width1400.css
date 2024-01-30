@@ -11,6 +11,15 @@
     .video .section-content {
         padding-bottom: 85rem;
     }
+
+    .search-popup {
+        max-height: 110rem;
+    }
+
+    .col-xxl-2 {
+        flex: 0 0 auto;
+        width: 16.66%;
+    }
 }
 
 @media only screen and (min-width: 1400px) {

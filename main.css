@@ -177,8 +177,9 @@
   color: var(--color-grey-5);
 }
 
-.fa-star {
-  font-size: 1rem;
+.rating img {
+  width: 1rem;
+  height: 1rem;
 }
 
 .sale-price {

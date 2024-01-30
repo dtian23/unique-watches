@@ -351,9 +351,9 @@ nav ul li a:hover {
   color: var(--color-white);
 }
 
-.fa-xmark {
+/* .fa-xmark {
   font-size: 1.8rem;
-}
+} */
 
 .side-body {
   flex: 1;
@@ -638,7 +638,7 @@ nav ul li a:hover {
   margin-bottom: clamp(1rem, 3vw, 2rem);
 }
 
-.search-header label i {
+.search-header label img {
   font-size: 2rem;
   top: 2.5rem;
   right: 2.5rem;
