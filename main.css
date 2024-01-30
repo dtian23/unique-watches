@@ -720,7 +720,7 @@ label {
   font-size: 1.4rem;
   font-weight: var(--fw-700);
   margin-bottom: 1rem;
-  color: var(--color-grey-9);
+  color: var(--color-black);
 }
 
 .banner-title {
@@ -822,7 +822,7 @@ main .scrolling-text .text span {
   font-size: 1.2rem;
   font-weight: var(--fw-700);
   margin-bottom: 1rem;
-  color: var(--color-grey-9);
+  color: var(--color-grey-5);
 }
 
 .date {
