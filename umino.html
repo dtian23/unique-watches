@@ -12,17 +12,36 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     >
-    <link rel="stylesheet" href="umino.css" >
-    <link rel="stylesheet" href="header.css" >
+    <link rel="stylesheet" href="umino-min.css" >
+    <link rel="stylesheet" href="header-min.css" >
     <link rel="stylesheet" href="main.css" >
-    <link rel="stylesheet" href="footer.css" >
-    <link rel="stylesheet" href="width576.css" media="(min-width:576px)" >
-    <link rel="stylesheet" href="width768.css" media="(min-width:768px)" >
-    <link rel="stylesheet" href="width992.css" media="(min-width:922px)" >
-    <link rel="stylesheet" href="width1200.css" media="(min-width:1200px)" >
-    <link rel="stylesheet" href="width1440.css" media="(min-width:1440px)" >
+    <link rel="stylesheet" href="footer-min.css" >
+    <link rel="stylesheet" href="width576-min.css" media="(min-width:576px)" >
+    <link rel="stylesheet" href="width768-min.css" media="(min-width:768px)" >
+    <link rel="stylesheet" href="width992-min.css" media="(min-width:922px)" >
+    <link rel="stylesheet" href="width1200-min.css" media="(min-width:1200px)" >
+    <link rel="stylesheet" href="width1440-min.css" media="(min-width:1440px)" >
+    <link rel="preload" href="font/Manrope-Light.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="font/Manrope-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="font/Manrope-Medium.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="font/Manrope-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="font/Manrope-Bold.ttf" as="font" type="font/ttf" crossorigin>
     <script src="https://kit.fontawesome.com/82f8c9310a.js" crossorigin="anonymous"></script>
-    <!-- <script src="https://www.youtube.com/iframe_api"></script> -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          videoId: 'youtube-video',
+          playerVars: {
+            'origin': 'https://dtian23.github.io/unique-watches/umino.html',
+            'enablejsapi': 1,
+            'widget_referrer': 'https://dtian23.github.io/unique-watches/umino.html',
+            'cookie_flags': 'samesite=none;secure'
+          }
+        });
+      }
+    </script>
   </head>
 
   <body>
@@ -186,9 +205,7 @@
                             alt="Main demo"
                             srcset="
                             data/01-main-demo-w375.webp 375w,
-                            data/01-main-demo-w550.webp 550w,
-                            data/01-main-demo-w750.webp 750w,
-                            data/01-main-demo-w1100.webp 1100w
+                            data/01-main-demo-w550.webp 550w
                             "
                             sizes="100vw"
                             loading="lazy"
@@ -207,9 +224,7 @@
                             alt="Modern simple"
                             srcset="
                             data/02-modern-simple-w375.webp 375w,
-                            data/02-modern-simple-w550.webp 550w,
-                            data/02-modern-simple-w750.webp 750w,
-                            data/02-modern-simple-w1100.webp 1100w
+                            data/02-modern-simple-w550.webp 550w
                             "
                             sizes="100vw"
                             loading="lazy"
@@ -228,9 +243,7 @@
                             alt="Home decor"
                             srcset="
                             data/03-home-decor-w375.webp 375w,
-                            data/03-home-decor-w550.webp 550w,
-                            data/03-home-decor-w750.webp 750w,
-                            data/03-home-decor-w1100.webp 1100w
+                            data/03-home-decor-w550.webp 550w
                             "
                             sizes="100vw"
                             loading="lazy"
@@ -249,9 +262,7 @@
                             alt="Skincare"
                             srcset="
                             data/04-skincare-w375.webp 375w,
-                            data/04-skincare-w550.webp 550w,
-                            data/04-skincare-w750.webp 750w,
-                            data/04-skincare-w1100.webp 1100w
+                            data/04-skincare-w550.webp 550w
                             "
                             sizes="100vw"
                             loading="lazy"
@@ -270,9 +281,7 @@
                             alt="Mega store"
                             srcset="
                             data/05-mega-store-w375.webp 375w,
-                            data/05-mega-store-w550.webp 550w,
-                            data/05-mega-store-w750.webp 750w,
-                            data/05-mega-store-w1100.webp 1100w
+                            data/05-mega-store-w550.webp 550w
                             "
                             sizes="100vw"
                             loading="lazy"
@@ -291,9 +300,7 @@
                             alt="Tiktok fashion"
                             srcset="
                             data/06-tiktok-fashion-w375.webp 375w,
-                            data/06-tiktok-fashion-w550.webp 550w,
-                            data/06-tiktok-fashion-w750.webp 750w,
-                            data/06-tiktok-fashion-w1100.webp 1100w
+                            data/06-tiktok-fashion-w550.webp 550w
                             "
                             sizes="100vw"
                             loading="lazy"
@@ -312,9 +319,7 @@
                             alt="Gym fitness"
                             srcset="
                             data/07-gym-fitness-w350.webp 375w,
-                            data/07-gym-fitness-w550.webp 550w,
-                            data/07-gym-fitness-w750.webp 750w,
-                            data/07-gym-fitness-w1100.webp 1100w
+                            data/07-gym-fitness-w550.webp 550w
                             "
                             sizes="100vw"
                             loading="lazy"
@@ -333,9 +338,7 @@
                             alt="Smart digital"
                             srcset="
                             data/08-smart-digital-w375.webp 375w,
-                            data/08-smart-digital-w550.webp 550w,
-                            data/08-smart-digital-w750.webp 750w,
-                            data/08-smart-digital-w1100.webp 1100w
+                            data/08-smart-digital-w550.webp 550w
                             "
                             sizes="100vw"
                             loading="lazy"
@@ -354,9 +357,7 @@
                             alt="Swimwear"
                             srcset="
                             data/09-swimwear-w375.webp 375w,
-                            data/09-swimwear-w550.webp 550w,
-                            data/09-swimwear-w750.webp 750w,
-                            data/09-swimwear-w1100.webp 1100w,
+                            data/09-swimwear-w550.webp 550w
                             "
                             sizes="100vw"
                             loading="lazy"
@@ -375,9 +376,7 @@
                             alt="Organic Food"
                             srcset="
                             data/10-organic-food-w375.webp 375w,
-                            data/10-organic-food-w550.webp 550w,
-                            data/10-organic-food-w750.webp 750w,
-                            data/10-organic-food-w1100.webp 1100w
+                            data/10-organic-food-w550.webp 550w
                             "
                             sizes="100vw"
                             loading="lazy"
@@ -427,7 +426,7 @@
                   <div class="submenu-child col-3">
                     <div class="submenu-child-wrapper">
                       <div class="overflow-hidden position-relative" style="aspect-ratio: 3/4;">
-                        <img loading="lazy" src="data/submenu-child-1.jpg" alt="Men's Watches collection" width="350" height="466">
+                        <img loading="lazy" src="data/submenu-child-1.webp" alt="Men's Watches collection" width="350" height="466">
                         <a href="#" class="submenu-child-collection position-absolute text-center text-decoration-none" aria-label="Men's Watches">Men's Watches</a>
                       </div>
                     </div>
@@ -436,7 +435,7 @@
                   <div class="submenu-child col-3">
                     <div class="submenu-child-wrapper">
                       <div class="overflow-hidden position-relative" style="aspect-ratio: 3/4;">
-                        <img loading="lazy" src="data/submenu-child-2.jpg" alt="Women's Watches collection" width="350" height="466">
+                        <img loading="lazy" src="data/submenu-child-2.webp" alt="Women's Watches collection" width="350" height="466">
                         <a href="#" class="submenu-child-collection position-absolute text-center text-decoration-none" aria-label="Women's Watches">Women's Watches</a>
                       </div>
                     </div>
@@ -695,8 +694,8 @@
                         </label>
 
                         <div class="color-swatch-img position-relative overflow-hidden" style="order: 1">
-                          <a href="#" class="d-block overflow-hidden position-relative" aria-label="The Chrono S200 - Blue/Leather">
-                            <img
+                          <a href="#" class="d-block overflow-hidden position-relative" aria-label="The Chrono S200 - Blue/Leather" style="aspect-ratio: 3/4;">
+                            <!-- <img
                               loading="lazy"
                               src="data/top-trending-1-w165.webp"
                               srcset="
@@ -711,9 +710,23 @@
                               height="253"
                               width="190"
                               sizes="100vw"
+                            > -->
+                            <img
+                              loading="lazy"
+                              src="data/top-trending-1-w165.webp"
+                              srcset="
+                                data/top-trending-1-w360.webp   360w,
+                                data/top-trending-1-w533.webp   533w,
+                                data/top-trending-1-w940.webp   940w
+                              "
+                              class="top-trending-1 card-img-top position-relative"
+                              alt="The Chrono S200 - Blue/Leather"
+                              height="253"
+                              width="190"
+                              sizes="100vw"
                             >
 
-                            <img
+                            <!-- <img
                               loading="lazy"
                               src="data/top-trending-1-swatch-w165.webp"
                               srcset="
@@ -728,9 +741,23 @@
                               height="257"
                               width="193"
                               sizes="100vw"
+                            > -->
+                            <img
+                              loading="lazy"
+                              src="data/top-trending-1-swatch-w165.webp"
+                              srcset="
+                                data/top-trending-1-swatch-w360.webp   360w,
+                                data/top-trending-1-swatch-w533.webp   533w,
+                                data/top-trending-1-swatch-w940.webp   940w
+                              "
+                              class="top-trending-1-swatch card-img-top position-relative"
+                              alt="The Chrono S200 - Blue/Leather"
+                              height="257"
+                              width="193"
+                              sizes="100vw"
                             >
 
-                            <img
+                            <!-- <img
                               loading="lazy"
                               src="data/top-trending-1-hover-w165.webp"
                               srcset="
@@ -739,6 +766,20 @@
                                 data/top-trending-1-hover-w940.webp   940w,
                                 data/top-trending-1-hover-w1066.webp 1066w,
                                 data/top-trending-1-hover-w1200.webp 1200w
+                              "
+                              class="card-img-top position-absolute img-hover"
+                              alt="The Chrono S200 - Blue/Leather"
+                              height="257"
+                              width="193"
+                              sizes="100vw"
+                            > -->
+                            <img
+                              loading="lazy"
+                              src="data/top-trending-1-hover-w165.webp"
+                              srcset="
+                                data/top-trending-1-hover-w360.webp   360w,
+                                data/top-trending-1-hover-w533.webp   533w,
+                                data/top-trending-1-hover-w940.webp   940w
                               "
                               class="card-img-top position-absolute img-hover"
                               alt="The Chrono S200 - Blue/Leather"
@@ -830,8 +871,8 @@
                         </label>
 
                         <div class="color-swatch-img position-relative overflow-hidden" style="order: 1">
-                          <a href="#" class="d-block overflow-hidden position-relative" aria-label="The 1820 Vintage - Gold/White">
-                            <img
+                          <a href="#" class="d-block overflow-hidden position-relative" aria-label="The 1820 Vintage - Gold/White" style="aspect-ratio: 3/4;">
+                            <!-- <img
                               loading="lazy"
                               src="data/top-trending-2-w165.webp"
                               srcset="
@@ -846,9 +887,23 @@
                               height="257"
                               width="193"
                               sizes="100vw"
+                            > -->
+                            <img
+                              loading="lazy"
+                              src="data/top-trending-2-w165.webp"
+                              srcset="
+                                data/top-trending-2-w360.webp   360w,
+                                data/top-trending-2-w533.webp   533w,
+                                data/top-trending-2-w940.webp   940w
+                              "
+                              class="top-trending-2 card-img-top position-relative"
+                              alt="The Chrono S200 - Blue/Leather"
+                              height="257"
+                              width="193"
+                              sizes="100vw"
                             >
 
-                            <img
+                            <!-- <img
                               loading="lazy"
                               src="data/top-trending-2-swatch-w165.webp"
                               srcset="
@@ -863,9 +918,23 @@
                               height="257"
                               width="193"
                               sizes="100vw"
+                            > -->
+                            <img
+                              loading="lazy"
+                              src="data/top-trending-2-swatch-w165.webp"
+                              srcset="
+                                data/top-trending-2-swatch-w360.webp   360w,
+                                data/top-trending-2-swatch-w533.webp   533w,
+                                data/top-trending-2-swatch-w940.webp   940w
+                              "
+                              class="top-trending-2-swatch card-img-top position-relative"
+                              alt="The Chrono S200 - Blue/Leather"
+                              height="257"
+                              width="193"
+                              sizes="100vw"
                             >
 
-                            <img
+                            <!-- <img
                               loading="lazy"
                               src="data/top-trending-2-hover-w165.webp"
                               srcset="
@@ -874,6 +943,20 @@
                                 data/top-trending-2-hover-w940.webp   940w,
                                 data/top-trending-2-hover-w1066.webp 1066w,
                                 data/top-trending-2-hover-w1200.webp 1200w
+                              "
+                              class="card-img-top position-absolute img-hover"
+                              alt="The Chrono S200 - Blue/Leather"
+                              height="257"
+                              width="193"
+                              sizes="100vw"
+                            > -->
+                            <img
+                              loading="lazy"
+                              src="data/top-trending-2-hover-w165.webp"
+                              srcset="
+                                data/top-trending-2-hover-w360.webp   360w,
+                                data/top-trending-2-hover-w533.webp   533w,
+                                data/top-trending-2-hover-w940.webp   940w
                               "
                               class="card-img-top position-absolute img-hover"
                               alt="The Chrono S200 - Blue/Leather"
@@ -964,8 +1047,8 @@
                         </label>
 
                         <div class="color-swatch-img position-relative overflow-hidden" style="order: 1">
-                          <a href="#" class="d-block overflow-hidden position-relative" aria-label="The Reserve Automatic - Blue/Silver">
-                            <img
+                          <a href="#" class="d-block overflow-hidden position-relative" aria-label="The Reserve Automatic - Blue/Silver" style="aspect-ratio: 3/4;">
+                            <!-- <img
                               loading="lazy"
                               src="data/top-trending-3-w165.webp"
                               srcset="
@@ -980,9 +1063,23 @@
                               height="257"
                               width="193"
                               sizes="100vw"
+                            > -->
+                            <img
+                              loading="lazy"
+                              src="data/top-trending-3-w165.webp"
+                              srcset="
+                                data/top-trending-3-w360.webp   360w,
+                                data/top-trending-3-w533.webp   533w,
+                                data/top-trending-3-w940.webp   940w
+                              "
+                              class="top-trending-3 card-img-top position-relative"
+                              alt="The Reserve Automatic - Blue/Silver"
+                              height="257"
+                              width="193"
+                              sizes="100vw"
                             >
 
-                            <img
+                            <!-- <img
                               loading="lazy"
                               src="data/top-trending-3-swatch-w165.webp"
                               srcset="
@@ -997,9 +1094,23 @@
                               height="257"
                               width="193"
                               sizes="100vw"
+                            > -->
+                            <img
+                              loading="lazy"
+                              src="data/top-trending-3-swatch-w165.webp"
+                              srcset="
+                                data/top-trending-3-swatch-w360.webp   360w,
+                                data/top-trending-3-swatch-w533.webp   533w,
+                                data/top-trending-3-swatch-w940.webp   940w
+                              "
+                              class="top-trending-3-swatch card-img-top position-relative"
+                              alt="The Reserve Automatic - Blue/Silver"
+                              height="257"
+                              width="193"
+                              sizes="100vw"
                             >
 
-                            <img
+                            <!-- <img
                               loading="lazy"
                               src="data/top-trending-3-hover-w165.webp"
                               srcset="
@@ -1008,6 +1119,20 @@
                                 data/top-trending-3-hover-w940.webp   940w,
                                 data/top-trending-3-hover-w1066.webp 1066w,
                                 data/top-trending-3-hover-w1200.webp 1200w
+                              "
+                              class="card-img-top position-absolute img-hover"
+                              alt="The Reserve Automatic - Blue/Silver"
+                              height="257"
+                              width="193"
+                              sizes="100vw"
+                            > -->
+                            <img
+                              loading="lazy"
+                              src="data/top-trending-3-hover-w165.webp"
+                              srcset="
+                                data/top-trending-3-hover-w360.webp   360w,
+                                data/top-trending-3-hover-w533.webp   533w,
+                                data/top-trending-3-hover-w940.webp   940w
                               "
                               class="card-img-top position-absolute img-hover"
                               alt="The Reserve Automatic - Blue/Silver"
@@ -1131,7 +1256,7 @@
                 <div class="cart-item-list">
                   <div class="cart-item d-flex flex-row position-relative">
                     <a href="#" aria-label="item">
-                      <img
+                      <!-- <img
                         loading="lazy"
                         src="data/top-trending-1-w165.webp"
                         srcset="
@@ -1140,6 +1265,20 @@
                           data/top-trending-1-w940.webp   940w,
                           data/top-trending-1-w1066.webp 1066w,
                           data/top-trending-1-w1200.webp 1200w
+                        "
+                        class="card-img-top position-relative image-swatch-1"
+                        alt="The 1820 Vintage - Gold/White"
+                        height="257"
+                        width="193"
+                        sizes="100vw"
+                      > -->
+                      <img
+                        loading="lazy"
+                        src="data/top-trending-1-w165.webp"
+                        srcset="
+                          data/top-trending-1-w360.webp   360w,
+                          data/top-trending-1-w533.webp   533w,
+                          data/top-trending-1-w940.webp   940w
                         "
                         class="card-img-top position-relative image-swatch-1"
                         alt="The 1820 Vintage - Gold/White"
@@ -1417,8 +1556,8 @@
                   </label>
 
                   <div class="color-swatch-img position-relative overflow-hidden" style="order: 1">
-                    <a href="#" class="d-block overflow-hidden position-relative" aria-label="The Chrono S200 - Blue/Leather">
-                      <img
+                    <a href="#" class="d-block overflow-hidden position-relative" aria-label="The Chrono S200 - Blue/Leather" style="aspect-ratio: 3/4;">
+                      <!-- <img
                         loading="lazy"
                         src="data/top-trending-1-w165.webp"
                         srcset="
@@ -1433,9 +1572,23 @@
                         height="257"
                         width="193"
                         sizes="100vw"
+                      > -->
+                      <img
+                        loading="lazy"
+                        src="data/top-trending-1-w165.webp"
+                        srcset="
+                          data/top-trending-1-w360.webp   360w,
+                          data/top-trending-1-w533.webp   533w,
+                          data/top-trending-1-w940.webp   940w
+                        "
+                        class="top-trending-1 card-img-top position-relative"
+                        alt="The Chrono S200 - Blue/Leather"
+                        height="257"
+                        width="193"
+                        sizes="100vw"
                       >
 
-                      <img
+                      <!-- <img
                         loading="lazy"
                         src="data/top-trending-1-swatch-w165.webp"
                         srcset="
@@ -1450,9 +1603,23 @@
                         height="257"
                         width="193"
                         sizes="100vw"
+                      > -->
+                      <img
+                        loading="lazy"
+                        src="data/top-trending-1-swatch-w165.webp"
+                        srcset="
+                          data/top-trending-1-swatch-w360.webp   360w,
+                          data/top-trending-1-swatch-w533.webp   533w,
+                          data/top-trending-1-swatch-w940.webp   940w
+                        "
+                        class="top-trending-1-swatch card-img-top position-relative"
+                        alt="The Chrono S200 - Blue/Leather"
+                        height="257"
+                        width="193"
+                        sizes="100vw"
                       >
 
-                      <img
+                      <!-- <img
                         loading="lazy"
                         src="data/top-trending-1-hover-w165.webp"
                         srcset="
@@ -1461,6 +1628,20 @@
                           data/top-trending-1-hover-w940.webp   940w,
                           data/top-trending-1-hover-w1066.webp 1066w,
                           data/top-trending-1-hover-w1200.webp 1200w
+                        "
+                        class="card-img-top position-absolute img-hover"
+                        alt="The Chrono S200 - Blue/Leather"
+                        height="257"
+                        width="193"
+                        sizes="100vw"
+                      > -->
+                      <img
+                        loading="lazy"
+                        src="data/top-trending-1-hover-w165.webp"
+                        srcset="
+                          data/top-trending-1-hover-w360.webp   360w,
+                          data/top-trending-1-hover-w533.webp   533w,
+                          data/top-trending-1-hover-w940.webp   940w
                         "
                         class="card-img-top position-absolute img-hover"
                         alt="The Chrono S200 - Blue/Leather"
@@ -1552,8 +1733,8 @@
                   </label>
 
                   <div class="color-swatch-img position-relative overflow-hidden" style="order: 1">
-                    <a href="#" class="d-block overflow-hidden position-relative" aria-label="The 1820 Vintage - Gold/White">
-                      <img
+                    <a href="#" class="d-block overflow-hidden position-relative" aria-label="The 1820 Vintage - Gold/White" style="aspect-ratio: 3/4;">
+                      <!-- <img
                         loading="lazy"
                         src="data/top-trending-2-w165.webp"
                         srcset="
@@ -1568,9 +1749,23 @@
                         height="257"
                         width="193"
                         sizes="100vw"
+                      > -->
+                      <img
+                        loading="lazy"
+                        src="data/top-trending-2-w165.webp"
+                        srcset="
+                          data/top-trending-2-w360.webp   360w,
+                          data/top-trending-2-w533.webp   533w,
+                          data/top-trending-2-w940.webp   940w
+                        "
+                        class="top-trending-2 card-img-top position-relative"
+                        alt="The Chrono S200 - Blue/Leather"
+                        height="257"
+                        width="193"
+                        sizes="100vw"
                       >
 
-                      <img
+                      <!-- <img
                         loading="lazy"
                         src="data/top-trending-2-swatch-w165.webp"
                         srcset="
@@ -1585,9 +1780,24 @@
                         height="257"
                         width="193"
                         sizes="100vw"
+                      > -->
+                      <img
+                        loading="lazy"
+                        src="data/top-trending-2-swatch-w165.webp"
+                        srcset="
+                          data/top-trending-2-swatch-w360.webp   360w,
+                          data/top-trending-2-swatch-w533.webp   533w,
+                          data/top-trending-2-swatch-w940.webp   940w
+                        "
+                        class="top-trending-2-swatch card-img-top position-relative"
+                        alt="The Chrono S200 - Blue/Leather"
+                        height="257"
+                        width="193"
+                        sizes="100vw"
                       >
 
-                      <img
+
+                      <!-- <img
                         loading="lazy"
                         src="data/top-trending-2-hover-w165.webp"
                         srcset="
@@ -1596,6 +1806,20 @@
                           data/top-trending-2-hover-w940.webp   940w,
                           data/top-trending-2-hover-w1066.webp 1066w,
                           data/top-trending-2-hover-w1200.webp 1200w
+                        "
+                        class="card-img-top position-absolute img-hover"
+                        alt="The Chrono S200 - Blue/Leather"
+                        height="257"
+                        width="193"
+                        sizes="100vw"
+                      > -->
+                      <img
+                        loading="lazy"
+                        src="data/top-trending-2-hover-w165.webp"
+                        srcset="
+                          data/top-trending-2-hover-w360.webp   360w,
+                          data/top-trending-2-hover-w533.webp   533w,
+                          data/top-trending-2-hover-w940.webp   940w
                         "
                         class="card-img-top position-absolute img-hover"
                         alt="The Chrono S200 - Blue/Leather"
@@ -1686,8 +1910,8 @@
                   </label>
 
                   <div class="color-swatch-img position-relative overflow-hidden" style="order: 1">
-                    <a href="#" class="d-block overflow-hidden position-relative" aria-label="The Reserve Automatic - Blue/Silver">
-                      <img
+                    <a href="#" class="d-block overflow-hidden position-relative" aria-label="The Reserve Automatic - Blue/Silver" style="aspect-ratio: 3/4;">
+                      <!-- <img
                         loading="lazy"
                         src="data/top-trending-3-w165.webp"
                         srcset="
@@ -1702,9 +1926,23 @@
                         height="257"
                         width="193"
                         sizes="100vw"
+                      > -->
+                      <img
+                        loading="lazy"
+                        src="data/top-trending-3-w165.webp"
+                        srcset="
+                          data/top-trending-3-w360.webp   360w,
+                          data/top-trending-3-w533.webp   533w,
+                          data/top-trending-3-w940.webp   940w
+                        "
+                        class="top-trending-3 card-img-top position-relative"
+                        alt="The Reserve Automatic - Blue/Silver"
+                        height="257"
+                        width="193"
+                        sizes="100vw"
                       >
 
-                      <img
+                      <!-- <img
                         loading="lazy"
                         src="data/top-trending-3-swatch-w165.webp"
                         srcset="
@@ -1719,9 +1957,23 @@
                         height="257"
                         width="193"
                         sizes="100vw"
+                      > -->
+                      <img
+                        loading="lazy"
+                        src="data/top-trending-3-swatch-w165.webp"
+                        srcset="
+                          data/top-trending-3-swatch-w360.webp   360w,
+                          data/top-trending-3-swatch-w533.webp   533w,
+                          data/top-trending-3-swatch-w940.webp   940w
+                        "
+                        class="top-trending-3-swatch card-img-top position-relative"
+                        alt="The Reserve Automatic - Blue/Silver"
+                        height="257"
+                        width="193"
+                        sizes="100vw"
                       >
 
-                      <img
+                      <!-- <img
                         loading="lazy"
                         src="data/top-trending-3-hover-w165.webp"
                         srcset="
@@ -1730,6 +1982,20 @@
                           data/top-trending-3-hover-w940.webp   940w,
                           data/top-trending-3-hover-w1066.webp 1066w,
                           data/top-trending-3-hover-w1200.webp 1200w
+                        "
+                        class="card-img-top position-absolute img-hover"
+                        alt="The Reserve Automatic - Blue/Silver"
+                        height="257"
+                        width="193"
+                        sizes="100vw"
+                      > -->
+                      <img
+                        loading="lazy"
+                        src="data/top-trending-3-hover-w165.webp"
+                        srcset="
+                          data/top-trending-3-hover-w360.webp   360w,
+                          data/top-trending-3-hover-w533.webp   533w,
+                          data/top-trending-3-hover-w940.webp   940w
                         "
                         class="card-img-top position-absolute img-hover"
                         alt="The Reserve Automatic - Blue/Silver"
@@ -1864,12 +2130,20 @@
 
       <div class="video">
         <div class="section-content position-relative">
-          <iframe
+          <!-- <iframe
             data-src="https://www.youtube-nocookie.com/embed/v75kf-L3pYs?controls=0&autoplay=1&mute=1&loop=1&rel=0&playsinline=1&playlist=v75kf-L3pYs"
             data-categories="advertising"
             title="Umino - watches"
             allowfullscreen
-          ></iframe>
+          ></iframe> -->
+          <div id="player">
+            <iframe src="https://www.youtube-nocookie.com/embed/v75kf-L3pYs?vq=hd1080&autoplay=1&mute=1&loop=1&rel=0&cc_load_policy=1&fs=0&controls=0&playlist=v75kf-L3pYs" 
+                    id="youtube-video"
+                    title="Umino - watches"
+                    allowfullscreen>
+            </iframe> 
+          </div>
+         
           <div class="video-text d-flex flex-column justify-content-center align-items-center position-absolute">
             <span class="slide-subtitle text-uppercase">#high-quality products</span>
             <h2 class="slide-title text-uppercase">Affirm your style</h2>
@@ -2519,10 +2793,12 @@
       </div>
     </footer>
 
-    <script
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
+    <script src="bootstrap.bundle.min.js"></script>
+
   </body>
 </html>

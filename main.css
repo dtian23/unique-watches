@@ -85,10 +85,6 @@
   padding: 1.5rem 0 0 0;
 }
 
-.color-swatch-img a {
-  aspect-ratio: 3/4;
-}
-
 .size-swatch input[type="radio"]:checked+label {
   cursor: pointer;
   border: 1px solid var(--color-black) !important;
@@ -203,6 +199,13 @@
   z-index: 5;
   transition: all 0.3s ease;
 }
+
+/* .color-swatch-img a::before {
+  content: '';
+  height: 0; 
+display: block;
+padding-top: calc(100% / calc(0 + var(--aspect, 16/9)));
+} */
 
 .product-image,
 .color-swatch-img,
