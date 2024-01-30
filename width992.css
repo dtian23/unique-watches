@@ -24,6 +24,13 @@
     .header-middle {
         width: 7%;
     }
+
+    video {
+        max-height: 65rem;
+    }
+    .video .section-content {
+        padding-bottom: 65rem;
+    }
 }
 
 @media only screen and (max-width: 1024px) {

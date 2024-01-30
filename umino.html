@@ -14,34 +14,19 @@
     >
     <link rel="stylesheet" href="umino-min.css" >
     <link rel="stylesheet" href="header-min.css" >
-    <link rel="stylesheet" href="main.css" >
+    <link rel="stylesheet" href="main-min.css" >
     <link rel="stylesheet" href="footer-min.css" >
     <link rel="stylesheet" href="width576-min.css" media="(min-width:576px)" >
     <link rel="stylesheet" href="width768-min.css" media="(min-width:768px)" >
     <link rel="stylesheet" href="width992-min.css" media="(min-width:922px)" >
     <link rel="stylesheet" href="width1200-min.css" media="(min-width:1200px)" >
-    <link rel="stylesheet" href="width1440-min.css" media="(min-width:1440px)" >
+    <link rel="stylesheet" href="width1400-min.css" media="(min-width:1400px)" >
     <link rel="preload" href="font/Manrope-Light.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="font/Manrope-Regular.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="font/Manrope-Medium.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="font/Manrope-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="font/Manrope-Bold.ttf" as="font" type="font/ttf" crossorigin>
     <script src="https://kit.fontawesome.com/82f8c9310a.js" crossorigin="anonymous"></script>
-    <script src="https://www.youtube.com/iframe_api"></script>
-    <script>
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          videoId: 'youtube-video',
-          playerVars: {
-            'origin': 'https://dtian23.github.io/unique-watches/umino.html',
-            'enablejsapi': 1,
-            'widget_referrer': 'https://dtian23.github.io/unique-watches/umino.html',
-            'cookie_flags': 'samesite=none;secure'
-          }
-        });
-      }
-    </script>
   </head>
 
   <body>
@@ -2130,20 +2115,10 @@
 
       <div class="video">
         <div class="section-content position-relative">
-          <!-- <iframe
-            data-src="https://www.youtube-nocookie.com/embed/v75kf-L3pYs?controls=0&autoplay=1&mute=1&loop=1&rel=0&playsinline=1&playlist=v75kf-L3pYs"
-            data-categories="advertising"
-            title="Umino - watches"
-            allowfullscreen
-          ></iframe> -->
-          <div id="player">
-            <iframe src="https://www.youtube-nocookie.com/embed/v75kf-L3pYs?vq=hd1080&autoplay=1&mute=1&loop=1&rel=0&cc_load_policy=1&fs=0&controls=0&playlist=v75kf-L3pYs" 
-                    id="youtube-video"
-                    title="Umino - watches"
-                    allowfullscreen>
-            </iframe> 
-          </div>
-         
+          <video autoplay muted loop>
+            <source src="data/banner-video.mp4" type="video/mp4" loading="lazy">
+          </video>
+
           <div class="video-text d-flex flex-column justify-content-center align-items-center position-absolute">
             <span class="slide-subtitle text-uppercase">#high-quality products</span>
             <h2 class="slide-title text-uppercase">Affirm your style</h2>

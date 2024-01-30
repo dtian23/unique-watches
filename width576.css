@@ -36,8 +36,4 @@
             visibility: visible;
         }
     }
-
-    .video .section-content {
-        padding-bottom: clamp(25%, 61vh, 56%);
-    }
 }
