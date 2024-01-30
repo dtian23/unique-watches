@@ -291,6 +291,7 @@ nav ul li a:hover {
 
 .submenu-child-wrapper img {
   width: 100%;
+  height: auto;
   transition: all 0.4s;
 }
 
