@@ -71,4 +71,10 @@
         padding: 1.5rem 4rem;
     }
 
+    .copy-right, .footer-payment {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+
 }

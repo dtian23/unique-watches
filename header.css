@@ -694,7 +694,11 @@ input[type="search"]:focus {
   text-decoration: underline;
 }
 
-.search-suggest {
+.color-swatches {
+  margin-bottom: 1rem;
+}
+
+.suggest-text {
   margin-top: 2rem;
 }
 

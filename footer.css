@@ -129,8 +129,6 @@ footer {
   font-size: 1.4rem;
   font-weight: var(--fw-500);
   color: var(--footer-text);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .tooltip {
@@ -225,11 +223,6 @@ footer {
 
 .icon-nav svg {
   font-size: 0.5rem;
-}
-
-.footer-payment {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .footer-payment img {
