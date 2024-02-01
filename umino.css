@@ -116,7 +116,8 @@ h2 {
 }
 
 main .container-fluid,
-footer .container-fluid {
+footer .container-fluid, 
+.container-limit {
   max-width: 147rem;
 }
 

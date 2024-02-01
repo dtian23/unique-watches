@@ -201,6 +201,11 @@
   transition: all 0.3s ease;
 }
 
+.color-swatch-img {
+  width: 100%;
+  height: auto;
+}
+
 .product-image,
 .color-swatch-img,
 .limited-edition-img {
