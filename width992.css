@@ -28,6 +28,7 @@
     video {
         max-height: 65rem;
     }
+
     .video .section-content {
         padding-bottom: 65rem;
     }
@@ -55,5 +56,12 @@
     .header-tab {
         padding-top: 0;
         padding-bottom: 0;
+    }
+}
+
+@media (min-width:992px) {
+    .col-lg-2 {
+        flex: 0 0 auto;
+        width: 16.66666667%
     }
 }
