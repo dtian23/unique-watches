@@ -897,7 +897,7 @@ main .scrolling-text .text span {
 }
 
 .tooltip-placeholder:active {
-  border: none;
+  border-style: outset;
 }
 
 .tooltip-text-left {
@@ -972,7 +972,6 @@ main .scrolling-text .text span {
 }
 
 .tooltip-placeholder:hover {
-
   .tooltip-text-left,
   .tooltip-text-bottom,
   .tooltip-text-top {
