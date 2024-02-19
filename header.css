@@ -467,6 +467,14 @@ nav ul li a:hover {
   padding: 3rem;
 }
 
+.cart-item-list::-webkit-scrollbar {
+  display: none;
+}
+
+.cart-item:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
 .cart-item a img {
   max-width: 8.7rem;
   height: 100%;
