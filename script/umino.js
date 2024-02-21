@@ -103,12 +103,18 @@ products.forEach((product, index) => {
     </div>
     `;
 });
-
 document.querySelector(".js-products-grid").innerHTML = productsHTML;
+
+// function checkSwatch(productId) {
+//   cart.forEach((item, index) => {
+//     if
+//   });
+// }
 
 updateSubtotal();
 
 /************************************************************************ */
+
 let cartQuantity;
 
 function updateCartQuantity() {
@@ -157,23 +163,25 @@ function updateCartUI() {
           </a>
           <div class="item-body d-flex flex-column">
             <a href="#" class="item-title" aria-label="${matchingProduct.name}">${matchingProduct.name}</a>
-            <p class="item-description">White</p>
+            <p class="item-description">${cartItem.swatch}</p>
             <p class="item-price">$${(matchingProduct.priceCents / 100).toFixed(2)} &nbsp;<span class="text-decoration-line-through">$400.00</span></p>
             <div class="input-number d-flex flex-row align-items-center col-12 col-lg-2">
-              <button class="decrease js-decrease-quantity" data-decrease-quantity='${matchingProduct.id}' name="buttonName" aria-label="decrease">
+              <button class="decrease js-decrease-quantity" data-decrease-quantity='${matchingProduct.id}' data-swatch-decrease='${cartItem.swatch}' name="buttonName" aria-label="decrease">
                 <svg width="11" height="2" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11 0.5L11 1.5L-4.37114e-08 1.5L0 0.5L11 0.5Z" fill="#111111"></path>
                 </svg>
               </button>
               <span class="number-of-product text-center">${cartItem.quantity}</span>
-              <button class="increase js-increase-quantity" data-increase-quantity='${matchingProduct.id}' name="buttonName" aria-label="increase">
+              <button class="increase js-increase-quantity" data-increase-quantity='${matchingProduct.id}' data-swatch-increase='${cartItem.swatch}' name="buttonName" aria-label="increase">
                 <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M5 11.5H6L6 6.5H11V5.5H6L6 0.5H5L5 5.5H0V6.5H5L5 11.5Z" fill="#111111"></path>
                 </svg>
               </button>
             </div>
             <div class="item-edit d-flex flex-column justify-content-center align-items-center gap-2 position-absolute js-parent-remove">
-              <button class="tooltip-placeholder icon-edit btn d-flex justify-content-center align-items-center js-remove-item" data-matching-id="${matchingProduct.id}" aria-label="remove item">
+              <button class="tooltip-placeholder icon-edit btn d-flex justify-content-center align-items-center js-remove-item" data-matching-id="${matchingProduct.id}" data-swatch-remove='${
+      cartItem.swatch
+    }' aria-label="remove item">
                 <svg width="20px" height="20px" viewBox="-0.7 -0.7 24.80 24.80" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#999999">
                   <g id="SVGRepo_bgCarrier_1" stroke-width="0"></g>
                   <g id="SVGRepo_tracerCarrier_1" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.144"></g>
@@ -209,7 +217,6 @@ function updateCartUI() {
           </div>
         </div>
       `;
-
     add();
   });
 
@@ -226,15 +233,22 @@ function add() {
     if (targetElement) {
       const productId = targetElement.dataset.productId;
 
-      let priceCents;
+      let priceCents, swatchValue;
 
-      products.forEach((item) => {
+      products.forEach((item, index) => {
         if (productId === item.id) {
           priceCents = item.priceCents;
+
+          let swatchCheck = document.getElementById(`trending-${index + 1}-swatch-1`);
+          if (swatchCheck.checked) {
+            swatchValue = capitalizeFirstLetter(`${item.swatch.option1}`);
+          } else {
+            swatchValue = capitalizeFirstLetter(`${item.swatch.option2}`);
+          }
           return;
         }
       });
-      addToCart(productId, priceCents);
+      addToCart(productId, priceCents, swatchValue);
       updateSubtotal();
       updateCartUI();
       openCartPopup();
@@ -253,17 +267,21 @@ function setupEventListeners() {
 
       if (targetElement && targetElement.matches(".js-remove-item")) {
         const productId = targetElement.dataset.matchingId;
-        removeCartItem(productId);
+        const swatchValue = targetElement.dataset.swatchRemove;
+        console.log(swatchValue);
+        removeCartItem(productId, swatchValue);
         updateSubtotal();
         updateCartUI();
       } else if (targetElement && targetElement.matches(".js-increase-quantity")) {
         const productId = targetElement.dataset.increaseQuantity;
-        increaseItemQuantity(productId);
+        const swatchValue = targetElement.dataset.swatchIncrease;
+        increaseItemQuantity(productId, swatchValue);
         updateSubtotal();
         updateCartUI();
       } else if (targetElement && targetElement.matches(".js-decrease-quantity")) {
         const productId = targetElement.dataset.decreaseQuantity;
-        decreaseItemQuantity(productId);
+        const swatchValue = targetElement.dataset.swatchDecrease;
+        decreaseItemQuantity(productId, swatchValue);
         updateSubtotal();
         updateCartUI();
       }
@@ -315,3 +333,18 @@ document.querySelector(".js-close-cart").addEventListener("click", function () {
 document.querySelector(".js-return-to-shop").addEventListener("click", function () {
   closeCartPopup();
 });
+
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+// function checkSwatchValue(productId, swatchValue) {
+//   products.forEach((item) => {
+//     cart.forEach((event) => {
+//       if (event.productId === productId && event.productId === item.id) {
+//         swatchValue = event.swatch;
+//       }
+//     });
+//   });
+//   return swatchValue;
+// }

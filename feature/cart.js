@@ -4,11 +4,10 @@ export function saveToStorage() {
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 
-export function addToCart(productId, priceCents) {
+export function addToCart(productId, priceCents, swatchValue) {
   let matchingItem;
-
   cart.forEach((cartItem) => {
-    if (productId === cartItem.productId) {
+    if (productId === cartItem.productId && swatchValue === cartItem.swatch) {
       matchingItem = cartItem;
     }
   });
@@ -20,17 +19,18 @@ export function addToCart(productId, priceCents) {
       productId,
       quantity: 1,
       priceCents: priceCents,
+      swatch: swatchValue,
     });
   }
 
   saveToStorage();
 }
 
-export function removeCartItem(productId) {
+export function removeCartItem(productId, swatchValue) {
   const newCart = [];
 
   cart.forEach((cartItem) => {
-    if (cartItem.productId !== productId) {
+    if (cartItem.productId !== productId || cartItem.swatch !== swatchValue) {
       newCart.push(cartItem);
     }
   });
@@ -40,21 +40,35 @@ export function removeCartItem(productId) {
   saveToStorage();
 }
 
-export function decreaseItemQuantity(productId) {
-  const item = cart.find((item) => item.productId === productId);
-  if (item && item.quantity > 1) {
-    item.quantity -= 1;
+export function decreaseItemQuantity(productId, swatchValue) {
+  let targetItem;
+
+  cart.forEach((item) => {
+    if (item.swatch === swatchValue && item.productId === productId) {
+      targetItem = item;
+    }
+  });
+
+  if (targetItem && targetItem.quantity - 1 > 0) {
+    targetItem.quantity -= 1;
     saveToStorage();
     return;
-  } else {
-    removeCartItem(productId);
+  } else if (targetItem && targetItem.quantity - 1 === 0) {
+    removeCartItem(productId, swatchValue);
   }
 }
 
-export function increaseItemQuantity(productId) {
-  const item = cart.find((item) => item.productId === productId);
-  if (item && item.quantity > 0) {
-    item.quantity += 1;
+export function increaseItemQuantity(productId, swatchValue) {
+  let targetItem;
+
+  cart.forEach((item) => {
+    if (item.swatch === swatchValue && item.productId === productId) {
+      targetItem = item;
+    }
+  });
+
+  if (targetItem && targetItem.quantity > 0) {
+    targetItem.quantity += 1;
     saveToStorage();
     return;
   }
