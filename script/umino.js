@@ -42,7 +42,7 @@ products.forEach((product, index) => {
 
         <div class="color-swatch-img position-relative overflow-hidden" style="order: 1">
         <a href="#" class="d-flex overflow-hidden position-relative" aria-label="The Chrono S200 - Blue/Leather" style="aspect-ratio: 3/4">
-            <img src="data/top-trending-${index + 1}-w533.webp" class="top-trending-${index + 1} card-img-top position-relative" loading="lazy" height="253" sizes="100vw" alt="${product.name}" />
+            <img data-src="data/top-trending-${index + 1}-w533.webp" class="top-trending-${index + 1} card-img-top position-relative lazyload" height="253" sizes="100vw" alt="${product.name}" />
             <img
             id="top-trending-${index + 1}-swatch"
             data-src="data/top-trending-${index + 1}-swatch-w533.webp"
