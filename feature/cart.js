@@ -1,14 +1,10 @@
 export let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-// if (!cart) {
-//   cart = [];
-// }
-
-function saveToStorage() {
+export function saveToStorage() {
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 
-export function addToCart(productId) {
+export function addToCart(productId, priceCents) {
   let matchingItem;
 
   cart.forEach((cartItem) => {
@@ -23,6 +19,7 @@ export function addToCart(productId) {
     cart.push({
       productId,
       quantity: 1,
+      priceCents: priceCents,
     });
   }
 
@@ -41,4 +38,33 @@ export function removeCartItem(productId) {
   cart = newCart;
 
   saveToStorage();
+}
+
+export function decreaseItemQuantity(productId) {
+  const item = cart.find((item) => item.productId === productId);
+  if (item && item.quantity > 1) {
+    item.quantity -= 1;
+    saveToStorage();
+    return;
+  } else {
+    removeCartItem(productId);
+  }
+}
+
+export function increaseItemQuantity(productId) {
+  const item = cart.find((item) => item.productId === productId);
+  if (item && item.quantity > 0) {
+    item.quantity += 1;
+    saveToStorage();
+    return;
+  }
+}
+
+export function updateSubtotal() {
+  let subtotal = 0;
+
+  cart.forEach((item) => {
+    subtotal += item.priceCents * item.quantity;
+  });
+  document.querySelector(".js-subtotal-price").innerHTML = `$${(subtotal / 100).toFixed(2)}`;
 }
