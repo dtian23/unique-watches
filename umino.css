@@ -116,7 +116,7 @@ h2 {
 }
 
 main .container-fluid,
-footer .container-fluid, 
+footer .container-fluid,
 .container-limit {
   max-width: 147rem;
 }
@@ -188,3 +188,14 @@ footer .container-fluid,
 /* .col-6 {
   width: calc(calc(100% - 15px) / 2);
 } */
+
+img:not([src]) {
+  visibility: hidden;
+}
+
+/* Fixes Firefox anomaly during image load */
+@-moz-document url-prefix() {
+  img:-moz-loading {
+    visibility: hidden;
+  }
+}

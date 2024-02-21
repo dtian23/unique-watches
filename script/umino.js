@@ -1,6 +1,11 @@
 import { products } from "../feature/products.js";
 import { cart, addToCart, removeCartItem, decreaseItemQuantity, increaseItemQuantity, updateSubtotal } from "../feature/cart.js";
 
+document.addEventListener("DOMContentLoaded", function () {
+  const lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazyload",
+  });
+});
 /*************************************************************************************************** */
 
 let productsHTML = "";
@@ -40,11 +45,10 @@ products.forEach((product, index) => {
             <img src="data/top-trending-${index + 1}-w533.webp" class="top-trending-${index + 1} card-img-top position-relative" loading="lazy" height="253" sizes="100vw" alt="${product.name}" />
             <img
             id="top-trending-${index + 1}-swatch"
-            src="data/placeholder-image.webp"
-            class="top-trending-${index + 1}-swatch card-img-top position-relative"
-            loading="lazy"
+            data-src="data/top-trending-${index + 1}-swatch-w533.webp"
+            class="lazyload top-trending-${index + 1}-swatch card-img-top position-relative"
             height="253"
-            sizes="100vw"
+            data-sizes="100vw"
             alt="${product.name}"
             />
             <img src="data/top-trending-${index + 1}-hover-w533.webp" class="card-img-top position-absolute img-hover" loading="lazy" height="253" sizes="100vw" alt="${product.name}" />
@@ -106,16 +110,16 @@ products.forEach((product, index) => {
 });
 document.querySelector(".js-products-grid").innerHTML = productsHTML;
 
-document.addEventListener("DOMContentLoaded", function () {
-  products.forEach((item, index) => {
-    const placeholder = document.getElementById(`trending-${index + 1}-swatch-2`);
-    const actualImg = document.getElementById(`top-trending-${index + 1}-swatch`);
+// document.addEventListener("DOMContentLoaded", function () {
+//   products.forEach((item, index) => {
+//     const placeholder = document.getElementById(`trending-${index + 1}-swatch-2`);
+//     const actualImg = document.getElementById(`top-trending-${index + 1}-swatch`);
 
-    placeholder.addEventListener("click", function () {
-      actualImg.src = `data/top-trending-${index + 1}-swatch-w533.webp`;
-    });
-  });
-});
+//     placeholder.addEventListener("click", function () {
+//       actualImg.src = `data/top-trending-${index + 1}-swatch-w533.webp`;
+//     });
+//   });
+// });
 
 updateSubtotal();
 
