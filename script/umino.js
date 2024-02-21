@@ -39,7 +39,8 @@ products.forEach((product, index) => {
         <a href="#" class="d-flex overflow-hidden position-relative" aria-label="The Chrono S200 - Blue/Leather" style="aspect-ratio: 3/4">
             <img src="data/top-trending-${index + 1}-w533.webp" class="top-trending-${index + 1} card-img-top position-relative" loading="lazy" height="253" sizes="100vw" alt="${product.name}" />
             <img
-            src="data/top-trending-${index + 1}-swatch-w533.webp"
+            id="top-trending-${index + 1}-swatch"
+            src="data/placeholder-image.webp"
             class="top-trending-${index + 1}-swatch card-img-top position-relative"
             loading="lazy"
             height="253"
@@ -105,11 +106,16 @@ products.forEach((product, index) => {
 });
 document.querySelector(".js-products-grid").innerHTML = productsHTML;
 
-// function checkSwatch(productId) {
-//   cart.forEach((item, index) => {
-//     if
-//   });
-// }
+document.addEventListener("DOMContentLoaded", function () {
+  products.forEach((item, index) => {
+    const placeholder = document.getElementById(`trending-${index + 1}-swatch-2`);
+    const actualImg = document.getElementById(`top-trending-${index + 1}-swatch`);
+
+    placeholder.addEventListener("click", function () {
+      actualImg.src = `data/top-trending-${index + 1}-swatch-w533.webp`;
+    });
+  });
+});
 
 updateSubtotal();
 
