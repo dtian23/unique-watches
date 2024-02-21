@@ -36,7 +36,7 @@ products.forEach((product, index) => {
         </label>
 
         <div class="color-swatch-img position-relative overflow-hidden" style="order: 1">
-        <a href="#" class="d-block overflow-hidden position-relative" aria-label="The Chrono S200 - Blue/Leather" style="aspect-ratio: 3/4">
+        <a href="#" class="d-flex overflow-hidden position-relative" aria-label="The Chrono S200 - Blue/Leather" style="aspect-ratio: 3/4">
             <img src="data/top-trending-${index + 1}-w533.webp" class="top-trending-${index + 1} card-img-top position-relative" loading="lazy" height="253" sizes="100vw" alt="${product.name}" />
             <img
             src="data/top-trending-${index + 1}-swatch-w533.webp"
@@ -338,13 +338,21 @@ function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-// function checkSwatchValue(productId, swatchValue) {
-//   products.forEach((item) => {
-//     cart.forEach((event) => {
-//       if (event.productId === productId && event.productId === item.id) {
-//         swatchValue = event.swatch;
-//       }
-//     });
-//   });
-//   return swatchValue;
-// }
+/************************************************************************************ */
+
+function addOutsideClickListener(parent, component) {
+  document.addEventListener("click", function (event) {
+    const isClickInsideComponent = component.contains(event.target);
+    const computedStyles = getComputedStyle(component);
+    const visibility = computedStyles.getPropertyValue("visibility");
+
+    if (visibility === "visible" && !isClickInsideComponent) {
+      closeCartPopup();
+    }
+  });
+}
+
+const parent = document.getElementById("parent-header");
+const component = document.getElementById("mini-cart-popup");
+
+addOutsideClickListener(parent, component);

@@ -99,27 +99,37 @@
 }
 
 .top-trending-1,
-.top-trending-1-swatch,
 .top-trending-2,
+.top-trending-3 {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-100%);
+}
+
+.top-trending-1-swatch,
 .top-trending-2-swatch,
-.top-trending-3,
 .top-trending-3-swatch {
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.4s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
 }
 
 .trending-1-swatch-1:checked~.swatch+.color-swatch-img .top-trending-1,
-.trending-1-swatch-2:checked~.swatch+.color-swatch-img .top-trending-1-swatch,
 .trending-2-swatch-1:checked~.swatch+.color-swatch-img .top-trending-2,
-.trending-2-swatch-2:checked~.swatch+.color-swatch-img .top-trending-2-swatch,
-.trending-3-swatch-1:checked~.swatch+.color-swatch-img .top-trending-3,
-.trending-3-swatch-2:checked~.swatch+.color-swatch-img .top-trending-3-swatch {
-  display: block;
+.trending-3-swatch-1:checked~.swatch+.color-swatch-img .top-trending-3 {
+  display: flex;
+  transform: translateX(0);
   opacity: 1;
   visibility: visible;
-  transition: all 0.4s ease-in-out;
+}
+
+.trending-1-swatch-2:checked~.swatch+.color-swatch-img .top-trending-1-swatch,
+.trending-2-swatch-2:checked~.swatch+.color-swatch-img .top-trending-2-swatch,
+.trending-3-swatch-2:checked~.swatch+.color-swatch-img .top-trending-3-swatch {
+  display: flex;
+  transform: translateX(-100%);
+  opacity: 1;
+  visibility: visible;
 }
 
 .swatch {
@@ -972,6 +982,7 @@ main .scrolling-text .text span {
 }
 
 .tooltip-placeholder:hover {
+
   .tooltip-text-left,
   .tooltip-text-bottom,
   .tooltip-text-top {
